@@ -1,0 +1,331 @@
+# Additional learning paths (same format as paths.txt).  Merged by scripts/build_data.py.
+
+@C++
+project: Build a console inventory or bank system in C++ with classes, STL containers, file I/O and a README with complexity notes
+check_files: README.md, Makefile
+check_keywords: class, vector, map, pointer, template, constructor
+M: Syntax, pointers and references || Pointer: variable that stores a memory address; Reference: alias for an existing variable; Header file: declares functions and classes for reuse || Write programs that swap values through pointers and references
+M: Classes and OOP in C++ || Constructor: special function that initializes an object; Virtual function: enables runtime polymorphism through a base pointer; RAII: resource lifetime tied to object scope || Model shapes with a base class and two derived classes
+M: STL and templates || vector: dynamic array in the standard library; map: sorted key-value container; Template: generic code parameterized by type || Solve five problems using vector, map and sort
+
+@C#
+project: Build a C# console or ASP.NET Core app with classes, interfaces, LINQ and unit tests
+check_files: README.md, .csproj
+check_keywords: class, interface, linq, async, namespace, test
+M: C# fundamentals || Namespace: groups related types; Property: field exposed with get and set accessors; .NET runtime: executes compiled C# code || Write programs with classes, properties and collections
+M: OOP and LINQ || Interface: contract that a class implements; LINQ: query syntax for filtering and projecting collections; Delegate: type-safe reference to a method || Filter and group a list of objects with LINQ
+M: Async and testing || async/await: writes non-blocking code that reads sequentially; NuGet: package manager for .NET libraries; xUnit: popular .NET unit test framework || Add async file reading and two xUnit tests
+
+@Go
+project: Build a small Go REST service with handlers, a struct-based model, goroutine worker and tests
+check_files: go.mod, README.md
+check_keywords: func, struct, goroutine, channel, http, test
+M: Go basics || Package: unit of code organization in Go; Struct: typed collection of fields; Slice: dynamic view over an array || Write programs using slices, maps and structs
+M: Concurrency || Goroutine: lightweight concurrent function; Channel: typed pipe for communicating between goroutines; WaitGroup: waits for a set of goroutines to finish || Process a list of URLs concurrently with goroutines
+M: HTTP services || net/http: standard library package for web servers; Handler: function that responds to an HTTP request; go test: built-in command that runs tests || Serve a JSON endpoint and test it
+
+@Kotlin
+project: Build a Kotlin console app or Android screen using data classes, null safety, collections and coroutines
+check_files: README.md, build.gradle
+check_keywords: data class, val, null, lambda, coroutine, when
+M: Kotlin basics || val: read-only variable; Null safety: types distinguish nullable from non-null values; data class: class that auto-generates equals, copy and toString || Convert a small Java class into a Kotlin data class
+M: Functions and collections || Lambda: anonymous function passed as a value; Extension function: adds a method to an existing class; when: expressive replacement for switch || Transform a list with map, filter and groupBy
+M: Coroutines || Coroutine: lightweight unit of asynchronous work; suspend: marks a function that can pause without blocking a thread; Flow: asynchronous stream of values || Fetch data with a suspend function
+
+@Operating Systems
+project: Write a report with small programs demonstrating process creation, thread synchronization and a scheduling simulation
+check_files: README.md
+check_keywords: process, thread, scheduling, deadlock, memory, semaphore
+M: Processes and threads || Process: running program with its own address space; Thread: unit of execution inside a process; Context switch: saving one task's state to run another || Trace how fork creates a child process
+M: CPU scheduling and deadlocks || Round robin: scheduler giving each process a fixed time slice; Deadlock: processes waiting on each other forever; Mutex: lock that lets only one thread enter a critical section || Simulate FCFS and round robin scheduling and compare waiting times
+M: Memory management || Virtual memory: gives each process its own large address space; Paging: splits memory into fixed size pages and frames; Page fault: access to a page not currently in RAM || Work out page replacement with FIFO and LRU on a reference string
+
+@Computer Networks
+project: Write a report tracing what happens when a URL is opened, with packet captures or curl and dig output as evidence
+check_files: README.md
+check_keywords: tcp, dns, http, ip, layer, handshake
+M: Layers and models || OSI model: seven layer reference model for networking; TCP/IP model: four layer model used on the internet; Protocol: agreed rules for communication || Map HTTP, TCP, IP and Ethernet to their layers
+M: IP, TCP and DNS || IP address: identifies a host on a network; TCP three-way handshake: SYN, SYN-ACK, ACK sets up a reliable connection; DNS: translates domain names into IP addresses || Use ping, traceroute and nslookup on a real domain
+M: HTTP and security basics || HTTPS: HTTP carried over TLS encryption; Subnet: logical slice of an IP network; Firewall: filters traffic using rules || Inspect headers of an HTTPS request using browser developer tools
+
+@DBMS
+project: Design an ER diagram and normalized schema for a hospital or library system and demonstrate two transactions with ACID reasoning
+check_files: README.md
+check_keywords: normalization, primary key, transaction, acid, index, er diagram
+M: Relational model and ER design || Entity: real world object stored as a table; Relationship: association between entities; Candidate key: minimal set of columns that uniquely identifies a row || Draw an ER diagram for a library
+M: Normalization || 1NF: every column holds atomic values; 2NF: no partial dependency on part of a composite key; 3NF: no transitive dependency between non-key columns || Normalize a messy orders table up to 3NF
+M: Transactions and indexing || ACID: atomicity, consistency, isolation and durability guarantees; Isolation level: controls how concurrent transactions see each other; B-tree index: balanced tree structure speeding up lookups || Explain a bank transfer as a transaction
+
+@Design Patterns
+project: Implement Singleton, Factory, Observer and Strategy in a small app and document when each is appropriate
+check_files: README.md
+check_keywords: singleton, factory, observer, strategy, interface, solid
+M: SOLID principles || Single responsibility: a class has one reason to change; Open-closed: open for extension and closed for modification; Dependency inversion: depend on abstractions not concrete classes || Refactor a class that does too many jobs
+M: Creational patterns || Singleton: guarantees one instance of a class; Factory: creates objects without exposing construction logic; Builder: constructs complex objects step by step || Replace scattered new calls with a factory
+M: Behavioural patterns || Observer: notifies subscribers when state changes; Strategy: swaps algorithms behind a common interface; Decorator: adds behaviour by wrapping an object || Build a notification system with Observer
+
+@Agile
+project: Run a two-week mock sprint for a small app with a backlog, sprint plan, daily notes and a retrospective document
+check_files: README.md
+check_keywords: sprint, backlog, standup, retrospective, user story, scrum
+M: Agile and Scrum basics || Sprint: fixed length iteration that delivers a working increment; Product backlog: ordered list of everything the product needs; User story: requirement written from the user's point of view || Write five user stories with acceptance criteria
+M: Scrum events and roles || Daily stand-up: short daily sync on progress and blockers; Retrospective: team reflection on how to improve; Product owner: person who prioritizes the backlog || Plan a sprint and hold a mock retrospective
+
+@Django
+project: Build a Django app with models, admin, class-based views and a REST endpoint using Django REST Framework
+check_files: manage.py, requirements.txt, README.md
+check_keywords: models, views, urls, migration, serializer, admin
+M: Project structure and MVT || MVT: Model, View, Template architecture of Django; manage.py: command line utility for a Django project; URLconf: maps URL patterns to views || Create a project and a hello view
+M: Models and ORM || Model: Python class mapped to a database table; Migration: versioned change to the database schema; QuerySet: lazy collection of database rows || Create two related models and query them in the shell
+M: Forms, admin and REST || Admin: auto-generated management interface; Serializer: converts model instances to JSON; ViewSet: groups CRUD actions for an API resource || Expose your model through a DRF ViewSet
+
+@Flask
+project: Build a Flask API with blueprints, SQLite storage and pytest tests, and document the endpoints
+check_files: requirements.txt, README.md
+check_keywords: route, blueprint, jsonify, request, flask, test
+M: Routing and requests || Route: maps a URL to a Python function; request: object holding data sent by the client; jsonify: returns a JSON response || Create GET and POST routes
+M: Structure and data || Blueprint: groups related routes into a module; SQLAlchemy: ORM for talking to databases from Python; Application factory: function that creates and configures the app || Store notes in SQLite with SQLAlchemy
+M: Errors and testing || Error handler: custom response for an exception or status code; Test client: simulates requests without running a server; Environment config: separates settings from code || Write three tests with the Flask test client
+
+@FastAPI
+project: Build a FastAPI service with Pydantic models, dependency injection, a database and auto-generated docs
+check_files: requirements.txt, README.md
+check_keywords: fastapi, pydantic, async, depends, response_model, uvicorn
+M: Path operations || Path operation: function bound to an HTTP method and path; Path parameter: value taken from the URL; Query parameter: optional value after the question mark || Create GET and POST endpoints
+M: Pydantic and validation || Pydantic model: typed schema that validates request data; response_model: filters and documents the response shape; HTTPException: raises an error with a status code || Validate a create-user payload
+M: Dependencies and async || Depends: injects shared logic such as a database session; async def: declares a coroutine handler; Uvicorn: ASGI server that runs the app || Add a dependency that provides a DB session
+
+@Message Queues
+project: Build a producer and consumer pair using Kafka or RabbitMQ with retries and a dead-letter queue, documented with a diagram
+check_files: README.md, docker-compose.yml
+check_keywords: producer, consumer, topic, queue, retry, offset
+M: Why queues || Message broker: middleman that stores and routes messages; Producer: service that sends messages; Consumer: service that reads messages || Explain synchronous versus asynchronous processing with an order example
+M: Kafka and RabbitMQ concepts || Topic: named stream of messages in Kafka; Partition: ordered slice of a topic that enables parallelism; Consumer group: consumers sharing the work of a topic || Run a broker with Docker and send ten messages
+M: Reliability || Acknowledgement: consumer confirms a message was processed; Dead-letter queue: holds messages that keep failing; Idempotent consumer: handles duplicates safely || Add retry logic and a dead-letter queue
+
+@ASP.NET
+project: Build an ASP.NET Core Web API with controllers, Entity Framework Core and unit tests
+check_files: README.md, .csproj
+check_keywords: controller, entity framework, dependency injection, middleware, dbcontext
+M: Web API basics || Controller: class that handles HTTP requests; Middleware: components forming the request pipeline; Program.cs: entry point that configures services || Create a controller with GET and POST actions
+M: Data and DI || Entity Framework Core: ORM for .NET; DbContext: session with the database; Dependency injection: framework supplies services to classes || Persist entities with EF Core
+
+@Angular
+project: Build an Angular app with components, routing, a service calling a REST API and reactive forms
+check_files: package.json, README.md
+check_keywords: component, service, module, routing, observable, template
+M: Components and templates || Component: class plus template that renders a piece of UI; Data binding: syncs component data with the template; Directive: adds behaviour such as *ngFor to elements || Build a list component with *ngFor
+M: Services and HTTP || Service: injectable class holding shared logic; HttpClient: Angular service for HTTP calls; Observable: stream of values from RxJS || Call a REST API from a service and display data
+M: Routing and forms || Router: navigates between views without reloading; Reactive form: form model defined in code; Guard: decides whether a route may be opened || Add two routes and a validated form
+
+@Bootstrap/Tailwind
+project: Recreate a landing page in Bootstrap and again in Tailwind, comparing responsiveness and code size
+check_files: index.html, README.md
+check_keywords: container, grid, responsive, utility, class, breakpoint
+M: Frameworks and grids || Grid system: divides the page into responsive columns; Breakpoint: screen width where the layout changes; Utility class: single purpose CSS class applied in markup || Build a three column layout that stacks on mobile
+M: Components and customization || Component: prebuilt UI piece such as a navbar or card; Theme: custom colors and spacing configuration; Mobile-first: design for small screens then scale up || Restyle a card and navbar with your own palette
+
+@Redux
+project: Add Redux Toolkit to a React to-do or cart app with slices, async thunks and selectors
+check_files: package.json, README.md
+check_keywords: store, slice, reducer, dispatch, selector, thunk
+M: Store, actions and reducers || Store: single object holding global state; Action: plain object describing what happened; Reducer: pure function computing the next state || Build a counter with a store and reducer
+M: Redux Toolkit || createSlice: defines reducers and actions together; useSelector: reads state in a component; createAsyncThunk: handles async requests with lifecycle actions || Load items from an API into the store
+
+@Next.js
+project: Build a Next.js blog or catalog with file-based routing, server-side rendering and an API route
+check_files: package.json, README.md
+check_keywords: page, route, getserversideprops, api, ssr, component
+M: Routing and rendering || File-based routing: folders and files define URLs; SSR: HTML is generated on the server per request; SSG: pages are generated at build time || Create three pages and a dynamic route
+M: Data and API routes || API route: server function inside the Next.js project; Server component: renders on the server and sends HTML; Image optimization: automatic resizing and lazy loading || Fetch data on the server and render a list
+
+@PostgreSQL
+project: Model an e-commerce schema in PostgreSQL with constraints, indexes, a view and a transaction, documented with EXPLAIN output
+check_files: README.md
+check_keywords: constraint, index, view, transaction, explain, jsonb
+M: Setup and data types || psql: command line client for PostgreSQL; SERIAL: auto-incrementing integer column; JSONB: binary JSON column type that can be indexed || Install PostgreSQL and create a database with three tables
+M: Constraints and indexes || Foreign key: enforces a valid link between tables; Unique constraint: prevents duplicate values; GIN index: index type suited to JSONB and full-text search || Add constraints and compare EXPLAIN before and after an index
+M: Transactions and views || BEGIN and COMMIT: group statements into one atomic unit; View: saved query that behaves like a table; Materialized view: stores query results physically || Create a view for monthly sales
+
+@MySQL
+project: Build a MySQL schema for a school or shop with joins, indexes, stored procedure and backup script
+check_files: README.md
+check_keywords: primary key, join, index, procedure, mysqldump, engine
+M: MySQL basics || InnoDB: default storage engine supporting transactions; AUTO_INCREMENT: automatically numbers new rows; mysqldump: utility that exports a database backup || Create tables and load sample data
+M: Queries and performance || EXPLAIN: shows how MySQL will run a query; Composite index: index spanning several columns; Stored procedure: saved SQL routine you call by name || Optimize a slow query with an index
+
+@Azure
+project: Deploy a web app and a storage account on Azure using the portal and then the Azure CLI, documenting costs and clean-up steps
+check_files: README.md
+check_keywords: resource group, app service, storage, azure cli, virtual machine, entra
+M: Azure fundamentals || Resource group: container that holds related Azure resources; Subscription: billing boundary for Azure usage; Region: geographic location of data centres || Create a resource group and a virtual machine
+M: Compute and storage || App Service: managed hosting for web apps; Blob Storage: object storage for files; Azure Functions: serverless code triggered by events || Deploy a web app to App Service
+M: Identity and networking || Microsoft Entra ID: identity and access management service; Virtual network: private network inside Azure; RBAC: role based access control for resources || Assign a role to a user and restrict access
+
+@GCP
+project: Deploy a containerized app to Cloud Run and store data in Cloud Storage and BigQuery, documenting IAM roles used
+check_files: README.md
+check_keywords: cloud run, project, iam, bigquery, storage, gcloud
+M: GCP fundamentals || Project: top level container for GCP resources; IAM: controls who can do what; gcloud: command line tool for Google Cloud || Create a project and enable an API
+M: Compute and data || Compute Engine: virtual machines on Google Cloud; Cloud Storage: object storage buckets; BigQuery: serverless data warehouse for SQL analytics || Load a CSV into BigQuery and query it
+
+@Terraform
+project: Provision a network, a virtual machine and a storage bucket with Terraform modules and remote state
+check_files: main.tf, README.md
+check_keywords: provider, resource, variable, state, module, plan
+M: Terraform basics || Provider: plugin that talks to a cloud API; Resource: infrastructure object declared in code; terraform plan: previews the changes before applying || Create one resource and destroy it
+M: State and variables || State file: records what Terraform manages; Variable: input that makes configuration reusable; Output: value exposed after apply || Parameterize a configuration with variables
+M: Modules and workflow || Module: reusable group of resources; Remote backend: stores state safely for teams; terraform apply: makes the real infrastructure match the code || Turn your resources into a module
+
+@Monitoring
+project: Set up Prometheus and Grafana for a sample app with a dashboard of latency and error rate and one alert rule
+check_files: prometheus.yml, README.md
+check_keywords: metric, prometheus, grafana, alert, dashboard, latency
+M: Metrics, logs and traces || Metric: numeric measurement over time; Log: timestamped record of an event; Trace: path of a request across services || Classify five signals as metrics, logs or traces
+M: Prometheus and Grafana || Prometheus: pulls and stores time series metrics; Grafana: builds dashboards from data sources; PromQL: query language for Prometheus || Chart request rate with PromQL
+M: Alerting and SLOs || SLI: measured indicator of service health; SLO: target value for an SLI; Alert rule: condition that notifies the on-call engineer || Create an alert for high error rate
+
+@NumPy
+project: Implement linear regression and image brightness transforms using only NumPy arrays and document the vectorization gains
+check_files: README.md
+check_keywords: array, broadcasting, vectorized, shape, dot, reshape
+M: Arrays and shapes || ndarray: fixed type n-dimensional array; Shape: tuple giving the size of each dimension; dtype: data type of array elements || Create arrays and reshape them
+M: Vectorization and broadcasting || Vectorization: applying operations to whole arrays without loops; Broadcasting: rules for combining arrays of different shapes; Slicing: selecting sub-arrays with start and stop indices || Replace a Python loop with a vectorized expression
+M: Linear algebra and statistics || dot: matrix multiplication; mean and std: summary statistics along an axis; random: module for generating random data || Solve a linear system and compute column statistics
+
+@Tableau
+project: Build a three sheet Tableau dashboard from a public dataset with filters, a calculated field and a story
+check_files: README.md
+check_keywords: dimension, measure, filter, calculated field, dashboard, story
+M: Connecting and fields || Dimension: categorical field used to slice data; Measure: numeric field that is aggregated; Data source: the file or database Tableau connects to || Connect to a CSV and drag fields to build a bar chart
+M: Charts and calculations || Calculated field: new field defined by a formula; Filter: limits which rows are shown; Dual axis: overlays two measures on one chart || Create a line chart with a calculated growth field
+M: Dashboards and stories || Dashboard: canvas combining several sheets; Action: interaction such as filter on click; Story: sequence of views that tells a narrative || Publish a dashboard with an interactive filter
+
+@Deep Learning
+project: Train a small CNN on MNIST or CIFAR-10 and report accuracy curves, an ablation and error analysis
+check_files: README.md, requirements.txt
+check_keywords: neural network, backpropagation, loss, epoch, cnn, overfitting
+M: Neural network foundations || Neuron: computes a weighted sum then applies an activation; Backpropagation: propagates errors backwards to update weights; Gradient descent: iteratively adjusts weights to reduce loss || Train a tiny network on a toy dataset
+M: Training deep models || Epoch: one full pass over the training data; Dropout: randomly disables neurons to reduce overfitting; Learning rate: step size for weight updates || Compare two learning rates and plot loss
+M: CNNs and sequences || Convolution: filter sliding over an image to detect patterns; Pooling: downsampling that keeps the strongest features; LSTM: recurrent unit designed for long sequences || Build a CNN that classifies digits
+
+@TensorFlow/PyTorch
+project: Implement the same classifier in PyTorch and Keras, comparing code, training time and accuracy
+check_files: README.md, requirements.txt
+check_keywords: tensor, model, optimizer, loss, dataloader, gpu
+M: Tensors and autograd || Tensor: multi-dimensional array with GPU support; Autograd: automatic differentiation engine; Device: CPU or GPU where tensors live || Create tensors and compute a gradient
+M: Building and training models || nn.Module: base class for PyTorch models; Optimizer: updates weights using gradients; DataLoader: batches and shuffles data || Write a training loop
+M: Keras and deployment || Keras Sequential: simple stack of layers; Checkpoint: saved model weights during training; Saved model: exported model ready to serve || Save and reload a trained model
+
+@NLP
+project: Build a text classifier (sentiment or spam) with TF-IDF baseline and a transformer fine-tune, comparing metrics
+check_files: README.md, requirements.txt
+check_keywords: tokenization, embedding, tf-idf, transformer, f1, classification
+M: Text preprocessing || Tokenization: splitting text into tokens; Stop words: very common words often removed; Stemming: reducing words to a crude root form || Clean and tokenize a review dataset
+M: Representations || TF-IDF: weights words by frequency and rarity; Word embedding: dense vector capturing meaning; Cosine similarity: measures the angle between two vectors || Find the most similar documents to a query
+M: Transformers || Attention: lets a model weigh which words matter for each other; BERT: pretrained transformer encoder for language understanding; Fine-tuning: adapting a pretrained model to a task || Fine-tune a small model on a labelled dataset
+
+@LLMs/GenAI
+project: Build a retrieval-augmented question answering app over your own PDFs with chunking, embeddings, a vector store and cited answers
+check_files: README.md, requirements.txt
+check_keywords: rag, embedding, chunk, vector, prompt, retrieval
+M: LLM basics and prompting || LLM: neural model trained on huge text to predict the next token; Prompt: instructions and context given to the model; Temperature: controls randomness of generated text || Write a prompt with a role, task and output format
+M: Embeddings and vector search || Embedding: numeric vector capturing the meaning of text; Vector store: database that finds nearest embeddings; Chunking: splitting documents into retrievable pieces || Embed ten paragraphs and search them
+M: RAG and agents || RAG: retrieves relevant documents and gives them to the model as context; Hallucination: confident but unsupported model output; Tool calling: model requests a function to run with arguments || Add source citations to your RAG answers
+
+@MLOps
+project: Package an ML model in a Docker container behind an API with MLflow tracking and a CI workflow that runs tests
+check_files: Dockerfile, README.md
+check_keywords: mlflow, docker, model, api, tracking, pipeline
+M: ML lifecycle || Experiment tracking: recording parameters and metrics of each run; Model registry: versioned store of trained models; Reproducibility: ability to recreate a result from code and data || Track two runs with MLflow
+M: Serving and monitoring || Model serving: exposing a model through an API; Data drift: input data changing from what the model saw in training; Canary release: rolling out to a small share of traffic first || Serve a model with FastAPI in Docker
+
+@Computer Vision
+project: Build an image classifier or object detector with OpenCV preprocessing and evaluate it with a confusion matrix
+check_files: README.md, requirements.txt
+check_keywords: opencv, cnn, image, detection, augmentation, accuracy
+M: Image basics || Pixel: smallest unit of an image holding intensity values; Grayscale: single channel image; Resize and crop: change image size and region || Load, resize and grayscale images with OpenCV
+M: CNNs and detection || Data augmentation: creating varied training images by flipping and rotating; IoU: overlap measure between predicted and true boxes; YOLO: real time object detector || Train a classifier with augmentation
+
+@ETL
+project: Build an ETL pipeline that extracts from an API and a CSV, cleans and loads into SQLite or PostgreSQL, scheduled with Airflow or cron
+check_files: README.md
+check_keywords: extract, transform, load, schema, dag, validation
+M: ETL concepts || Extract: pull data from sources; Transform: clean and reshape data; Load: write data into the target store || Sketch an ETL diagram for sales data
+M: Building pipelines || Idempotent job: safe to run twice with the same result; Data validation: checks that data meets expectations; Airflow DAG: workflow of tasks with dependencies || Schedule a daily job that loads a CSV
+M: Quality and scale || Incremental load: processes only new or changed rows; Schema evolution: handling changes in source columns; Data lineage: tracking where data came from || Add validation checks and a failure alert
+
+@Big Data
+project: Analyze a multi-million row dataset with PySpark, using DataFrames, joins and partitioning, and report timings
+check_files: README.md
+check_keywords: spark, dataframe, partition, rdd, cluster, shuffle
+M: Distributed processing || Cluster: group of machines working together; MapReduce: split, process and combine model for big data; HDFS: distributed file system for large files || Explain how word count runs on a cluster
+M: Spark essentials || DataFrame: distributed table with a schema; Transformation: lazy operation that defines a new dataset; Action: operation that triggers computation || Load a CSV into Spark and aggregate it
+M: Performance || Partition: slice of data processed in parallel; Shuffle: expensive movement of data between nodes; Caching: keeps data in memory for reuse || Compare runtimes with different partition counts
+
+@Data Warehousing
+project: Design a star schema for sales analytics, load sample data and write five analytical queries
+check_files: README.md
+check_keywords: fact table, dimension, star schema, olap, etl, grain
+M: Warehouse concepts || Data warehouse: central store optimized for analytics; OLTP: transaction processing for day to day operations; OLAP: analytical processing across large datasets || Compare OLTP and OLAP for a retail business
+M: Dimensional modeling || Fact table: stores measurable events such as sales; Dimension table: descriptive context such as product or date; Star schema: fact table linked directly to dimensions || Design a star schema for orders
+
+@Test Automation
+project: Build a Page Object based automation suite with Selenium or Playwright and an HTML report, running in CI
+check_files: README.md
+check_keywords: page object, assertion, fixture, report, framework, ci
+M: Automation strategy || Test pyramid: many unit tests, fewer integration tests, fewest UI tests; Regression suite: tests that guard existing behaviour; Flaky test: test that passes and fails without code changes || Decide which five manual tests to automate first
+M: Framework design || Page Object Model: one class per page holding locators and actions; Fixture: setup and teardown shared by tests; Data-driven testing: same test run with many inputs || Refactor a script into page objects
+M: Reporting and CI || Test report: readable summary of passes and failures; CI trigger: runs tests on each commit; Parallel execution: runs tests simultaneously to save time || Run your suite in GitHub Actions
+
+@Cybersecurity
+project: Test a deliberately vulnerable app (DVWA or Juice Shop) in a lab and write a report covering three OWASP Top 10 issues with fixes
+check_files: README.md
+check_keywords: owasp, injection, xss, encryption, vulnerability, mitigation
+M: Security fundamentals || CIA triad: confidentiality, integrity and availability; Threat: potential cause of harm; Vulnerability: weakness that can be exploited || Classify five incidents by CIA impact
+M: Web attacks || SQL injection: attacker input alters a database query; XSS: injects scripts that run in other users' browsers; CSRF: tricks a logged-in user into sending unwanted requests || Reproduce SQL injection in a lab and fix it with parameters
+M: Defence || Hashing: one-way transformation used for password storage; TLS: encrypts data in transit; Least privilege: grant only the access needed || Harden a small server checklist
+
+@Android Development
+project: Build an Android app with two screens, a RecyclerView or Compose list, ViewModel and a Retrofit API call
+check_files: README.md, build.gradle
+check_keywords: activity, viewmodel, retrofit, recyclerview, compose, manifest
+M: Android fundamentals || Activity: single screen with a UI; Manifest: declares components and permissions of the app; Intent: message used to start components || Create an app with two activities
+M: UI and architecture || RecyclerView: efficient scrolling list; ViewModel: holds UI state across configuration changes; LiveData: observable data holder aware of lifecycle || Show a list backed by a ViewModel
+M: Networking and storage || Retrofit: type-safe HTTP client; Room: SQLite abstraction for local data; Permission: user consent for sensitive features || Fetch and cache data from a public API
+
+@Flutter
+project: Build a Flutter app with navigation, a list from an API and local state management
+check_files: pubspec.yaml, README.md
+check_keywords: widget, state, setstate, provider, navigator, future
+M: Widgets and layout || Widget: building block of Flutter UIs; StatelessWidget: widget without mutable state; Column and Row: layout widgets that stack children || Build a profile screen with Column and Row
+M: State and navigation || setState: rebuilds a widget after state changes; Navigator: pushes and pops screens; Provider: simple state management package || Create a to-do app with state
+M: Networking || Future: value that will be available later; http package: makes web requests; JSON parsing: converts response text into Dart objects || Load and display API data
+
+@GraphQL
+project: Build a GraphQL API with a schema, queries, a mutation and a resolver connected to a database
+check_files: README.md
+check_keywords: schema, query, mutation, resolver, type, apollo
+M: GraphQL concepts || Schema: describes types and operations available; Query: read operation requesting exact fields; Mutation: write operation that changes data || Write queries against a public GraphQL API
+M: Building a server || Resolver: function that returns data for a field; Type system: defines fields and their types; Over-fetching: receiving more data than needed, avoided by GraphQL || Implement two resolvers
+
+@Vue.js
+project: Build a Vue app with components, props, a Pinia store and API calls
+check_files: package.json, README.md
+check_keywords: component, props, ref, computed, router, pinia
+M: Reactivity and templates || Reactive state: data whose changes update the UI; v-for: renders a list from an array; v-model: two way binding for form inputs || Build a task list
+M: Components and routing || Props: data passed from a parent to a child component; Emit: child component sending an event to its parent; Vue Router: client-side routing for Vue apps || Split your app into three components
+
+@C
+project: Implement a linked list, a string utility library and a small file-based program in C with memory leak checks using valgrind
+check_files: README.md, Makefile
+check_keywords: pointer, malloc, free, struct, array, header
+M: C fundamentals || Pointer: variable storing a memory address; Array: fixed size block of same typed elements; Header file: declaration file included with #include || Write programs using arrays and pointers
+M: Memory and structs || malloc: allocates memory on the heap; free: releases heap memory; struct: groups related variables into one type || Build a dynamic array and free it correctly
+
+@R
+project: Analyze a public dataset in R with dplyr, ggplot2 and a short statistical test, delivered as an R Markdown report
+check_files: README.md
+check_keywords: dataframe, dplyr, ggplot2, tidyverse, summary, lm
+M: R basics || Vector: ordered collection of same typed values; Data frame: table of rows and columns; Tidyverse: collection of packages for data analysis || Load a CSV and summarize it
+M: Visualization and models || ggplot2: grammar of graphics plotting package; dplyr: verbs to filter, group and summarize data; lm: fits a linear regression model || Plot a relationship and fit a regression

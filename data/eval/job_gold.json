@@ -1,0 +1,2000 @@
+{
+ "J01": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 2
+   },
+   {
+    "skill": "dsa",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "spring_boot",
+    "level": 1
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E."
+  ]
+ },
+ "J02": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 2
+   },
+   {
+    "skill": "spring_boot",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "hibernate_jpa",
+    "level": 1
+   },
+   {
+    "skill": "unit_testing",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "MCA"
+  ]
+ },
+ "J03": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 3
+   },
+   {
+    "skill": "spring_boot",
+    "level": 3
+   },
+   {
+    "skill": "rest_api",
+    "level": 3
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "hibernate_jpa",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 2
+   },
+   {
+    "skill": "microservices",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "message_queues",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J04": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 3
+   },
+   {
+    "skill": "django",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "postgresql",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "redis",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "B.Sc",
+   "MCA"
+  ]
+ },
+ "J05": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "fastapi",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "redis",
+    "level": 1
+   },
+   {
+    "skill": "unit_testing",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J06": {
+  "required": [
+   {
+    "skill": "javascript",
+    "level": 3
+   },
+   {
+    "skill": "nodejs",
+    "level": 2
+   },
+   {
+    "skill": "expressjs",
+    "level": 2
+   },
+   {
+    "skill": "mongodb",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "typescript",
+    "level": 1
+   },
+   {
+    "skill": "redis",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA"
+  ]
+ },
+ "J07": {
+  "required": [
+   {
+    "skill": "html_css",
+    "level": 2
+   },
+   {
+    "skill": "javascript",
+    "level": 2
+   },
+   {
+    "skill": "react",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "bootstrap_tailwind",
+    "level": 1
+   },
+   {
+    "skill": "typescript",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J08": {
+  "required": [
+   {
+    "skill": "react",
+    "level": 3
+   },
+   {
+    "skill": "javascript",
+    "level": 3
+   },
+   {
+    "skill": "html_css",
+    "level": 3
+   },
+   {
+    "skill": "git",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "typescript",
+    "level": 2
+   },
+   {
+    "skill": "redux",
+    "level": 1
+   },
+   {
+    "skill": "nextjs",
+    "level": 1
+   },
+   {
+    "skill": "unit_testing",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J09": {
+  "required": [
+   {
+    "skill": "angular",
+    "level": 2
+   },
+   {
+    "skill": "typescript",
+    "level": 2
+   },
+   {
+    "skill": "html_css",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "unit_testing",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J10": {
+  "required": [
+   {
+    "skill": "javascript",
+    "level": 3
+   },
+   {
+    "skill": "react",
+    "level": 2
+   },
+   {
+    "skill": "nodejs",
+    "level": 2
+   },
+   {
+    "skill": "expressjs",
+    "level": 2
+   },
+   {
+    "skill": "mongodb",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "typescript",
+    "level": 1
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "MCA"
+  ]
+ },
+ "J11": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 2
+   },
+   {
+    "skill": "spring_boot",
+    "level": 2
+   },
+   {
+    "skill": "react",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "html_css",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   },
+   {
+    "skill": "microservices",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J12": {
+  "required": [
+   {
+    "skill": "javascript",
+    "level": 2
+   },
+   {
+    "skill": "html_css",
+    "level": 2
+   },
+   {
+    "skill": "nodejs",
+    "level": 1
+   },
+   {
+    "skill": "sql",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "react",
+    "level": 1
+   },
+   {
+    "skill": "mongodb",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J13": {
+  "required": [
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "excel",
+    "level": 2
+   },
+   {
+    "skill": "python",
+    "level": 1
+   },
+   {
+    "skill": "data_visualization",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "power_bi",
+    "level": 1
+   },
+   {
+    "skill": "statistics",
+    "level": 1
+   },
+   {
+    "skill": "pandas",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "B.Sc",
+   "BCA",
+   "MCA"
+  ]
+ },
+ "J14": {
+  "required": [
+   {
+    "skill": "sql",
+    "level": 3
+   },
+   {
+    "skill": "excel",
+    "level": 3
+   },
+   {
+    "skill": "power_bi",
+    "level": 2
+   },
+   {
+    "skill": "statistics",
+    "level": 2
+   },
+   {
+    "skill": "python",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "tableau",
+    "level": 1
+   },
+   {
+    "skill": "pandas",
+    "level": 2
+   },
+   {
+    "skill": "data_visualization",
+    "level": 2
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "B.Sc",
+   "MCA"
+  ]
+ },
+ "J15": {
+  "required": [
+   {
+    "skill": "sql",
+    "level": 3
+   },
+   {
+    "skill": "power_bi",
+    "level": 3
+   },
+   {
+    "skill": "excel",
+    "level": 2
+   },
+   {
+    "skill": "data_warehousing",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "tableau",
+    "level": 1
+   },
+   {
+    "skill": "etl",
+    "level": 1
+   },
+   {
+    "skill": "python",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "B.Sc",
+   "MCA"
+  ]
+ },
+ "J16": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 3
+   },
+   {
+    "skill": "pandas",
+    "level": 2
+   },
+   {
+    "skill": "numpy",
+    "level": 2
+   },
+   {
+    "skill": "statistics",
+    "level": 2
+   },
+   {
+    "skill": "machine_learning",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "data_visualization",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "deep_learning",
+    "level": 1
+   },
+   {
+    "skill": "big_data",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech",
+   "MCA",
+   "M.Sc"
+  ]
+ },
+ "J17": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 3
+   },
+   {
+    "skill": "machine_learning",
+    "level": 3
+   },
+   {
+    "skill": "deep_learning",
+    "level": 2
+   },
+   {
+    "skill": "tensorflow_pytorch",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "mlops",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "nlp",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech"
+  ]
+ },
+ "J18": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "machine_learning",
+    "level": 2
+   },
+   {
+    "skill": "pandas",
+    "level": 2
+   },
+   {
+    "skill": "numpy",
+    "level": 2
+   },
+   {
+    "skill": "statistics",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "deep_learning",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech",
+   "MCA"
+  ]
+ },
+ "J19": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 3
+   },
+   {
+    "skill": "llms_genai",
+    "level": 2
+   },
+   {
+    "skill": "nlp",
+    "level": 2
+   },
+   {
+    "skill": "machine_learning",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "fastapi",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech"
+  ]
+ },
+ "J20": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 3
+   },
+   {
+    "skill": "etl",
+    "level": 2
+   },
+   {
+    "skill": "big_data",
+    "level": 2
+   },
+   {
+    "skill": "data_warehousing",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "message_queues",
+    "level": 1
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "linux",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J21": {
+  "required": [
+   {
+    "skill": "aws",
+    "level": 3
+   },
+   {
+    "skill": "linux",
+    "level": 2
+   },
+   {
+    "skill": "computer_networks",
+    "level": 2
+   },
+   {
+    "skill": "bash",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "terraform",
+    "level": 1
+   },
+   {
+    "skill": "kubernetes",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   },
+   {
+    "skill": "python",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J22": {
+  "required": [
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "linux",
+    "level": 2
+   },
+   {
+    "skill": "computer_networks",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "azure",
+    "level": 1
+   },
+   {
+    "skill": "bash",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J23": {
+  "required": [
+   {
+    "skill": "linux",
+    "level": 3
+   },
+   {
+    "skill": "docker",
+    "level": 3
+   },
+   {
+    "skill": "ci_cd",
+    "level": 3
+   },
+   {
+    "skill": "git",
+    "level": 3
+   },
+   {
+    "skill": "kubernetes",
+    "level": 2
+   },
+   {
+    "skill": "aws",
+    "level": 2
+   },
+   {
+    "skill": "bash",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "terraform",
+    "level": 1
+   },
+   {
+    "skill": "monitoring",
+    "level": 1
+   },
+   {
+    "skill": "python",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J24": {
+  "required": [
+   {
+    "skill": "linux",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "bash",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA"
+  ]
+ },
+ "J25": {
+  "required": [
+   {
+    "skill": "linux",
+    "level": 3
+   },
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 2
+   },
+   {
+    "skill": "kubernetes",
+    "level": 2
+   },
+   {
+    "skill": "monitoring",
+    "level": 2
+   },
+   {
+    "skill": "computer_networks",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "terraform",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J26": {
+  "required": [
+   {
+    "skill": "manual_testing",
+    "level": 3
+   },
+   {
+    "skill": "sql",
+    "level": 1
+   },
+   {
+    "skill": "api_testing",
+    "level": 1
+   },
+   {
+    "skill": "agile",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "selenium",
+    "level": 1
+   },
+   {
+    "skill": "unit_testing",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc",
+   "MCA"
+  ]
+ },
+ "J27": {
+  "required": [
+   {
+    "skill": "selenium",
+    "level": 2
+   },
+   {
+    "skill": "java",
+    "level": 2
+   },
+   {
+    "skill": "test_automation",
+    "level": 2
+   },
+   {
+    "skill": "api_testing",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "python",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J28": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 3
+   },
+   {
+    "skill": "selenium",
+    "level": 3
+   },
+   {
+    "skill": "api_testing",
+    "level": 2
+   },
+   {
+    "skill": "test_automation",
+    "level": 3
+   },
+   {
+    "skill": "ci_cd",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "docker",
+    "level": 1
+   },
+   {
+    "skill": "microservices",
+    "level": 1
+   },
+   {
+    "skill": "unit_testing",
+    "level": 2
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J29": {
+  "required": [
+   {
+    "skill": "manual_testing",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 1
+   },
+   {
+    "skill": "agile",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "api_testing",
+    "level": 1
+   },
+   {
+    "skill": "selenium",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J30": {
+  "required": [
+   {
+    "skill": "android_development",
+    "level": 2
+   },
+   {
+    "skill": "kotlin",
+    "level": 2
+   },
+   {
+    "skill": "java",
+    "level": 1
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "unit_testing",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J31": {
+  "required": [
+   {
+    "skill": "flutter",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "unit_testing",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "MCA"
+  ]
+ },
+ "J32": {
+  "required": [
+   {
+    "skill": "csharp",
+    "level": 3
+   },
+   {
+    "skill": "aspnet",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "azure",
+    "level": 1
+   },
+   {
+    "skill": "microservices",
+    "level": 1
+   },
+   {
+    "skill": "unit_testing",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J33": {
+  "required": [
+   {
+    "skill": "cpp",
+    "level": 3
+   },
+   {
+    "skill": "dsa",
+    "level": 3
+   },
+   {
+    "skill": "oop",
+    "level": 3
+   },
+   {
+    "skill": "operating_systems",
+    "level": 2
+   },
+   {
+    "skill": "linux",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "design_patterns",
+    "level": 1
+   },
+   {
+    "skill": "computer_networks",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech"
+  ]
+ },
+ "J34": {
+  "required": [
+   {
+    "skill": "dsa",
+    "level": 3
+   },
+   {
+    "skill": "oop",
+    "level": 3
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "java",
+    "level": 2
+   },
+   {
+    "skill": "system_design",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "microservices",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "design_patterns",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech"
+  ]
+ },
+ "J35": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 2
+   },
+   {
+    "skill": "dbms",
+    "level": 2
+   },
+   {
+    "skill": "oop",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "spring_boot",
+    "level": 1
+   },
+   {
+    "skill": "agile",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "MCA",
+   "B.Sc"
+  ]
+ },
+ "J36": {
+  "required": [
+   {
+    "skill": "java",
+    "level": 3
+   },
+   {
+    "skill": "spring_boot",
+    "level": 3
+   },
+   {
+    "skill": "microservices",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 2
+   },
+   {
+    "skill": "kubernetes",
+    "level": 1
+   },
+   {
+    "skill": "message_queues",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 3
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "aws",
+    "level": 1
+   },
+   {
+    "skill": "ci_cd",
+    "level": 1
+   },
+   {
+    "skill": "redis",
+    "level": 1
+   }
+  ],
+  "experience": [
+   2,
+   4
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J37": {
+  "required": [
+   {
+    "skill": "cybersecurity",
+    "level": 2
+   },
+   {
+    "skill": "computer_networks",
+    "level": 2
+   },
+   {
+    "skill": "linux",
+    "level": 2
+   },
+   {
+    "skill": "python",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "bash",
+    "level": 1
+   },
+   {
+    "skill": "aws",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J38": {
+  "required": [
+   {
+    "skill": "sql",
+    "level": 3
+   },
+   {
+    "skill": "postgresql",
+    "level": 2
+   },
+   {
+    "skill": "dbms",
+    "level": 3
+   },
+   {
+    "skill": "linux",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "bash",
+    "level": 1
+   },
+   {
+    "skill": "data_warehousing",
+    "level": 1
+   },
+   {
+    "skill": "redis",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   2
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "B.Sc",
+   "BCA",
+   "MCA"
+  ]
+ },
+ "J39": {
+  "required": [
+   {
+    "skill": "html_css",
+    "level": 3
+   },
+   {
+    "skill": "javascript",
+    "level": 2
+   },
+   {
+    "skill": "bootstrap_tailwind",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "react",
+    "level": 1
+   },
+   {
+    "skill": "nextjs",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J40": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "machine_learning",
+    "level": 2
+   },
+   {
+    "skill": "computer_vision",
+    "level": 2
+   },
+   {
+    "skill": "deep_learning",
+    "level": 1
+   },
+   {
+    "skill": "tensorflow_pytorch",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "numpy",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "M.Tech"
+  ]
+ },
+ "J41": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "oop",
+    "level": 1
+   },
+   {
+    "skill": "sql",
+    "level": 1
+   },
+   {
+    "skill": "git",
+    "level": 1
+   },
+   {
+    "skill": "dsa",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "flask",
+    "level": 1
+   },
+   {
+    "skill": "rest_api",
+    "level": 1
+   },
+   {
+    "skill": "django",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "BCA",
+   "B.Sc"
+  ]
+ },
+ "J42": {
+  "required": [
+   {
+    "skill": "go",
+    "level": 2
+   },
+   {
+    "skill": "rest_api",
+    "level": 2
+   },
+   {
+    "skill": "postgresql",
+    "level": 2
+   },
+   {
+    "skill": "docker",
+    "level": 2
+   },
+   {
+    "skill": "git",
+    "level": 2
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "kubernetes",
+    "level": 1
+   },
+   {
+    "skill": "microservices",
+    "level": 1
+   },
+   {
+    "skill": "redis",
+    "level": 1
+   }
+  ],
+  "experience": [
+   1,
+   3
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "MCA"
+  ]
+ },
+ "J43": {
+  "required": [
+   {
+    "skill": "python",
+    "level": 2
+   },
+   {
+    "skill": "statistics",
+    "level": 2
+   },
+   {
+    "skill": "pandas",
+    "level": 2
+   },
+   {
+    "skill": "sql",
+    "level": 1
+   },
+   {
+    "skill": "data_visualization",
+    "level": 1
+   }
+  ],
+  "preferred": [
+   {
+    "skill": "machine_learning",
+    "level": 1
+   },
+   {
+    "skill": "excel",
+    "level": 1
+   }
+  ],
+  "experience": [
+   0,
+   1
+  ],
+  "degrees": [
+   "B.Tech",
+   "B.E.",
+   "B.Sc",
+   "M.Sc",
+   "MCA"
+  ]
+ }
+}

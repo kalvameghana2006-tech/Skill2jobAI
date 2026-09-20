@@ -1,0 +1,1745 @@
+{
+ "skills": {
+  "python": {
+   "id": "python",
+   "name": "Python",
+   "category": "Programming",
+   "aliases": [
+    "py",
+    "python programming",
+    "python3"
+   ],
+   "norm_aliases": [
+    "python 3"
+   ],
+   "prereqs": [],
+   "effort_days": 10.0,
+   "implies": [],
+   "description": "Versatile high-level language for scripting, backend APIs, automation, data science and machine learning"
+  },
+  "java": {
+   "id": "java",
+   "name": "Java",
+   "category": "Programming",
+   "aliases": [
+    "core java",
+    "j2se",
+    "java 11",
+    "java 17",
+    "java 8",
+    "java programming",
+    "java se",
+    "jdk"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 14.0,
+   "implies": [
+    "oop"
+   ],
+   "description": "Statically typed object-oriented language for enterprise backends, Android and large scale systems"
+  },
+  "javascript": {
+   "id": "javascript",
+   "name": "JavaScript",
+   "category": "Programming",
+   "aliases": [
+    "ecmascript",
+    "es2015",
+    "es6",
+    "js",
+    "vanilla javascript",
+    "vanilla js"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 12.0,
+   "implies": [],
+   "description": "Language of the web used for interactive browser interfaces and server side code"
+  },
+  "typescript": {
+   "id": "typescript",
+   "name": "TypeScript",
+   "category": "Programming",
+   "aliases": [
+    "ts"
+   ],
+   "norm_aliases": [
+    "ts"
+   ],
+   "prereqs": [
+    "javascript"
+   ],
+   "effort_days": 6.0,
+   "implies": [
+    "javascript"
+   ],
+   "description": "Typed superset of JavaScript that adds static types for safer large frontend and backend code"
+  },
+  "c": {
+   "id": "c",
+   "name": "C",
+   "category": "Programming",
+   "aliases": [
+    "ansi c",
+    "c language",
+    "c programming"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 12.0,
+   "implies": [],
+   "description": "Low level procedural language for systems, embedded software and performance critical code"
+  },
+  "cpp": {
+   "id": "cpp",
+   "name": "C++",
+   "category": "Programming",
+   "aliases": [
+    "c plus plus",
+    "c plus-plus",
+    "cpp"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 16.0,
+   "implies": [
+    "oop"
+   ],
+   "description": "Systems language with classes and templates used for performance critical software, games and trading systems"
+  },
+  "csharp": {
+   "id": "csharp",
+   "name": "C#",
+   "category": "Programming",
+   "aliases": [
+    "c sharp",
+    "c-sharp",
+    "csharp"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 14.0,
+   "implies": [
+    "oop"
+   ],
+   "description": "Modern object-oriented language from Microsoft used with .NET for enterprise and web applications"
+  },
+  "go": {
+   "id": "go",
+   "name": "Go",
+   "category": "Programming",
+   "aliases": [
+    "go lang",
+    "golang"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 10.0,
+   "implies": [],
+   "description": "Compiled language from Google known for simple concurrency and fast cloud services"
+  },
+  "kotlin": {
+   "id": "kotlin",
+   "name": "Kotlin",
+   "category": "Programming",
+   "aliases": [
+    "kotlin android",
+    "kotlin programming"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Modern concise JVM language and the preferred language for Android development"
+  },
+  "r": {
+   "id": "r",
+   "name": "R",
+   "category": "Programming",
+   "aliases": [
+    "r language",
+    "r programming",
+    "rstudio"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 10.0,
+   "implies": [],
+   "description": "Statistical programming language for data analysis and visualization"
+  },
+  "sql": {
+   "id": "sql",
+   "name": "SQL",
+   "category": "Databases",
+   "aliases": [
+    "joins and subqueries",
+    "pl/sql",
+    "plsql",
+    "sql programming",
+    "sql queries",
+    "structured query language",
+    "t-sql"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 7.0,
+   "implies": [],
+   "description": "Standard language to query and manage relational databases using joins, aggregations and subqueries"
+  },
+  "bash": {
+   "id": "bash",
+   "name": "Bash",
+   "category": "Programming",
+   "aliases": [
+    "bash scripting",
+    "sh scripting",
+    "shell",
+    "shell script",
+    "shell scripting",
+    "unix shell"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "linux"
+   ],
+   "effort_days": 4.0,
+   "implies": [
+    "linux"
+   ],
+   "description": "Command line scripting to automate tasks on Linux and Unix systems"
+  },
+  "dsa": {
+   "id": "dsa",
+   "name": "DSA",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "algorithms",
+    "coding interview",
+    "competitive programming",
+    "data structures",
+    "data structures & algorithms",
+    "data structures and algorithms",
+    "leetcode"
+   ],
+   "norm_aliases": [
+    "dsa"
+   ],
+   "prereqs": [],
+   "effort_days": 30.0,
+   "implies": [],
+   "description": "Core data structures (arrays, trees, graphs, hash maps) and algorithms (sorting, searching, dynamic programming) for efficient problem solving"
+  },
+  "oop": {
+   "id": "oop",
+   "name": "OOP",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "object oriented concepts",
+    "object oriented design",
+    "object oriented programming",
+    "object-oriented programming",
+    "oop concepts",
+    "oops"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 5.0,
+   "implies": [],
+   "description": "Modelling software with classes, encapsulation, inheritance, polymorphism and abstraction"
+  },
+  "operating_systems": {
+   "id": "operating_systems",
+   "name": "Operating Systems",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "operating system",
+    "os concepts",
+    "os fundamentals",
+    "process scheduling"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Processes, threads, scheduling, memory management and file systems"
+  },
+  "computer_networks": {
+   "id": "computer_networks",
+   "name": "Computer Networks",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "computer networking",
+    "network fundamentals",
+    "networking",
+    "osi model",
+    "tcp ip",
+    "tcp/ip"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "How data moves across networks: OSI and TCP/IP layers, HTTP, DNS, routing and sockets"
+  },
+  "dbms": {
+   "id": "dbms",
+   "name": "DBMS",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "acid transactions",
+    "database concepts",
+    "database management system",
+    "database management systems",
+    "er diagrams",
+    "normalization",
+    "rdbms"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 6.0,
+   "implies": [],
+   "description": "Relational model, normalization, ER modelling, ACID transactions and indexing"
+  },
+  "system_design": {
+   "id": "system_design",
+   "name": "System Design",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "distributed systems",
+    "high level design",
+    "hld",
+    "lld",
+    "low level design",
+    "scalable systems",
+    "system architecture"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "rest_api",
+    "sql"
+   ],
+   "effort_days": 15.0,
+   "implies": [],
+   "description": "Designing scalable services: load balancing, caching, databases, queues and trade-offs"
+  },
+  "design_patterns": {
+   "id": "design_patterns",
+   "name": "Design Patterns",
+   "category": "CS Fundamentals",
+   "aliases": [
+    "design pattern",
+    "gof patterns",
+    "solid principles"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "oop"
+   ],
+   "effort_days": 6.0,
+   "implies": [
+    "oop"
+   ],
+   "description": "Reusable solutions such as Singleton, Factory, Observer and the SOLID principles"
+  },
+  "git": {
+   "id": "git",
+   "name": "Git",
+   "category": "Tools",
+   "aliases": [
+    "bitbucket",
+    "git & github",
+    "git flow",
+    "git/github",
+    "github",
+    "gitlab",
+    "version control"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 2.0,
+   "implies": [],
+   "description": "Distributed version control: commits, branches, merges and pull requests"
+  },
+  "linux": {
+   "id": "linux",
+   "name": "Linux",
+   "category": "Tools",
+   "aliases": [
+    "centos",
+    "linux administration",
+    "linux commands",
+    "red hat",
+    "ubuntu",
+    "unix"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Command line, file permissions, processes, package managers and networking on Linux servers"
+  },
+  "agile": {
+   "id": "agile",
+   "name": "Agile",
+   "category": "Tools",
+   "aliases": [
+    "agile methodology",
+    "jira",
+    "kanban",
+    "scrum",
+    "sdlc",
+    "sprint planning"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 2.0,
+   "implies": [],
+   "description": "Iterative delivery with sprints, stand-ups, backlogs and retrospectives"
+  },
+  "spring_boot": {
+   "id": "spring_boot",
+   "name": "Spring Boot",
+   "category": "Backend",
+   "aliases": [
+    "spring",
+    "spring data",
+    "spring framework",
+    "spring mvc",
+    "springboot"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "java"
+   ],
+   "effort_days": 10.0,
+   "implies": [
+    "java",
+    "rest_api"
+   ],
+   "description": "Opinionated Java framework for building production-ready REST services with auto-configuration"
+  },
+  "rest_api": {
+   "id": "rest_api",
+   "name": "REST API",
+   "category": "Backend",
+   "aliases": [
+    "api development",
+    "http apis",
+    "rest apis",
+    "rest endpoints",
+    "rest services",
+    "restful",
+    "restful api",
+    "restful apis",
+    "restful services",
+    "restful web services",
+    "web api",
+    "web apis"
+   ],
+   "norm_aliases": [
+    "rest"
+   ],
+   "prereqs": [],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Designing HTTP APIs with resources, verbs, status codes and JSON payloads"
+  },
+  "nodejs": {
+   "id": "nodejs",
+   "name": "Node.js",
+   "category": "Backend",
+   "aliases": [
+    "node js",
+    "nodejs"
+   ],
+   "norm_aliases": [
+    "node"
+   ],
+   "prereqs": [
+    "javascript"
+   ],
+   "effort_days": 8.0,
+   "implies": [
+    "javascript"
+   ],
+   "description": "JavaScript runtime for building fast server side applications and APIs"
+  },
+  "expressjs": {
+   "id": "expressjs",
+   "name": "Express.js",
+   "category": "Backend",
+   "aliases": [
+    "express js",
+    "expressjs"
+   ],
+   "norm_aliases": [
+    "express"
+   ],
+   "prereqs": [
+    "nodejs"
+   ],
+   "effort_days": 3.0,
+   "implies": [
+    "nodejs",
+    "javascript"
+   ],
+   "description": "Minimal Node.js web framework for routing, middleware and REST APIs"
+  },
+  "django": {
+   "id": "django",
+   "name": "Django",
+   "category": "Backend",
+   "aliases": [
+    "django rest framework",
+    "drf"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python"
+   ],
+   "effort_days": 8.0,
+   "implies": [
+    "python"
+   ],
+   "description": "Batteries-included Python web framework with ORM, admin and authentication"
+  },
+  "flask": {
+   "id": "flask",
+   "name": "Flask",
+   "category": "Backend",
+   "aliases": [
+    "flask api",
+    "flask framework"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python"
+   ],
+   "effort_days": 4.0,
+   "implies": [
+    "python"
+   ],
+   "description": "Lightweight Python micro-framework for web apps and APIs"
+  },
+  "fastapi": {
+   "id": "fastapi",
+   "name": "FastAPI",
+   "category": "Backend",
+   "aliases": [
+    "fast api"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python",
+    "rest_api"
+   ],
+   "effort_days": 4.0,
+   "implies": [
+    "python",
+    "rest_api"
+   ],
+   "description": "Modern async Python framework for typed, documented REST APIs"
+  },
+  "hibernate_jpa": {
+   "id": "hibernate_jpa",
+   "name": "Hibernate/JPA",
+   "category": "Backend",
+   "aliases": [
+    "hibernate",
+    "jdbc",
+    "jpa",
+    "object relational mapping",
+    "spring data jpa"
+   ],
+   "norm_aliases": [
+    "orm"
+   ],
+   "prereqs": [
+    "java",
+    "sql"
+   ],
+   "effort_days": 4.0,
+   "implies": [
+    "java"
+   ],
+   "description": "ORM layer mapping Java objects to relational tables"
+  },
+  "microservices": {
+   "id": "microservices",
+   "name": "Microservices",
+   "category": "Backend",
+   "aliases": [
+    "microservice",
+    "microservice architecture",
+    "microservices architecture",
+    "service oriented architecture"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "rest_api",
+    "docker"
+   ],
+   "effort_days": 8.0,
+   "implies": [
+    "rest_api"
+   ],
+   "description": "Splitting applications into independently deployable services that communicate over APIs or messages"
+  },
+  "graphql": {
+   "id": "graphql",
+   "name": "GraphQL",
+   "category": "Backend",
+   "aliases": [
+    "apollo graphql",
+    "graph ql"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "rest_api"
+   ],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Query language letting clients request exactly the data they need from one endpoint"
+  },
+  "authentication": {
+   "id": "authentication",
+   "name": "Authentication",
+   "category": "Backend",
+   "aliases": [
+    "authorization",
+    "jwt",
+    "oauth",
+    "oauth2",
+    "session management",
+    "spring security",
+    "sso"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "rest_api"
+   ],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Securing APIs with sessions, JWT tokens, OAuth2 and role based access control"
+  },
+  "message_queues": {
+   "id": "message_queues",
+   "name": "Message Queues",
+   "category": "Backend",
+   "aliases": [
+    "activemq",
+    "apache kafka",
+    "event driven",
+    "kafka",
+    "message broker",
+    "messaging systems",
+    "pub/sub",
+    "rabbitmq"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 7.0,
+   "implies": [],
+   "description": "Asynchronous communication between services using brokers such as Kafka and RabbitMQ"
+  },
+  "aspnet": {
+   "id": "aspnet",
+   "name": "ASP.NET",
+   "category": "Backend",
+   "aliases": [
+    ".net",
+    ".net core",
+    "asp net",
+    "asp.net core",
+    "dotnet"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "csharp"
+   ],
+   "effort_days": 10.0,
+   "implies": [
+    "csharp"
+   ],
+   "description": "Microsoft framework for building web APIs and apps in C#"
+  },
+  "html_css": {
+   "id": "html_css",
+   "name": "HTML/CSS",
+   "category": "Frontend",
+   "aliases": [
+    "css",
+    "css3",
+    "flexbox",
+    "html",
+    "html & css",
+    "html and css",
+    "html5",
+    "responsive design",
+    "responsive web design",
+    "web design"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 5.0,
+   "implies": [],
+   "description": "Structure and styling of web pages, layouts with flexbox and grid, and responsive design"
+  },
+  "react": {
+   "id": "react",
+   "name": "React",
+   "category": "Frontend",
+   "aliases": [
+    "jsx",
+    "react hooks",
+    "react js",
+    "react.js",
+    "reactjs"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "javascript",
+    "html_css"
+   ],
+   "effort_days": 14.0,
+   "implies": [
+    "javascript",
+    "html_css"
+   ],
+   "description": "Component based UI library with state, props, hooks and virtual DOM"
+  },
+  "angular": {
+   "id": "angular",
+   "name": "Angular",
+   "category": "Frontend",
+   "aliases": [
+    "angular js",
+    "angularjs",
+    "rxjs"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "typescript",
+    "html_css"
+   ],
+   "effort_days": 14.0,
+   "implies": [
+    "typescript",
+    "javascript"
+   ],
+   "description": "Full featured TypeScript framework for large single page applications"
+  },
+  "vuejs": {
+   "id": "vuejs",
+   "name": "Vue.js",
+   "category": "Frontend",
+   "aliases": [
+    "nuxt",
+    "vue",
+    "vue js",
+    "vuejs",
+    "vuex"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "javascript",
+    "html_css"
+   ],
+   "effort_days": 10.0,
+   "implies": [
+    "javascript"
+   ],
+   "description": "Progressive JavaScript framework for reactive user interfaces"
+  },
+  "bootstrap_tailwind": {
+   "id": "bootstrap_tailwind",
+   "name": "Bootstrap/Tailwind",
+   "category": "Frontend",
+   "aliases": [
+    "bootstrap",
+    "css frameworks",
+    "material ui",
+    "tailwind",
+    "tailwind css",
+    "tailwindcss"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "html_css"
+   ],
+   "effort_days": 3.0,
+   "implies": [
+    "html_css"
+   ],
+   "description": "Utility and component CSS frameworks for fast responsive styling"
+  },
+  "redux": {
+   "id": "redux",
+   "name": "Redux",
+   "category": "Frontend",
+   "aliases": [
+    "context api",
+    "redux toolkit",
+    "state management",
+    "zustand"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "react"
+   ],
+   "effort_days": 3.0,
+   "implies": [
+    "react"
+   ],
+   "description": "Predictable global state management for React apps"
+  },
+  "nextjs": {
+   "id": "nextjs",
+   "name": "Next.js",
+   "category": "Frontend",
+   "aliases": [
+    "next js",
+    "nextjs",
+    "server side rendering",
+    "ssr"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "react"
+   ],
+   "effort_days": 6.0,
+   "implies": [
+    "react",
+    "javascript"
+   ],
+   "description": "React framework with routing, server side rendering and API routes"
+  },
+  "mysql": {
+   "id": "mysql",
+   "name": "MySQL",
+   "category": "Databases",
+   "aliases": [
+    "mariadb",
+    "my sql"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "sql"
+   ],
+   "effort_days": 2.0,
+   "implies": [
+    "sql"
+   ],
+   "description": "Popular open source relational database"
+  },
+  "postgresql": {
+   "id": "postgresql",
+   "name": "PostgreSQL",
+   "category": "Databases",
+   "aliases": [
+    "postgre sql",
+    "postgres",
+    "psql"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "sql"
+   ],
+   "effort_days": 3.0,
+   "implies": [
+    "sql"
+   ],
+   "description": "Advanced open source relational database with rich types and extensions"
+  },
+  "mongodb": {
+   "id": "mongodb",
+   "name": "MongoDB",
+   "category": "Databases",
+   "aliases": [
+    "document database",
+    "mongo",
+    "mongo db",
+    "mongoose",
+    "nosql"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Document oriented NoSQL database storing JSON like documents"
+  },
+  "redis": {
+   "id": "redis",
+   "name": "Redis",
+   "category": "Databases",
+   "aliases": [
+    "caching",
+    "in-memory cache",
+    "memcached",
+    "redis cache"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 3.0,
+   "implies": [],
+   "description": "In memory key value store used for caching, sessions and queues"
+  },
+  "docker": {
+   "id": "docker",
+   "name": "Docker",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "containerisation",
+    "containerization",
+    "containers",
+    "docker compose",
+    "docker hub",
+    "docker images",
+    "docker-compose",
+    "dockerfile"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "linux",
+    "git"
+   ],
+   "effort_days": 6.0,
+   "implies": [],
+   "description": "Packaging apps and dependencies into portable containers using images, Dockerfiles and Compose"
+  },
+  "kubernetes": {
+   "id": "kubernetes",
+   "name": "Kubernetes",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "aks",
+    "container orchestration",
+    "eks",
+    "gke",
+    "helm",
+    "k8s",
+    "kubectl"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "docker"
+   ],
+   "effort_days": 15.0,
+   "implies": [
+    "docker"
+   ],
+   "description": "Orchestrating containers at scale with pods, deployments, services and autoscaling"
+  },
+  "ci_cd": {
+   "id": "ci_cd",
+   "name": "CI/CD",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "azure devops",
+    "build pipelines",
+    "ci cd",
+    "cicd",
+    "continuous delivery",
+    "continuous deployment",
+    "continuous integration",
+    "github actions",
+    "gitlab ci",
+    "jenkins"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "git"
+   ],
+   "effort_days": 5.0,
+   "implies": [
+    "git"
+   ],
+   "description": "Automating build, test and deployment with pipelines such as GitHub Actions and Jenkins"
+  },
+  "aws": {
+   "id": "aws",
+   "name": "AWS",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "amazon web services",
+    "aws cloud",
+    "aws lambda",
+    "cloudfront",
+    "ec2",
+    "iam",
+    "rds",
+    "s3"
+   ],
+   "norm_aliases": [
+    "lambda"
+   ],
+   "prereqs": [
+    "linux"
+   ],
+   "effort_days": 14.0,
+   "implies": [],
+   "description": "Core Amazon cloud services: EC2, S3, IAM, RDS, Lambda and VPC networking"
+  },
+  "azure": {
+   "id": "azure",
+   "name": "Azure",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "azure cloud",
+    "azure functions",
+    "microsoft azure"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 14.0,
+   "implies": [],
+   "description": "Microsoft cloud platform: virtual machines, storage, App Service, Functions and Entra ID"
+  },
+  "gcp": {
+   "id": "gcp",
+   "name": "GCP",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "compute engine",
+    "gcloud",
+    "google cloud",
+    "google cloud platform"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 14.0,
+   "implies": [],
+   "description": "Google cloud platform: Compute Engine, Cloud Storage, BigQuery and Cloud Run"
+  },
+  "terraform": {
+   "id": "terraform",
+   "name": "Terraform",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "cloudformation",
+    "iac",
+    "infrastructure as code",
+    "pulumi"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "aws"
+   ],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Declaring cloud infrastructure as code with providers, state and modules"
+  },
+  "monitoring": {
+   "id": "monitoring",
+   "name": "Monitoring",
+   "category": "DevOps & Cloud",
+   "aliases": [
+    "alerting",
+    "datadog",
+    "elk",
+    "elk stack",
+    "grafana",
+    "logging",
+    "observability",
+    "prometheus"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "linux"
+   ],
+   "effort_days": 5.0,
+   "implies": [],
+   "description": "Metrics, logs and alerts with Prometheus, Grafana and the ELK stack for reliable systems"
+  },
+  "pandas": {
+   "id": "pandas",
+   "name": "Pandas",
+   "category": "Data & ML",
+   "aliases": [
+    "data manipulation",
+    "data wrangling",
+    "dataframes",
+    "pandas dataframe"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python"
+   ],
+   "effort_days": 4.0,
+   "implies": [
+    "python"
+   ],
+   "description": "Python library for tabular data cleaning, grouping and analysis with DataFrames"
+  },
+  "numpy": {
+   "id": "numpy",
+   "name": "NumPy",
+   "category": "Data & ML",
+   "aliases": [
+    "numerical python",
+    "scipy"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python"
+   ],
+   "effort_days": 3.0,
+   "implies": [
+    "python"
+   ],
+   "description": "Array computing in Python: vectorized maths, broadcasting and linear algebra"
+  },
+  "data_visualization": {
+   "id": "data_visualization",
+   "name": "Data Visualization",
+   "category": "Data & ML",
+   "aliases": [
+    "data viz",
+    "ggplot",
+    "matplotlib",
+    "plotly",
+    "seaborn"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Communicating insights through charts using Matplotlib, Seaborn or BI tools"
+  },
+  "excel": {
+   "id": "excel",
+   "name": "Excel",
+   "category": "Data & ML",
+   "aliases": [
+    "advanced excel",
+    "excel formulas",
+    "google sheets",
+    "microsoft excel",
+    "ms excel",
+    "pivot tables",
+    "spreadsheets",
+    "vlookup"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Spreadsheet analysis with formulas, lookups, pivot tables and charts"
+  },
+  "power_bi": {
+   "id": "power_bi",
+   "name": "Power BI",
+   "category": "Data & ML",
+   "aliases": [
+    "dax",
+    "microsoft power bi",
+    "power bi desktop",
+    "power query",
+    "powerbi"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "excel"
+   ],
+   "effort_days": 6.0,
+   "implies": [],
+   "description": "Microsoft BI tool for data models, DAX measures and interactive dashboards"
+  },
+  "tableau": {
+   "id": "tableau",
+   "name": "Tableau",
+   "category": "Data & ML",
+   "aliases": [
+    "tableau desktop",
+    "tableau public"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 6.0,
+   "implies": [],
+   "description": "Visual analytics tool to build interactive dashboards"
+  },
+  "statistics": {
+   "id": "statistics",
+   "name": "Statistics",
+   "category": "Data & ML",
+   "aliases": [
+    "a/b testing",
+    "descriptive statistics",
+    "hypothesis testing",
+    "inferential statistics",
+    "probability",
+    "probability and statistics",
+    "regression analysis",
+    "statistical analysis"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 10.0,
+   "implies": [],
+   "description": "Distributions, hypothesis testing, confidence intervals and regression for data-driven decisions"
+  },
+  "machine_learning": {
+   "id": "machine_learning",
+   "name": "Machine Learning",
+   "category": "Data & ML",
+   "aliases": [
+    "ml",
+    "predictive modeling",
+    "predictive modelling",
+    "scikit learn",
+    "scikit-learn",
+    "sklearn",
+    "supervised learning",
+    "unsupervised learning",
+    "xgboost"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python",
+    "statistics"
+   ],
+   "effort_days": 25.0,
+   "implies": [],
+   "description": "Training models such as regression, trees and clustering; evaluation, overfitting and feature engineering"
+  },
+  "deep_learning": {
+   "id": "deep_learning",
+   "name": "Deep Learning",
+   "category": "Data & ML",
+   "aliases": [
+    "cnn",
+    "lstm",
+    "neural network",
+    "neural networks",
+    "rnn"
+   ],
+   "norm_aliases": [
+    "dl"
+   ],
+   "prereqs": [
+    "machine_learning"
+   ],
+   "effort_days": 20.0,
+   "implies": [
+    "machine_learning"
+   ],
+   "description": "Neural networks with backpropagation, CNNs and sequence models"
+  },
+  "tensorflow_pytorch": {
+   "id": "tensorflow_pytorch",
+   "name": "TensorFlow/PyTorch",
+   "category": "Data & ML",
+   "aliases": [
+    "keras",
+    "pytorch",
+    "tensorflow"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "deep_learning"
+   ],
+   "effort_days": 10.0,
+   "implies": [
+    "python"
+   ],
+   "description": "Deep learning frameworks for building and training neural networks"
+  },
+  "nlp": {
+   "id": "nlp",
+   "name": "NLP",
+   "category": "Data & ML",
+   "aliases": [
+    "bert",
+    "hugging face",
+    "huggingface",
+    "natural language processing",
+    "nltk",
+    "sentiment analysis",
+    "spacy",
+    "text classification",
+    "text mining"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "machine_learning"
+   ],
+   "effort_days": 12.0,
+   "implies": [
+    "machine_learning"
+   ],
+   "description": "Working with text: tokenization, embeddings, classification and transformer models"
+  },
+  "llms_genai": {
+   "id": "llms_genai",
+   "name": "LLMs/GenAI",
+   "category": "Data & ML",
+   "aliases": [
+    "gen ai",
+    "genai",
+    "generative ai",
+    "langchain",
+    "langgraph",
+    "large language models",
+    "llm",
+    "llms",
+    "openai api",
+    "prompt engineering",
+    "rag",
+    "retrieval augmented generation",
+    "vector database",
+    "vector databases"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python"
+   ],
+   "effort_days": 8.0,
+   "implies": [
+    "python"
+   ],
+   "description": "Building apps on large language models: prompting, RAG, vector stores and agents"
+  },
+  "mlops": {
+   "id": "mlops",
+   "name": "MLOps",
+   "category": "Data & ML",
+   "aliases": [
+    "kubeflow",
+    "ml deployment",
+    "ml pipelines",
+    "mlflow",
+    "model deployment",
+    "model serving"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "docker",
+    "machine_learning"
+   ],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Packaging, deploying, versioning and monitoring ML models in production"
+  },
+  "computer_vision": {
+   "id": "computer_vision",
+   "name": "Computer Vision",
+   "category": "Data & ML",
+   "aliases": [
+    "image classification",
+    "image processing",
+    "object detection",
+    "opencv",
+    "yolo"
+   ],
+   "norm_aliases": [
+    "cv"
+   ],
+   "prereqs": [
+    "deep_learning"
+   ],
+   "effort_days": 12.0,
+   "implies": [
+    "deep_learning"
+   ],
+   "description": "Teaching machines to understand images: OpenCV, CNNs and object detection"
+  },
+  "etl": {
+   "id": "etl",
+   "name": "ETL",
+   "category": "Data & ML",
+   "aliases": [
+    "airflow",
+    "data cleaning",
+    "data engineering",
+    "data ingestion",
+    "data pipeline",
+    "data pipelines",
+    "elt",
+    "etl pipelines"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "sql"
+   ],
+   "effort_days": 5.0,
+   "implies": [],
+   "description": "Extracting, transforming and loading data with pipelines and orchestration tools like Airflow"
+  },
+  "big_data": {
+   "id": "big_data",
+   "name": "Big Data",
+   "category": "Data & ML",
+   "aliases": [
+    "apache spark",
+    "big data processing",
+    "databricks",
+    "hadoop",
+    "hive",
+    "pyspark",
+    "spark"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "python",
+    "sql"
+   ],
+   "effort_days": 12.0,
+   "implies": [],
+   "description": "Distributed data processing with Spark and Hadoop"
+  },
+  "data_warehousing": {
+   "id": "data_warehousing",
+   "name": "Data Warehousing",
+   "category": "Data & ML",
+   "aliases": [
+    "bigquery",
+    "data modeling",
+    "data warehouse",
+    "dimensional modeling",
+    "olap",
+    "redshift",
+    "snowflake",
+    "star schema"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "sql"
+   ],
+   "effort_days": 6.0,
+   "implies": [
+    "sql"
+   ],
+   "description": "Star schemas, fact and dimension tables and warehouse platforms such as Snowflake and BigQuery"
+  },
+  "manual_testing": {
+   "id": "manual_testing",
+   "name": "Manual Testing",
+   "category": "Testing & QA",
+   "aliases": [
+    "black box testing",
+    "bug reporting",
+    "defect tracking",
+    "functional testing",
+    "regression testing",
+    "stlc",
+    "test case design",
+    "test cases",
+    "test plans",
+    "uat"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Designing test cases, executing them and reporting defects across the STLC"
+  },
+  "selenium": {
+   "id": "selenium",
+   "name": "Selenium",
+   "category": "Testing & QA",
+   "aliases": [
+    "browser automation",
+    "selenium webdriver",
+    "ui automation",
+    "webdriver"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "manual_testing"
+   ],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Automating browser tests with WebDriver locators, waits and page objects"
+  },
+  "test_automation": {
+   "id": "test_automation",
+   "name": "Test Automation",
+   "category": "Testing & QA",
+   "aliases": [
+    "automation framework",
+    "automation testing",
+    "bdd",
+    "cucumber",
+    "cypress",
+    "page object model",
+    "playwright",
+    "robot framework",
+    "test automation frameworks"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "manual_testing"
+   ],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Building maintainable automated test suites and frameworks with BDD and page objects"
+  },
+  "api_testing": {
+   "id": "api_testing",
+   "name": "API Testing",
+   "category": "Testing & QA",
+   "aliases": [
+    "api automation",
+    "api tests",
+    "postman",
+    "rest assured",
+    "restassured",
+    "soapui"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "rest_api"
+   ],
+   "effort_days": 3.0,
+   "implies": [],
+   "description": "Validating REST endpoints, status codes and payloads with Postman or REST Assured"
+  },
+  "unit_testing": {
+   "id": "unit_testing",
+   "name": "Unit Testing",
+   "category": "Testing & QA",
+   "aliases": [
+    "jest",
+    "junit",
+    "mocha",
+    "mockito",
+    "pytest",
+    "tdd",
+    "test driven development",
+    "testng",
+    "unit tests",
+    "unittest"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "oop"
+   ],
+   "effort_days": 4.0,
+   "implies": [],
+   "description": "Writing isolated tests with assertions and mocks using JUnit, pytest or Jest"
+  },
+  "cybersecurity": {
+   "id": "cybersecurity",
+   "name": "Cybersecurity",
+   "category": "Security",
+   "aliases": [
+    "cyber security",
+    "ethical hacking",
+    "information security",
+    "network security",
+    "owasp",
+    "penetration testing",
+    "security fundamentals",
+    "siem",
+    "vulnerability assessment"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "computer_networks"
+   ],
+   "effort_days": 8.0,
+   "implies": [],
+   "description": "Threats, OWASP Top 10, encryption, vulnerability assessment and basic incident response"
+  },
+  "android_development": {
+   "id": "android_development",
+   "name": "Android Development",
+   "category": "Mobile",
+   "aliases": [
+    "android",
+    "android sdk",
+    "android studio",
+    "jetpack compose"
+   ],
+   "norm_aliases": [],
+   "prereqs": [
+    "java"
+   ],
+   "effort_days": 15.0,
+   "implies": [],
+   "description": "Building native Android apps with activities, fragments, ViewModels and REST integration"
+  },
+  "flutter": {
+   "id": "flutter",
+   "name": "Flutter",
+   "category": "Mobile",
+   "aliases": [
+    "dart",
+    "flutter development",
+    "flutter sdk"
+   ],
+   "norm_aliases": [],
+   "prereqs": [],
+   "effort_days": 12.0,
+   "implies": [],
+   "description": "Cross platform mobile UI toolkit using Dart widgets and state management"
+  }
+ },
+ "families": [
+  {
+   "name": "SQL databases",
+   "credit": 0.55,
+   "members": [
+    "sql",
+    "mysql",
+    "postgresql",
+    "dbms"
+   ]
+  },
+  {
+   "name": "Frontend frameworks",
+   "credit": 0.5,
+   "members": [
+    "react",
+    "angular",
+    "vuejs",
+    "nextjs"
+   ]
+  },
+  {
+   "name": "Cloud platforms",
+   "credit": 0.55,
+   "members": [
+    "aws",
+    "azure",
+    "gcp"
+   ]
+  },
+  {
+   "name": "Python web frameworks",
+   "credit": 0.55,
+   "members": [
+    "django",
+    "flask",
+    "fastapi"
+   ]
+  },
+  {
+   "name": "Java backend",
+   "credit": 0.45,
+   "members": [
+    "spring_boot",
+    "hibernate_jpa"
+   ]
+  },
+  {
+   "name": "JavaScript backend",
+   "credit": 0.5,
+   "members": [
+    "nodejs",
+    "expressjs"
+   ]
+  },
+  {
+   "name": "Deep learning stack",
+   "credit": 0.5,
+   "members": [
+    "tensorflow_pytorch",
+    "deep_learning"
+   ]
+  },
+  {
+   "name": "BI tools",
+   "credit": 0.5,
+   "members": [
+    "power_bi",
+    "tableau",
+    "excel",
+    "data_visualization"
+   ]
+  },
+  {
+   "name": "Test automation",
+   "credit": 0.4,
+   "members": [
+    "selenium",
+    "test_automation",
+    "api_testing",
+    "unit_testing"
+   ]
+  },
+  {
+   "name": "Container tooling",
+   "credit": 0.3,
+   "members": [
+    "docker",
+    "kubernetes"
+   ]
+  },
+  {
+   "name": "Data platforms",
+   "credit": 0.4,
+   "members": [
+    "big_data",
+    "data_warehousing",
+    "etl"
+   ]
+  },
+  {
+   "name": "NoSQL stores",
+   "credit": 0.4,
+   "members": [
+    "mongodb",
+    "redis"
+   ]
+  },
+  {
+   "name": "Service architecture",
+   "credit": 0.4,
+   "members": [
+    "microservices",
+    "message_queues"
+   ]
+  },
+  {
+   "name": "Pipelines and IaC",
+   "credit": 0.35,
+   "members": [
+    "ci_cd",
+    "terraform"
+   ]
+  },
+  {
+   "name": "Mobile",
+   "credit": 0.35,
+   "members": [
+    "android_development",
+    "flutter"
+   ]
+  },
+  {
+   "name": "Typed OOP languages",
+   "credit": 0.3,
+   "members": [
+    "java",
+    "csharp",
+    "cpp",
+    "kotlin"
+   ]
+  },
+  {
+   "name": "Scripting languages",
+   "credit": 0.3,
+   "members": [
+    "python",
+    "bash"
+   ]
+  }
+ ],
+ "not_related": [
+  [
+   "java",
+   "javascript"
+  ],
+  [
+   "c",
+   "cpp"
+  ],
+  [
+   "c",
+   "csharp"
+  ]
+ ]
+}

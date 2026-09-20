@@ -1,0 +1,432 @@
+[
+ {
+  "id": "J01",
+  "title": "Software Engineer Intern",
+  "company": "Nimbus Labs",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Software Engineering",
+  "salary_lpa": 5.0,
+  "description": "Nimbus Labs is hiring a Software Engineer Intern for our Bengaluru team (Hybrid).\nJoin our platform team to build and ship internal tools used by hundreds of engineers.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E..\n\nRequired skills:\n- Practical experience with Java, algorithms, t-sql and Git\n\nPreferred:\n- Exposure to Spring Boot and Docker"
+ },
+ {
+  "id": "J02",
+  "title": "Backend Developer Intern",
+  "company": "Sahyadri Software",
+  "city": "Pune",
+  "mode": "On-site",
+  "domain": "Backend",
+  "salary_lpa": 4.5,
+  "description": "Sahyadri Software is hiring a Backend Developer Intern for our Pune team (On-site).\n\nAbout the role. Work with senior engineers to build REST services for a logistics platform.\n\nWhat you bring: You should have practical experience with Java, spring mvc, SQL and REST API and basic awareness of Git.\nIt is a plus if you also bring familiarity with Docker, object relational mapping and Unit Testing.\n\nExperience: 0-1 years. Eligibility: B.Tech / B.E. / BCA / MCA."
+ },
+ {
+  "id": "J03",
+  "title": "Backend Developer (Java)",
+  "company": "Quantix Systems",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Backend",
+  "salary_lpa": 9.0,
+  "description": "Quantix Systems is hiring a Backend Developer (Java) for our Hyderabad team (Hybrid).\n\nAbout the role:\nOwn backend modules of a payments product serving millions of transactions.\n\nRequirements:\n* Strong proficiency in Java, Spring Boot and rest services.\n* Practical experience with sql programming, Hibernate/JPA and version control.\n\nGood to have:\n* Working knowledge of Docker.\n* Basic understanding of microservice architecture, amazon web services and rabbitmq.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J04",
+  "title": "Python Backend Developer",
+  "company": "BlueOrbit Tech",
+  "city": "Chennai",
+  "mode": "Hybrid",
+  "domain": "Backend",
+  "salary_lpa": 7.0,
+  "description": "BlueOrbit Tech is hiring a Python Backend Developer for our Chennai team (Hybrid).\nBuild APIs and admin tooling for a healthcare scheduling product.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / B.Sc / MCA.\n\nRequired skills:\n- Deep hands-on expertise in Python\n- Working knowledge of Django, REST API, PostgreSQL and gitlab\n\nBonus points:\n- Basic understanding of Docker, Redis and CI/CD"
+ },
+ {
+  "id": "J05",
+  "title": "API Engineer (FastAPI)",
+  "company": "Zenith Data Co.",
+  "city": "Remote",
+  "mode": "Remote",
+  "domain": "Backend",
+  "salary_lpa": 8.0,
+  "description": "Zenith Data Co. is hiring a API Engineer (FastAPI) for our Remote team (Remote).\n\nAbout the role. Ship data-serving APIs that power analytics dashboards.\n\nWhat you bring: You should have hands-on experience with Python, FastAPI, REST API and SQL and familiarity with Docker.\nIt is a plus if you also bring familiarity with aws cloud, Redis and test driven development.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J06",
+  "title": "Node.js Backend Developer",
+  "company": "Pixelforge Studio",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Backend",
+  "salary_lpa": 7.0,
+  "description": "Pixelforge Studio is hiring a Node.js Backend Developer for our Bengaluru team (Hybrid).\n\nAbout the role:\nBuild fast APIs for a consumer gaming community.\n\nRequirements:\n* Advanced skills in JavaScript.\n* Practical experience with Node.js, Express.js, MongoDB, REST API and github.\n\nGood to have:\n* Basic understanding of Docker, TypeScript and Redis.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / BCA."
+ },
+ {
+  "id": "J07",
+  "title": "Frontend Developer Intern",
+  "company": "Kiwi Analytics",
+  "city": "Remote",
+  "mode": "Remote",
+  "domain": "Frontend",
+  "salary_lpa": 3.6,
+  "description": "Kiwi Analytics is hiring a Frontend Developer Intern for our Remote team (Remote).\nTurn design mockups into responsive interfaces for our analytics product.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / BCA / B.Sc.\n\nWhat you'll need:\n- Practical experience with responsive design and JavaScript\n- Basic awareness of React and Git\n\nNice to have:\n- Exposure to css frameworks and TypeScript"
+ },
+ {
+  "id": "J08",
+  "title": "Frontend Developer (React)",
+  "company": "Mango Cloudworks",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Frontend",
+  "salary_lpa": 10.0,
+  "description": "Mango Cloudworks is hiring a Frontend Developer (React) for our Hyderabad team (Hybrid).\n\nAbout the role. Own customer-facing web experiences for a SaaS billing platform.\n\nWhat you bring: You should have strong command of React, JavaScript and HTML/CSS and hands-on experience with Git and REST API.\nIt is a plus if you also bring working knowledge of TypeScript and exposure to Redux, Next.js and Unit Testing.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J09",
+  "title": "Angular Developer",
+  "company": "Ratnam Digital",
+  "city": "Chennai",
+  "mode": "On-site",
+  "domain": "Frontend",
+  "salary_lpa": 8.0,
+  "description": "Ratnam Digital is hiring a Angular Developer for our Chennai team (On-site).\n\nAbout the role:\nMaintain and extend enterprise dashboards for banking clients.\n\nRequirements:\n* Practical experience with Angular, TypeScript, html5, REST API and Git.\n\nGood to have:\n* Familiarity with unit tests and CI/CD.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J10",
+  "title": "Full Stack Developer (MERN)",
+  "company": "Orchid Technologies",
+  "city": "Pune",
+  "mode": "Hybrid",
+  "domain": "Full Stack",
+  "salary_lpa": 8.0,
+  "description": "Orchid Technologies is hiring a Full Stack Developer (MERN) for our Pune team (Hybrid).\nDeliver features end to end for an e-commerce marketplace.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / BCA / MCA.\n\nRequirements:\n- Deep hands-on expertise in vanilla js\n- Practical experience with React, Node.js, Express.js, mongo and git flow\n\nPreferred:\n- Exposure to TypeScript, Docker and AWS"
+ },
+ {
+  "id": "J11",
+  "title": "Full Stack Developer (Java + React)",
+  "company": "Lotus Logic",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Full Stack",
+  "salary_lpa": 10.0,
+  "description": "Lotus Logic is hiring a Full Stack Developer (Java + React) for our Bengaluru team (Hybrid).\n\nAbout the role. Work across the stack for a retail inventory platform.\n\nWhat you bring: You should have working knowledge of Java, Spring Boot, reactjs, SQL, api development and HTML/CSS.\nIt is a plus if you also bring basic understanding of Docker, CI/CD and service oriented architecture.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J12",
+  "title": "Full Stack Intern",
+  "company": "Vega Ventures",
+  "city": "Hyderabad",
+  "mode": "On-site",
+  "domain": "Full Stack",
+  "salary_lpa": 3.6,
+  "description": "Vega Ventures is hiring a Full Stack Intern for our Hyderabad team (On-site).\n\nAbout the role:\nLearn by shipping small features across our web stack.\n\nRequirements:\n* Comfort building with vanilla javascript and HTML/CSS.\n* Familiarity with Node.js, SQL and Git.\n\nGood to have:\n* Basic understanding of react hooks and MongoDB.\n\nExperience: 0-1 years. Eligibility: B.Tech / B.E. / BCA / B.Sc."
+ },
+ {
+  "id": "J13",
+  "title": "Data Analyst Intern",
+  "company": "Kiwi Analytics",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Data Analytics",
+  "salary_lpa": 3.6,
+  "description": "Kiwi Analytics is hiring a Data Analyst Intern for our Bengaluru team (Hybrid).\nHelp business teams answer questions with data and dashboards.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / B.Sc / BCA / MCA.\n\nWhat you'll need:\n- Working knowledge of t-sql and advanced excel\n- Familiarity with python3 and Data Visualization\n\nPreferred:\n- Familiarity with Power BI, inferential statistics and Pandas"
+ },
+ {
+  "id": "J14",
+  "title": "Data Analyst",
+  "company": "Zenith Data Co.",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Data Analytics",
+  "salary_lpa": 7.0,
+  "description": "Zenith Data Co. is hiring a Data Analyst for our Hyderabad team (Hybrid).\n\nAbout the role. Turn raw operational data into decision-ready dashboards.\n\nWhat you bring: You should have deep hands-on expertise in SQL and Excel and working knowledge of Power BI, inferential statistics and Python.\nIt is a plus if you also bring practical experience with Pandas and ggplot and basic awareness of tableau public.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / B.Sc / MCA."
+ },
+ {
+  "id": "J15",
+  "title": "Business Intelligence Analyst",
+  "company": "Sahyadri Software",
+  "city": "Pune",
+  "mode": "Hybrid",
+  "domain": "Data Analytics",
+  "salary_lpa": 8.0,
+  "description": "Sahyadri Software is hiring a Business Intelligence Analyst for our Pune team (Hybrid).\n\nAbout the role:\nOwn reporting and semantic models for finance and sales teams.\n\nRequirements:\n* Deep hands-on expertise in SQL and powerbi.\n* Comfort building with Excel.\n* Familiarity with data modeling.\n\nGood to have:\n* Basic awareness of Tableau, data ingestion and python programming.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / B.Sc / MCA."
+ },
+ {
+  "id": "J16",
+  "title": "Junior Data Scientist",
+  "company": "Quantix Systems",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Data Science & ML",
+  "salary_lpa": 10.0,
+  "description": "Quantix Systems is hiring a Junior Data Scientist for our Bengaluru team (Hybrid).\nPrototype predictive models for demand forecasting and churn.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / M.Tech / MCA / M.Sc.\n\nMust have:\n- Advanced skills in Python\n- Comfort building with Pandas, NumPy, Statistics, predictive modelling, SQL and Data Visualization\n\nPreferred:\n- Familiarity with Deep Learning, Big Data and Git"
+ },
+ {
+  "id": "J17",
+  "title": "Machine Learning Engineer",
+  "company": "Nimbus Labs",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Data Science & ML",
+  "salary_lpa": 14.0,
+  "description": "Nimbus Labs is hiring a Machine Learning Engineer for our Hyderabad team (Hybrid).\n\nAbout the role. Train and deploy ranking models for a search product.\n\nWhat you bring: You should have deep hands-on expertise in python programming and Machine Learning, comfort building with Deep Learning, TensorFlow/PyTorch and version control and basic awareness of Docker.\nIt is a plus if you also bring familiarity with kubeflow, amazon web services and huggingface.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / M.Tech."
+ },
+ {
+  "id": "J18",
+  "title": "ML Engineer Intern",
+  "company": "BlueOrbit Tech",
+  "city": "Remote",
+  "mode": "Remote",
+  "domain": "Data Science & ML",
+  "salary_lpa": 4.8,
+  "description": "BlueOrbit Tech is hiring a ML Engineer Intern for our Remote team (Remote).\n\nAbout the role:\nSupport the ML team with experiments, data preparation and evaluation.\n\nRequirements:\n* Practical experience with Python, Machine Learning, pandas dataframe and numerical python.\n* Basic understanding of Statistics.\n\nGood to have:\n* Basic awareness of Deep Learning and Git.\n\nExperience: 0-1 years. Eligibility: B.Tech / B.E. / M.Tech / MCA."
+ },
+ {
+  "id": "J19",
+  "title": "GenAI / NLP Engineer",
+  "company": "Mango Cloudworks",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Data Science & ML",
+  "salary_lpa": 12.0,
+  "description": "Mango Cloudworks is hiring a GenAI / NLP Engineer for our Bengaluru team (Hybrid).\nBuild retrieval-augmented assistants for enterprise knowledge bases.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / M.Tech.\n\nRequired skills:\n- Advanced skills in Python\n- Comfort building with LLMs/GenAI, NLP, Machine Learning and version control\n- Familiarity with REST API\n\nGood to have:\n- Basic awareness of Docker, fast api and AWS"
+ },
+ {
+  "id": "J20",
+  "title": "Data Engineer",
+  "company": "Ratnam Digital",
+  "city": "Pune",
+  "mode": "Hybrid",
+  "domain": "Data Engineering",
+  "salary_lpa": 11.0,
+  "description": "Ratnam Digital is hiring a Data Engineer for our Pune team (Hybrid).\n\nAbout the role. Build reliable pipelines that feed analytics and ML.\n\nWhat you bring: You should have deep hands-on expertise in sql queries and working knowledge of Python, ETL, Big Data, dimensional modeling and bitbucket.\nIt is a plus if you also bring basic awareness of AWS, Message Queues, Docker and linux commands.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J21",
+  "title": "Cloud Engineer (AWS)",
+  "company": "Mango Cloudworks",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Cloud & DevOps",
+  "salary_lpa": 9.0,
+  "description": "Mango Cloudworks is hiring a Cloud Engineer (AWS) for our Hyderabad team (Hybrid).\n\nAbout the role:\nDesign and operate cloud infrastructure for SaaS customers.\n\nRequirements:\n* Strong command of aws lambda.\n* Working knowledge of Linux, Computer Networks and bash scripting.\n* Basic understanding of Docker.\n\nGood to have:\n* Basic understanding of Terraform, Kubernetes, CI/CD and Python.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J22",
+  "title": "Cloud Support Associate",
+  "company": "Orchid Technologies",
+  "city": "Chennai",
+  "mode": "On-site",
+  "domain": "Cloud & DevOps",
+  "salary_lpa": 4.5,
+  "description": "Orchid Technologies is hiring a Cloud Support Associate for our Chennai team (On-site).\nResolve customer cloud issues and guide them through best practices.\n\nExperience: 0-1 years. Eligibility: B.Tech / B.E. / BCA / B.Sc.\n\nRequirements:\n- Comfort building with Linux and Computer Networks\n- Basic awareness of AWS\n\nBonus points:\n- Familiarity with azure cloud and shell scripting"
+ },
+ {
+  "id": "J23",
+  "title": "DevOps Engineer",
+  "company": "Quantix Systems",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Cloud & DevOps",
+  "salary_lpa": 12.0,
+  "description": "Quantix Systems is hiring a DevOps Engineer for our Bengaluru team (Hybrid).\n\nAbout the role. Own build, release and runtime reliability for microservices.\n\nWhat you bring: You should have advanced skills in unix, Docker, CI/CD and version control and hands-on experience with container orchestration, aws cloud and Bash.\nIt is a plus if you also bring exposure to pulumi, Monitoring and Python.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J24",
+  "title": "DevOps Intern",
+  "company": "Lotus Logic",
+  "city": "Pune",
+  "mode": "Hybrid",
+  "domain": "Cloud & DevOps",
+  "salary_lpa": 3.6,
+  "description": "Lotus Logic is hiring a DevOps Intern for our Pune team (Hybrid).\n\nAbout the role:\nAutomate builds and deployments alongside our platform team.\n\nRequirements:\n* Hands-on experience with Linux and Git.\n* Basic awareness of Docker and continuous delivery.\n\nGood to have:\n* Familiarity with Bash and AWS.\n\nExperience: 0-1 years. Eligibility: B.Tech / B.E. / BCA."
+ },
+ {
+  "id": "J25",
+  "title": "Junior Site Reliability Engineer",
+  "company": "Nimbus Labs",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Cloud & DevOps",
+  "salary_lpa": 11.0,
+  "description": "Nimbus Labs is hiring a Junior Site Reliability Engineer for our Hyderabad team (Hybrid).\nKeep production systems fast and reliable through automation and on-call practices.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / MCA.\n\nMust have:\n- Advanced skills in Linux\n- Practical experience with python3, Docker, container orchestration, Monitoring and Computer Networks\n\nPreferred:\n- Basic awareness of Terraform, aws lambda and CI/CD"
+ },
+ {
+  "id": "J26",
+  "title": "QA Engineer (Manual)",
+  "company": "Sahyadri Software",
+  "city": "Chennai",
+  "mode": "On-site",
+  "domain": "QA & Testing",
+  "salary_lpa": 4.5,
+  "description": "Sahyadri Software is hiring a QA Engineer (Manual) for our Chennai team (On-site).\n\nAbout the role. Own test planning and execution for enterprise web applications.\n\nWhat you bring: You should have advanced skills in test plans and exposure to SQL, soapui and Agile.\nIt is a plus if you also bring exposure to Selenium and mockito.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / BCA / B.Sc / MCA."
+ },
+ {
+  "id": "J27",
+  "title": "QA Automation Engineer",
+  "company": "Vega Ventures",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "QA & Testing",
+  "salary_lpa": 8.0,
+  "description": "Vega Ventures is hiring a QA Automation Engineer for our Bengaluru team (Hybrid).\n\nAbout the role:\nBuild and maintain automated regression suites.\n\nRequirements:\n* Practical experience with browser automation, Java, automation testing, api tests and Git.\n* Basic awareness of continuous integration.\n\nGood to have:\n* Familiarity with docker hub and python programming.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J28",
+  "title": "SDET",
+  "company": "Pixelforge Studio",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "QA & Testing",
+  "salary_lpa": 11.0,
+  "description": "Pixelforge Studio is hiring a SDET for our Hyderabad team (Hybrid).\nEngineer test frameworks and quality gates for a fast-moving product.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA.\n\nMust have:\n- Strong proficiency in java 11, Selenium and Test Automation\n- Practical experience with API Testing, CI/CD, SQL and Git\n\nBonus points:\n- Comfort building with Unit Testing\n- Basic understanding of Docker and microservice architecture"
+ },
+ {
+  "id": "J29",
+  "title": "QA Intern",
+  "company": "Kiwi Analytics",
+  "city": "Remote",
+  "mode": "Remote",
+  "domain": "QA & Testing",
+  "salary_lpa": 3.0,
+  "description": "Kiwi Analytics is hiring a QA Intern for our Remote team (Remote).\n\nAbout the role. Learn testing practice by validating releases with a mentor.\n\nWhat you bring: You should have comfort building with Manual Testing and familiarity with SQL and Agile.\nIt is a plus if you also bring familiarity with API Testing and Selenium.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / BCA / B.Sc."
+ },
+ {
+  "id": "J30",
+  "title": "Android Developer",
+  "company": "Orchid Technologies",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Mobile",
+  "salary_lpa": 8.0,
+  "description": "Orchid Technologies is hiring a Android Developer for our Bengaluru team (Hybrid).\n\nAbout the role:\nBuild and improve a consumer fintech Android app.\n\nRequirements:\n* Comfort building with Android Development, Kotlin, REST API and Git.\n* Exposure to Java.\n\nGood to have:\n* Basic understanding of Unit Testing and azure devops.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J31",
+  "title": "Flutter Developer",
+  "company": "Zenith Data Co.",
+  "city": "Remote",
+  "mode": "Remote",
+  "domain": "Mobile",
+  "salary_lpa": 7.0,
+  "description": "Zenith Data Co. is hiring a Flutter Developer for our Remote team (Remote).\nShip cross platform mobile apps with a small product team.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / BCA / MCA.\n\nMust have:\n- Hands-on experience with Flutter, REST API and Git\n\nPreferred:\n- Basic awareness of Unit Testing and CI/CD"
+ },
+ {
+  "id": "J32",
+  "title": ".NET Developer",
+  "company": "Ratnam Digital",
+  "city": "Chennai",
+  "mode": "On-site",
+  "domain": "Backend",
+  "salary_lpa": 8.0,
+  "description": "Ratnam Digital is hiring a .NET Developer for our Chennai team (On-site).\n\nAbout the role. Develop APIs and services for insurance workflows.\n\nWhat you bring: You should have strong proficiency in C# and hands-on experience with ASP.NET, SQL, restful web services and Git.\nIt is a plus if you also bring basic understanding of azure functions, Microservices and Unit Testing.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J33",
+  "title": "C++ Software Engineer",
+  "company": "Quantix Systems",
+  "city": "Bengaluru",
+  "mode": "On-site",
+  "domain": "Software Engineering",
+  "salary_lpa": 12.0,
+  "description": "Quantix Systems is hiring a C++ Software Engineer for our Bengaluru team (On-site).\n\nAbout the role:\nWrite performance critical components for a trading platform.\n\nRequirements:\n* Strong command of C++, DSA and OOP.\n* Comfort building with os fundamentals and ubuntu.\n\nGood to have:\n* Basic understanding of design pattern and Computer Networks.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / M.Tech."
+ },
+ {
+  "id": "J34",
+  "title": "Software Development Engineer (SDE-1)",
+  "company": "Nimbus Labs",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Software Engineering",
+  "salary_lpa": 16.0,
+  "description": "Nimbus Labs is hiring a Software Development Engineer (SDE-1) for our Bengaluru team (Hybrid).\nBuild scalable product features with strong engineering fundamentals.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / M.Tech.\n\nRequirements:\n- Strong proficiency in DSA and OOP\n- Working knowledge of SQL, Java and Git\n- Familiarity with system architecture\n\nPreferred:\n- Basic understanding of microservices architecture, AWS and Design Patterns"
+ },
+ {
+  "id": "J35",
+  "title": "Associate Software Engineer",
+  "company": "Lotus Logic",
+  "city": "Coimbatore",
+  "mode": "On-site",
+  "domain": "Software Engineering",
+  "salary_lpa": 4.0,
+  "description": "Lotus Logic is hiring a Associate Software Engineer for our Coimbatore team (On-site).\n\nAbout the role. Join a training-and-deployment programme, then work on client projects.\n\nWhat you bring: You should have hands-on experience with Java, SQL, database management system and OOP and exposure to git flow.\nIt is a plus if you also bring basic awareness of Spring Boot and Agile.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / BCA / MCA / B.Sc."
+ },
+ {
+  "id": "J36",
+  "title": "Microservices Engineer",
+  "company": "Mango Cloudworks",
+  "city": "Hyderabad",
+  "mode": "Hybrid",
+  "domain": "Backend",
+  "salary_lpa": 15.0,
+  "description": "Mango Cloudworks is hiring a Microservices Engineer for our Hyderabad team (Hybrid).\n\nAbout the role:\nDesign event-driven services for a large logistics network.\n\nRequirements:\n* Strong command of Java, Spring Boot and REST API.\n* Practical experience with microservices architecture, Docker and messaging systems.\n* Familiarity with container orchestration.\n\nGood to have:\n* Familiarity with aws lambda, cicd and Redis.\n\nExperience: 2-4 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J37",
+  "title": "Junior Security Analyst",
+  "company": "Vega Ventures",
+  "city": "Pune",
+  "mode": "On-site",
+  "domain": "Security",
+  "salary_lpa": 5.0,
+  "description": "Vega Ventures is hiring a Junior Security Analyst for our Pune team (On-site).\nMonitor alerts and help harden systems for enterprise customers.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / BCA / B.Sc.\n\nRequired skills:\n- Hands-on experience with Cybersecurity, Computer Networks and red hat\n- Basic understanding of python programming\n\nBonus points:\n- Basic understanding of Bash and cloudfront"
+ },
+ {
+  "id": "J38",
+  "title": "SQL / Database Developer",
+  "company": "Sahyadri Software",
+  "city": "Pune",
+  "mode": "On-site",
+  "domain": "Database",
+  "salary_lpa": 6.0,
+  "description": "Sahyadri Software is hiring a SQL / Database Developer for our Pune team (On-site).\n\nAbout the role. Design schemas and tune queries for a high-volume ERP.\n\nWhat you bring: You should have deep hands-on expertise in sql programming and database management system, working knowledge of PostgreSQL and exposure to Linux.\nIt is a plus if you also bring exposure to unix shell, Data Warehousing and Redis.\n\nExperience: 0-2 years. Eligibility: B.Tech / B.E. / B.Sc / BCA / MCA."
+ },
+ {
+  "id": "J39",
+  "title": "Web Developer",
+  "company": "Pixelforge Studio",
+  "city": "Vijayawada",
+  "mode": "Hybrid",
+  "domain": "Frontend",
+  "salary_lpa": 3.5,
+  "description": "Pixelforge Studio is hiring a Web Developer for our Vijayawada team (Hybrid).\n\nAbout the role:\nBuild marketing sites and landing pages for growing brands.\n\nRequirements:\n* Advanced skills in html5.\n* Working knowledge of JavaScript and Bootstrap/Tailwind.\n* Basic awareness of git flow.\n\nGood to have:\n* Basic awareness of React and Next.js.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / BCA / B.Sc."
+ },
+ {
+  "id": "J40",
+  "title": "Computer Vision Intern",
+  "company": "BlueOrbit Tech",
+  "city": "Visakhapatnam",
+  "mode": "Hybrid",
+  "domain": "Data Science & ML",
+  "salary_lpa": 4.8,
+  "description": "BlueOrbit Tech is hiring a Computer Vision Intern for our Visakhapatnam team (Hybrid).\nHelp build image inspection models for manufacturing.\n\nExperience: 0-1 years. Eligibility: B.Tech / B.E. / M.Tech.\n\nRequirements:\n- Practical experience with python3, supervised learning and object detection\n- Basic awareness of Deep Learning and pytorch\n\nNice to have:\n- Basic awareness of numerical python"
+ },
+ {
+  "id": "J41",
+  "title": "Python Developer Intern",
+  "company": "Orchid Technologies",
+  "city": "Kochi",
+  "mode": "Remote",
+  "domain": "Backend",
+  "salary_lpa": 3.6,
+  "description": "Orchid Technologies is hiring a Python Developer Intern for our Kochi team (Remote).\n\nAbout the role. Automate internal workflows and build small services.\n\nWhat you bring: You should have practical experience with python3 and basic awareness of OOP, SQL, gitlab and DSA.\nIt is a plus if you also bring basic awareness of Flask, web api and Django.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / BCA / B.Sc."
+ },
+ {
+  "id": "J42",
+  "title": "Go Backend Developer",
+  "company": "Zenith Data Co.",
+  "city": "Bengaluru",
+  "mode": "Hybrid",
+  "domain": "Backend",
+  "salary_lpa": 14.0,
+  "description": "Zenith Data Co. is hiring a Go Backend Developer for our Bengaluru team (Hybrid).\n\nAbout the role:\nBuild high-throughput ingestion services.\n\nRequirements:\n* Hands-on experience with Go, REST API, postgres, Docker and Git.\n\nGood to have:\n* Basic awareness of Kubernetes, Microservices and redis cache.\n\nExperience: 1-3 years. Eligibility: B.Tech / B.E. / MCA."
+ },
+ {
+  "id": "J43",
+  "title": "Data Science Intern",
+  "company": "Nimbus Labs",
+  "city": "Remote",
+  "mode": "Remote",
+  "domain": "Data Science & ML",
+  "salary_lpa": 4.5,
+  "description": "Nimbus Labs is hiring a Data Science Intern for our Remote team (Remote).\nExplore datasets and support experiments for the analytics team.\n\nFreshers and final-year students are welcome (0-1 years). Eligibility: B.Tech / B.E. / B.Sc / M.Sc / MCA.\n\nRequirements:\n- Comfort building with python3, Statistics and Pandas\n- Basic understanding of plsql and matplotlib\n\nBonus points:\n- Familiarity with predictive modelling and Excel"
+ }
+]

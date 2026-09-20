@@ -1,0 +1,5714 @@
+{
+ "docker": {
+  "modules": [
+   {
+    "title": "Containers vs virtual machines",
+    "terms": [
+     {
+      "term": "Container",
+      "definition": "isolated process sharing the host kernel"
+     },
+     {
+      "term": "Virtual machine",
+      "definition": "full guest OS running on a hypervisor"
+     },
+     {
+      "term": "Image",
+      "definition": "read-only template used to create containers"
+     }
+    ],
+    "practice": "Install Docker and run hello-world, nginx and an interactive ubuntu container"
+   },
+   {
+    "title": "Images and containers in practice",
+    "terms": [
+     {
+      "term": "docker run",
+      "definition": "creates and starts a container from an image"
+     },
+     {
+      "term": "docker ps",
+      "definition": "lists running containers"
+     },
+     {
+      "term": "Docker Hub",
+      "definition": "public registry for sharing images"
+     }
+    ],
+    "practice": "Pull, tag and remove images; map a container port to your laptop"
+   },
+   {
+    "title": "Writing a Dockerfile",
+    "terms": [
+     {
+      "term": "FROM",
+      "definition": "sets the base image"
+     },
+     {
+      "term": "COPY",
+      "definition": "adds files into the image"
+     },
+     {
+      "term": "CMD",
+      "definition": "default command run when the container starts"
+     },
+     {
+      "term": "Layer caching",
+      "definition": "unchanged steps are reused to speed up builds"
+     }
+    ],
+    "practice": "Write a Dockerfile for a small web app and build it"
+   },
+   {
+    "title": "Volumes and networks",
+    "terms": [
+     {
+      "term": "Volume",
+      "definition": "persistent storage that outlives a container"
+     },
+     {
+      "term": "Bridge network",
+      "definition": "default network letting containers talk by name"
+     },
+     {
+      "term": "Port mapping",
+      "definition": "exposes a container port on the host"
+     }
+    ],
+    "practice": "Run a database container with a named volume and connect an app to it"
+   },
+   {
+    "title": "Docker Compose",
+    "terms": [
+     {
+      "term": "docker-compose.yml",
+      "definition": "declares multi-container apps in one file"
+     },
+     {
+      "term": "depends_on",
+      "definition": "controls service start order"
+     },
+     {
+      "term": "Environment variables",
+      "definition": "configure containers without rebuilding images"
+     }
+    ],
+    "practice": "Compose an app + database stack and bring it up with one command"
+   },
+   {
+    "title": "Best practices",
+    "terms": [
+     {
+      "term": "Multi-stage build",
+      "definition": "uses one stage to build and a slim stage to run"
+     },
+     {
+      "term": ".dockerignore",
+      "definition": "excludes files from the build context"
+     },
+     {
+      "term": "Non-root user",
+      "definition": "limits damage if a container is compromised"
+     }
+    ],
+    "practice": "Shrink your image with a multi-stage build"
+   }
+  ],
+  "project": "Containerize a Spring Boot (or Flask) app plus a MySQL database with Docker Compose and document how to run it",
+  "check_files": [
+   "Dockerfile",
+   "docker-compose.yml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "dockerfile",
+   "compose",
+   "image",
+   "container",
+   "volume",
+   "port"
+  ]
+ },
+ "rest_api": {
+  "modules": [
+   {
+    "title": "HTTP and REST basics",
+    "terms": [
+     {
+      "term": "REST",
+      "definition": "architectural style using resources addressed by URLs"
+     },
+     {
+      "term": "HTTP method",
+      "definition": "verb such as GET or POST describing the action"
+     },
+     {
+      "term": "Stateless",
+      "definition": "each request carries everything the server needs"
+     }
+    ],
+    "practice": "Use curl or Postman to call a public API and inspect headers and bodies"
+   },
+   {
+    "title": "Methods and status codes",
+    "terms": [
+     {
+      "term": "GET",
+      "definition": "reads a resource without changing it"
+     },
+     {
+      "term": "POST",
+      "definition": "creates a new resource"
+     },
+     {
+      "term": "201 Created",
+      "definition": "returned after a resource is successfully created"
+     },
+     {
+      "term": "404 Not Found",
+      "definition": "the requested resource does not exist"
+     }
+    ],
+    "practice": "Map CRUD operations to methods and pick the right status code for each case"
+   },
+   {
+    "title": "Designing resources and JSON",
+    "terms": [
+     {
+      "term": "Resource naming",
+      "definition": "use nouns like /users/42 not verbs"
+     },
+     {
+      "term": "JSON",
+      "definition": "text format used for request and response bodies"
+     },
+     {
+      "term": "Idempotent",
+      "definition": "repeating the request leaves the same server state (PUT, DELETE)"
+     }
+    ],
+    "practice": "Design the URL structure and JSON shapes for a small todo API"
+   },
+   {
+    "title": "Build your first API",
+    "terms": [
+     {
+      "term": "Controller",
+      "definition": "code that receives requests and returns responses"
+     },
+     {
+      "term": "Request body",
+      "definition": "data the client sends in POST or PUT"
+     },
+     {
+      "term": "Validation",
+      "definition": "rejecting bad input with a 400 response"
+     }
+    ],
+    "practice": "Implement GET and POST endpoints in your framework of choice"
+   },
+   {
+    "title": "Errors, pagination and versioning",
+    "terms": [
+     {
+      "term": "Pagination",
+      "definition": "returning large lists in pages using limit and offset"
+     },
+     {
+      "term": "API versioning",
+      "definition": "keeping old clients working via /v1 style paths"
+     },
+     {
+      "term": "Error payload",
+      "definition": "consistent JSON body describing what went wrong"
+     }
+    ],
+    "practice": "Add pagination, validation errors and a /v1 prefix"
+   }
+  ],
+  "project": "Build a small REST service (users or todos) with GET, POST, PUT and DELETE endpoints, JSON validation and proper status codes",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "get",
+   "post",
+   "put",
+   "delete",
+   "status",
+   "json",
+   "endpoint"
+  ]
+ },
+ "spring_boot": {
+  "modules": [
+   {
+    "title": "Spring Boot foundations",
+    "terms": [
+     {
+      "term": "Auto-configuration",
+      "definition": "Spring Boot sets sensible defaults from the libraries on the classpath"
+     },
+     {
+      "term": "Starter",
+      "definition": "one dependency that pulls in a whole feature set"
+     },
+     {
+      "term": "Spring Initializr",
+      "definition": "web tool that generates a project skeleton"
+     }
+    ],
+    "practice": "Generate a project with Spring Initializr and run a hello endpoint"
+   },
+   {
+    "title": "Controllers and request mapping",
+    "terms": [
+     {
+      "term": "@RestController",
+      "definition": "marks a class whose methods return JSON responses"
+     },
+     {
+      "term": "@GetMapping",
+      "definition": "maps an HTTP GET request to a method"
+     },
+     {
+      "term": "@RequestBody",
+      "definition": "binds the JSON request body to a Java object"
+     }
+    ],
+    "practice": "Create GET and POST endpoints for a Student or Product resource"
+   },
+   {
+    "title": "Dependency injection and layers",
+    "terms": [
+     {
+      "term": "Bean",
+      "definition": "object managed by the Spring container"
+     },
+     {
+      "term": "@Service",
+      "definition": "marks business logic classes"
+     },
+     {
+      "term": "Dependency injection",
+      "definition": "Spring supplies collaborators instead of you calling new"
+     }
+    ],
+    "practice": "Split your code into controller, service and repository layers"
+   },
+   {
+    "title": "Persistence with Spring Data JPA",
+    "terms": [
+     {
+      "term": "@Entity",
+      "definition": "maps a Java class to a database table"
+     },
+     {
+      "term": "JpaRepository",
+      "definition": "gives CRUD methods without writing SQL"
+     },
+     {
+      "term": "application.properties",
+      "definition": "holds datasource and server settings"
+     }
+    ],
+    "practice": "Connect your API to MySQL or H2 and persist real data"
+   },
+   {
+    "title": "Validation, exceptions and tests",
+    "terms": [
+     {
+      "term": "@Valid",
+      "definition": "triggers bean validation on incoming data"
+     },
+     {
+      "term": "@ControllerAdvice",
+      "definition": "centralizes exception handling for all controllers"
+     },
+     {
+      "term": "MockMvc",
+      "definition": "tests controllers without starting a server"
+     }
+    ],
+    "practice": "Add validation, a global error handler and two controller tests"
+   }
+  ],
+  "project": "Build a Spring Boot REST service with a MySQL or H2 database, layered controller/service/repository code and unit tests",
+  "check_files": [
+   "pom.xml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "controller",
+   "service",
+   "repository",
+   "entity",
+   "application.properties",
+   "restcontroller"
+  ]
+ },
+ "git": {
+  "modules": [
+   {
+    "title": "Version control basics",
+    "terms": [
+     {
+      "term": "Repository",
+      "definition": "folder whose history Git tracks"
+     },
+     {
+      "term": "Commit",
+      "definition": "saved snapshot of your files with a message"
+     },
+     {
+      "term": "Staging area",
+      "definition": "holding zone for changes chosen for the next commit"
+     }
+    ],
+    "practice": "Init a repo, make five commits and read git log"
+   },
+   {
+    "title": "Branching and merging",
+    "terms": [
+     {
+      "term": "Branch",
+      "definition": "independent line of development"
+     },
+     {
+      "term": "Merge",
+      "definition": "combines the history of two branches"
+     },
+     {
+      "term": "HEAD",
+      "definition": "pointer to the commit you currently have checked out"
+     }
+    ],
+    "practice": "Create a feature branch, commit on it and merge it back"
+   },
+   {
+    "title": "Remotes and pull requests",
+    "terms": [
+     {
+      "term": "git push",
+      "definition": "uploads local commits to a remote"
+     },
+     {
+      "term": "Pull request",
+      "definition": "proposes changes for review before merging"
+     },
+     {
+      "term": "Fork",
+      "definition": "your own copy of someone else's repository"
+     }
+    ],
+    "practice": "Push to GitHub and open a pull request on your own repo"
+   },
+   {
+    "title": "Fixing mistakes",
+    "terms": [
+     {
+      "term": "git revert",
+      "definition": "creates a new commit that undoes an earlier one"
+     },
+     {
+      "term": "Merge conflict",
+      "definition": "two branches changed the same lines"
+     },
+     {
+      "term": "git stash",
+      "definition": "temporarily shelves uncommitted changes"
+     }
+    ],
+    "practice": "Create and resolve a merge conflict on purpose"
+   }
+  ],
+  "project": "Create a repository with a README, at least three feature branches merged through pull requests and a resolved merge conflict",
+  "check_files": [
+   "README.md",
+   ".gitignore"
+  ],
+  "check_keywords": [
+   "branch",
+   "merge",
+   "pull request",
+   "commit",
+   "conflict"
+  ]
+ },
+ "sql": {
+  "modules": [
+   {
+    "title": "Querying with SELECT",
+    "terms": [
+     {
+      "term": "SELECT",
+      "definition": "chooses which columns to return"
+     },
+     {
+      "term": "WHERE",
+      "definition": "filters rows before grouping"
+     },
+     {
+      "term": "ORDER BY",
+      "definition": "sorts the result set"
+     }
+    ],
+    "practice": "Answer ten questions on a sample database with SELECT and WHERE"
+   },
+   {
+    "title": "Aggregation and grouping",
+    "terms": [
+     {
+      "term": "GROUP BY",
+      "definition": "collapses rows into groups for aggregates like COUNT and SUM"
+     },
+     {
+      "term": "HAVING",
+      "definition": "filters groups after aggregation"
+     },
+     {
+      "term": "DISTINCT",
+      "definition": "removes duplicate rows from the result"
+     }
+    ],
+    "practice": "Compute totals and averages per category and filter groups with HAVING"
+   },
+   {
+    "title": "Joins",
+    "terms": [
+     {
+      "term": "INNER JOIN",
+      "definition": "keeps only rows that match in both tables"
+     },
+     {
+      "term": "LEFT JOIN",
+      "definition": "keeps all rows from the left table plus matches"
+     },
+     {
+      "term": "Foreign key",
+      "definition": "column referencing another table's primary key"
+     }
+    ],
+    "practice": "Join three tables to build a report and explain each join type"
+   },
+   {
+    "title": "Subqueries and window functions",
+    "terms": [
+     {
+      "term": "Subquery",
+      "definition": "query nested inside another query"
+     },
+     {
+      "term": "Window function",
+      "definition": "calculates across related rows without collapsing them"
+     },
+     {
+      "term": "CTE",
+      "definition": "named temporary result defined with WITH"
+     }
+    ],
+    "practice": "Rank rows per group with ROW_NUMBER and reuse logic with a CTE"
+   },
+   {
+    "title": "Design and performance",
+    "terms": [
+     {
+      "term": "Primary key",
+      "definition": "uniquely identifies each row"
+     },
+     {
+      "term": "Index",
+      "definition": "structure that speeds up lookups on a column"
+     },
+     {
+      "term": "Normalization",
+      "definition": "organizing tables to reduce redundancy"
+     }
+    ],
+    "practice": "Create tables with keys and compare a query plan before and after adding an index"
+   }
+  ],
+  "project": "Design a small schema (students, courses, enrollments) and write 15 queries using joins, GROUP BY, subqueries and window functions, documented in a README",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "join",
+   "group by",
+   "having",
+   "subquery",
+   "index",
+   "primary key"
+  ]
+ },
+ "dsa": {
+  "modules": [
+   {
+    "title": "Complexity and arrays",
+    "terms": [
+     {
+      "term": "Big-O",
+      "definition": "describes how running time grows with input size"
+     },
+     {
+      "term": "Array",
+      "definition": "contiguous block giving O(1) access by index"
+     },
+     {
+      "term": "Two pointers",
+      "definition": "technique scanning from both ends or at two speeds"
+     }
+    ],
+    "practice": "Solve five array and two-pointer problems and state each complexity"
+   },
+   {
+    "title": "Hashing and strings",
+    "terms": [
+     {
+      "term": "Hash map",
+      "definition": "key-value store with average O(1) lookup"
+     },
+     {
+      "term": "Sliding window",
+      "definition": "maintains a moving range to avoid re-scanning"
+     },
+     {
+      "term": "Anagram",
+      "definition": "words with the same letters in different order"
+     }
+    ],
+    "practice": "Solve five hash map and sliding window problems"
+   },
+   {
+    "title": "Stacks, queues and linked lists",
+    "terms": [
+     {
+      "term": "Stack",
+      "definition": "last-in first-out structure"
+     },
+     {
+      "term": "Queue",
+      "definition": "first-in first-out structure"
+     },
+     {
+      "term": "Linked list",
+      "definition": "nodes connected by pointers"
+     }
+    ],
+    "practice": "Implement a stack, a queue and reverse a linked list"
+   },
+   {
+    "title": "Recursion, trees and graphs",
+    "terms": [
+     {
+      "term": "Recursion",
+      "definition": "a function solving a problem by calling itself on smaller inputs"
+     },
+     {
+      "term": "Binary search tree",
+      "definition": "tree where left values are smaller and right values larger"
+     },
+     {
+      "term": "BFS",
+      "definition": "explores a graph level by level using a queue"
+     }
+    ],
+    "practice": "Implement tree traversals and BFS/DFS on a graph"
+   },
+   {
+    "title": "Sorting and searching",
+    "terms": [
+     {
+      "term": "Binary search",
+      "definition": "halves a sorted search space each step in O(log n)"
+     },
+     {
+      "term": "Merge sort",
+      "definition": "divide and conquer sort running in O(n log n)"
+     },
+     {
+      "term": "Quick sort",
+      "definition": "partitions around a pivot, O(n log n) on average"
+     }
+    ],
+    "practice": "Implement binary search, merge sort and quick sort from scratch"
+   },
+   {
+    "title": "Dynamic programming",
+    "terms": [
+     {
+      "term": "Memoization",
+      "definition": "caches results of overlapping subproblems"
+     },
+     {
+      "term": "Optimal substructure",
+      "definition": "best solution is built from best sub-solutions"
+     },
+     {
+      "term": "Tabulation",
+      "definition": "fills a table bottom-up instead of recursing"
+     }
+    ],
+    "practice": "Solve climbing stairs, knapsack and longest common subsequence"
+   }
+  ],
+  "project": "Solve and document 30 problems across arrays, strings, hash maps, linked lists, trees and dynamic programming with complexity analysis for each",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "complexity",
+   "o(n)",
+   "array",
+   "tree",
+   "hash",
+   "recursion",
+   "dynamic programming"
+  ]
+ },
+ "python": {
+  "modules": [
+   {
+    "title": "Syntax and data types",
+    "terms": [
+     {
+      "term": "List",
+      "definition": "ordered mutable collection"
+     },
+     {
+      "term": "Tuple",
+      "definition": "ordered immutable collection"
+     },
+     {
+      "term": "Dictionary",
+      "definition": "key-value mapping"
+     }
+    ],
+    "practice": "Write ten small programs using lists, dicts and loops"
+   },
+   {
+    "title": "Functions and modules",
+    "terms": [
+     {
+      "term": "Function",
+      "definition": "reusable block defined with def"
+     },
+     {
+      "term": "Module",
+      "definition": "a .py file you import"
+     },
+     {
+      "term": "Comprehension",
+      "definition": "compact way to build a list or dict from a loop"
+     }
+    ],
+    "practice": "Refactor a script into functions and split it into two modules"
+   },
+   {
+    "title": "Object-oriented Python",
+    "terms": [
+     {
+      "term": "Class",
+      "definition": "blueprint for objects"
+     },
+     {
+      "term": "__init__",
+      "definition": "constructor that sets up a new object"
+     },
+     {
+      "term": "Inheritance",
+      "definition": "a class reusing another class's behaviour"
+     }
+    ],
+    "practice": "Model a bank account or inventory with classes"
+   },
+   {
+    "title": "Files, errors and libraries",
+    "terms": [
+     {
+      "term": "try/except",
+      "definition": "catches and handles runtime errors"
+     },
+     {
+      "term": "with statement",
+      "definition": "opens a file and guarantees it is closed"
+     },
+     {
+      "term": "pip",
+      "definition": "installs third-party packages"
+     }
+    ],
+    "practice": "Read a CSV, handle bad rows and call a public API with requests"
+   },
+   {
+    "title": "Testing and packaging",
+    "terms": [
+     {
+      "term": "pytest",
+      "definition": "framework for writing concise tests"
+     },
+     {
+      "term": "Virtual environment",
+      "definition": "isolated set of installed packages per project"
+     },
+     {
+      "term": "requirements.txt",
+      "definition": "lists a project's dependencies"
+     }
+    ],
+    "practice": "Add tests for your utility and freeze its requirements"
+   }
+  ],
+  "project": "Build a command-line or Flask utility (expense tracker, log analyzer) with functions, a class, file handling, error handling and unit tests",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "def",
+   "class",
+   "import",
+   "list",
+   "dict",
+   "exception",
+   "test"
+  ]
+ },
+ "java": {
+  "modules": [
+   {
+    "title": "Java basics",
+    "terms": [
+     {
+      "term": "JVM",
+      "definition": "virtual machine that runs compiled bytecode"
+     },
+     {
+      "term": "Primitive types",
+      "definition": "int, double, boolean and similar built-in value types"
+     },
+     {
+      "term": "Static typing",
+      "definition": "variable types are checked at compile time"
+     }
+    ],
+    "practice": "Write programs using loops, arrays and methods"
+   },
+   {
+    "title": "Classes and OOP",
+    "terms": [
+     {
+      "term": "Encapsulation",
+      "definition": "hiding fields behind methods"
+     },
+     {
+      "term": "Inheritance",
+      "definition": "a subclass extending a superclass with extends"
+     },
+     {
+      "term": "Polymorphism",
+      "definition": "one interface, many behaviours"
+     }
+    ],
+    "practice": "Model shapes or accounts with an interface and two implementations"
+   },
+   {
+    "title": "Collections and generics",
+    "terms": [
+     {
+      "term": "ArrayList",
+      "definition": "resizable array-backed list"
+     },
+     {
+      "term": "HashMap",
+      "definition": "key-value collection with hashing"
+     },
+     {
+      "term": "Generics",
+      "definition": "type parameters that give compile-time type safety"
+     }
+    ],
+    "practice": "Count word frequencies with HashMap and sort objects with a Comparator"
+   },
+   {
+    "title": "Exceptions, streams and lambdas",
+    "terms": [
+     {
+      "term": "Checked exception",
+      "definition": "must be handled or declared by the caller"
+     },
+     {
+      "term": "Lambda",
+      "definition": "concise anonymous function"
+     },
+     {
+      "term": "Stream API",
+      "definition": "functional pipeline for filtering and mapping collections"
+     }
+    ],
+    "practice": "Refactor loops into streams and add custom exceptions"
+   },
+   {
+    "title": "Testing and build tools",
+    "terms": [
+     {
+      "term": "JUnit",
+      "definition": "standard Java unit testing framework"
+     },
+     {
+      "term": "Maven",
+      "definition": "build tool that manages dependencies via pom.xml"
+     },
+     {
+      "term": "Interface",
+      "definition": "contract listing methods a class must implement"
+     }
+    ],
+    "practice": "Add JUnit tests to your project and build it with Maven"
+   }
+  ],
+  "project": "Build a console or REST-based Library/Bank management app using OOP (interfaces, inheritance), collections, exceptions and JUnit tests",
+  "check_files": [
+   "README.md",
+   "pom.xml"
+  ],
+  "check_keywords": [
+   "class",
+   "interface",
+   "extends",
+   "arraylist",
+   "hashmap",
+   "exception",
+   "junit"
+  ]
+ },
+ "javascript": {
+  "modules": [
+   {
+    "title": "Language fundamentals",
+    "terms": [
+     {
+      "term": "let/const",
+      "definition": "block-scoped variable declarations"
+     },
+     {
+      "term": "Arrow function",
+      "definition": "shorter function syntax that keeps outer this"
+     },
+     {
+      "term": "Template literal",
+      "definition": "string with embedded expressions in backticks"
+     }
+    ],
+    "practice": "Practise variables, functions and loops in the browser console"
+   },
+   {
+    "title": "Arrays and objects",
+    "terms": [
+     {
+      "term": "map",
+      "definition": "builds a new array by transforming each item"
+     },
+     {
+      "term": "filter",
+      "definition": "keeps only items that pass a test"
+     },
+     {
+      "term": "Destructuring",
+      "definition": "unpacks values from arrays or objects into variables"
+     }
+    ],
+    "practice": "Transform a list of objects with map, filter and reduce"
+   },
+   {
+    "title": "The DOM and events",
+    "terms": [
+     {
+      "term": "DOM",
+      "definition": "tree representation of a web page"
+     },
+     {
+      "term": "Event listener",
+      "definition": "function that runs when a user action occurs"
+     },
+     {
+      "term": "querySelector",
+      "definition": "finds an element with a CSS selector"
+     }
+    ],
+    "practice": "Build a click counter and a form that validates input"
+   },
+   {
+    "title": "Async JavaScript",
+    "terms": [
+     {
+      "term": "Promise",
+      "definition": "object representing a future value"
+     },
+     {
+      "term": "async/await",
+      "definition": "writes asynchronous code that reads like sequential code"
+     },
+     {
+      "term": "fetch",
+      "definition": "browser API for HTTP requests"
+     }
+    ],
+    "practice": "Fetch data from a public API and render it as cards"
+   },
+   {
+    "title": "Modern JS in practice",
+    "terms": [
+     {
+      "term": "ES module",
+      "definition": "file that exports and imports values"
+     },
+     {
+      "term": "Closure",
+      "definition": "function remembering variables from where it was created"
+     },
+     {
+      "term": "Event loop",
+      "definition": "mechanism that runs callbacks after the current call stack empties"
+     }
+    ],
+    "practice": "Split your app into modules and add error handling"
+   }
+  ],
+  "project": "Build an interactive to-do or quiz web app with modern JavaScript (modules, fetch, DOM events, async/await) and no framework",
+  "check_files": [
+   "index.html",
+   "README.md"
+  ],
+  "check_keywords": [
+   "fetch",
+   "async",
+   "promise",
+   "addeventlistener",
+   "array",
+   "function"
+  ]
+ },
+ "react": {
+  "modules": [
+   {
+    "title": "Components and JSX",
+    "terms": [
+     {
+      "term": "Component",
+      "definition": "reusable function returning UI"
+     },
+     {
+      "term": "JSX",
+      "definition": "HTML-like syntax inside JavaScript"
+     },
+     {
+      "term": "Props",
+      "definition": "read-only inputs passed from parent to child"
+     }
+    ],
+    "practice": "Build a card component and render it from an array"
+   },
+   {
+    "title": "State and events",
+    "terms": [
+     {
+      "term": "useState",
+      "definition": "hook that stores state inside a component"
+     },
+     {
+      "term": "Controlled input",
+      "definition": "form field whose value lives in React state"
+     },
+     {
+      "term": "Lifting state up",
+      "definition": "moving shared state to a common parent"
+     }
+    ],
+    "practice": "Build a counter, a toggle and a controlled form"
+   },
+   {
+    "title": "Effects and data fetching",
+    "terms": [
+     {
+      "term": "useEffect",
+      "definition": "hook for side effects such as fetching data"
+     },
+     {
+      "term": "Dependency array",
+      "definition": "controls when an effect re-runs"
+     },
+     {
+      "term": "Loading state",
+      "definition": "UI shown while waiting for data"
+     }
+    ],
+    "practice": "Fetch API data on load and handle loading and errors"
+   },
+   {
+    "title": "Lists, routing and structure",
+    "terms": [
+     {
+      "term": "key prop",
+      "definition": "stable identifier that helps React update lists efficiently"
+     },
+     {
+      "term": "React Router",
+      "definition": "library for client-side routing"
+     },
+     {
+      "term": "Custom hook",
+      "definition": "reusable function built from other hooks"
+     }
+    ],
+    "practice": "Add two routes and extract a custom hook"
+   },
+   {
+    "title": "Ship it",
+    "terms": [
+     {
+      "term": "Build",
+      "definition": "production-optimised bundle of your app"
+     },
+     {
+      "term": "Environment variable",
+      "definition": "configuration outside the code"
+     },
+     {
+      "term": "Deployment",
+      "definition": "publishing the built app on a host"
+     }
+    ],
+    "practice": "Deploy the app and add a README with screenshots"
+   }
+  ],
+  "project": "Build a multi-component React app (movie search, expense tracker) with hooks, props, lists, forms and API calls, deployed to Netlify or Vercel",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "usestate",
+   "useeffect",
+   "component",
+   "props",
+   "key",
+   "fetch"
+  ]
+ },
+ "nodejs": {
+  "modules": [
+   {
+    "title": "Node runtime basics",
+    "terms": [
+     {
+      "term": "Event loop",
+      "definition": "lets Node handle many operations without blocking"
+     },
+     {
+      "term": "npm",
+      "definition": "package manager for JavaScript libraries"
+     },
+     {
+      "term": "CommonJS/ESM",
+      "definition": "module systems for sharing code between files"
+     }
+    ],
+    "practice": "Run scripts, read files and install a package"
+   },
+   {
+    "title": "Building a server",
+    "terms": [
+     {
+      "term": "http module",
+      "definition": "built-in server API"
+     },
+     {
+      "term": "Route",
+      "definition": "URL and method pair handled by a function"
+     },
+     {
+      "term": "Request/Response",
+      "definition": "objects representing incoming and outgoing HTTP data"
+     }
+    ],
+    "practice": "Create a server with three routes"
+   },
+   {
+    "title": "Express and middleware",
+    "terms": [
+     {
+      "term": "Middleware",
+      "definition": "function that runs between request and response"
+     },
+     {
+      "term": "express.json()",
+      "definition": "parses JSON request bodies"
+     },
+     {
+      "term": "Router",
+      "definition": "groups related routes"
+     }
+    ],
+    "practice": "Refactor into routers and add logging middleware"
+   },
+   {
+    "title": "Databases and async code",
+    "terms": [
+     {
+      "term": "Mongoose",
+      "definition": "ODM that models MongoDB documents"
+     },
+     {
+      "term": "async/await",
+      "definition": "sequential-looking asynchronous code"
+     },
+     {
+      "term": "Environment variables",
+      "definition": "keep secrets out of source code"
+     }
+    ],
+    "practice": "Persist data in MongoDB and read config from .env"
+   }
+  ],
+  "project": "Build a Node.js + Express REST API with MongoDB or a JSON store, request validation, error middleware and environment-based config",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "express",
+   "route",
+   "middleware",
+   "async",
+   "package.json",
+   "env"
+  ]
+ },
+ "linux": {
+  "modules": [
+   {
+    "title": "Filesystem and commands",
+    "terms": [
+     {
+      "term": "pwd/ls/cd",
+      "definition": "navigate the filesystem"
+     },
+     {
+      "term": "chmod",
+      "definition": "changes file permissions"
+     },
+     {
+      "term": "Root directory",
+      "definition": "the top of the Linux file tree written as /"
+     }
+    ],
+    "practice": "Navigate, create and permission a folder tree"
+   },
+   {
+    "title": "Text and pipes",
+    "terms": [
+     {
+      "term": "grep",
+      "definition": "searches text for patterns"
+     },
+     {
+      "term": "Pipe",
+      "definition": "sends one command's output into another"
+     },
+     {
+      "term": "Redirection",
+      "definition": "writes output to a file with > or >>"
+     }
+    ],
+    "practice": "Analyse a log file with grep, sort, uniq and pipes"
+   },
+   {
+    "title": "Processes and packages",
+    "terms": [
+     {
+      "term": "ps/top",
+      "definition": "inspect running processes"
+     },
+     {
+      "term": "apt",
+      "definition": "installs software on Debian and Ubuntu"
+     },
+     {
+      "term": "systemctl",
+      "definition": "starts, stops and inspects services"
+     }
+    ],
+    "practice": "Install nginx, start it as a service and check its status"
+   },
+   {
+    "title": "Networking and SSH",
+    "terms": [
+     {
+      "term": "SSH",
+      "definition": "encrypted remote login to another machine"
+     },
+     {
+      "term": "curl",
+      "definition": "transfers data using URLs from the terminal"
+     },
+     {
+      "term": "Cron",
+      "definition": "schedules commands to run automatically"
+     }
+    ],
+    "practice": "Connect over SSH and schedule a job with cron"
+   }
+  ],
+  "project": "Write a set of shell commands or a script that sets up a project directory, users/permissions, a cron job and a log-rotation report, documented in a README",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "chmod",
+   "grep",
+   "ssh",
+   "cron",
+   "apt",
+   "systemctl"
+  ]
+ },
+ "kubernetes": {
+  "modules": [
+   {
+    "title": "Cluster concepts",
+    "terms": [
+     {
+      "term": "Pod",
+      "definition": "smallest deployable unit, one or more containers"
+     },
+     {
+      "term": "Node",
+      "definition": "machine that runs pods"
+     },
+     {
+      "term": "Control plane",
+      "definition": "components that manage the cluster state"
+     }
+    ],
+    "practice": "Start minikube and inspect nodes and system pods"
+   },
+   {
+    "title": "Deployments and Services",
+    "terms": [
+     {
+      "term": "Deployment",
+      "definition": "manages replicas and rolling updates of pods"
+     },
+     {
+      "term": "Service",
+      "definition": "stable network endpoint that load balances to pods"
+     },
+     {
+      "term": "kubectl apply",
+      "definition": "creates or updates resources from YAML"
+     }
+    ],
+    "practice": "Deploy an app with 3 replicas and expose it with a Service"
+   },
+   {
+    "title": "Configuration and storage",
+    "terms": [
+     {
+      "term": "ConfigMap",
+      "definition": "injects non-secret configuration"
+     },
+     {
+      "term": "Secret",
+      "definition": "stores sensitive values such as passwords"
+     },
+     {
+      "term": "PersistentVolume",
+      "definition": "storage that outlives pods"
+     }
+    ],
+    "practice": "Move settings to a ConfigMap and mount a volume"
+   },
+   {
+    "title": "Operations",
+    "terms": [
+     {
+      "term": "Readiness probe",
+      "definition": "tells Kubernetes when a pod can receive traffic"
+     },
+     {
+      "term": "Rolling update",
+      "definition": "replaces pods gradually with zero downtime"
+     },
+     {
+      "term": "HPA",
+      "definition": "autoscaler that adds pods based on load"
+     }
+    ],
+    "practice": "Trigger a rolling update and roll it back"
+   }
+  ],
+  "project": "Deploy a containerized app on a local cluster (minikube or kind) with a Deployment, Service, ConfigMap and readiness probe",
+  "check_files": [
+   "deployment.yaml",
+   "service.yaml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "deployment",
+   "service",
+   "pod",
+   "replicas",
+   "kubectl",
+   "configmap"
+  ]
+ },
+ "aws": {
+  "modules": [
+   {
+    "title": "Cloud fundamentals",
+    "terms": [
+     {
+      "term": "Region",
+      "definition": "geographic area hosting AWS data centres"
+     },
+     {
+      "term": "IAM",
+      "definition": "service controlling who can do what"
+     },
+     {
+      "term": "Shared responsibility",
+      "definition": "AWS secures the cloud, you secure what you put in it"
+     }
+    ],
+    "practice": "Create an account with MFA and a least-privilege IAM user"
+   },
+   {
+    "title": "Compute and storage",
+    "terms": [
+     {
+      "term": "EC2",
+      "definition": "virtual servers you can launch on demand"
+     },
+     {
+      "term": "S3",
+      "definition": "object storage for files of any size"
+     },
+     {
+      "term": "EBS",
+      "definition": "block storage attached to an EC2 instance"
+     }
+    ],
+    "practice": "Launch an EC2 instance, connect over SSH and host a file on S3"
+   },
+   {
+    "title": "Networking and databases",
+    "terms": [
+     {
+      "term": "VPC",
+      "definition": "your isolated virtual network in AWS"
+     },
+     {
+      "term": "Security group",
+      "definition": "virtual firewall for an instance"
+     },
+     {
+      "term": "RDS",
+      "definition": "managed relational database service"
+     }
+    ],
+    "practice": "Place an instance in a VPC and open only the ports you need"
+   },
+   {
+    "title": "Serverless and cost",
+    "terms": [
+     {
+      "term": "Lambda",
+      "definition": "runs code without managing servers"
+     },
+     {
+      "term": "API Gateway",
+      "definition": "fronts Lambda with HTTP endpoints"
+     },
+     {
+      "term": "Free tier and budgets",
+      "definition": "alerts that stop surprise bills"
+     }
+    ],
+    "practice": "Deploy a Lambda behind API Gateway and set a budget alert"
+   }
+  ],
+  "project": "Host a static site on S3 and a small API on EC2 or Lambda with IAM roles, documenting the architecture and cost controls",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "ec2",
+   "s3",
+   "iam",
+   "vpc",
+   "lambda",
+   "region"
+  ]
+ },
+ "ci_cd": {
+  "modules": [
+   {
+    "title": "CI/CD concepts",
+    "terms": [
+     {
+      "term": "Continuous integration",
+      "definition": "merging and testing code frequently"
+     },
+     {
+      "term": "Continuous delivery",
+      "definition": "keeping software always ready to release"
+     },
+     {
+      "term": "Pipeline",
+      "definition": "automated sequence of build and test stages"
+     }
+    ],
+    "practice": "Sketch the pipeline stages for one of your own projects"
+   },
+   {
+    "title": "First workflow",
+    "terms": [
+     {
+      "term": "Workflow",
+      "definition": "YAML file describing an automated process"
+     },
+     {
+      "term": "Job",
+      "definition": "group of steps that run on one runner"
+     },
+     {
+      "term": "Trigger",
+      "definition": "event such as push that starts a workflow"
+     }
+    ],
+    "practice": "Write a workflow that runs your tests on every push"
+   },
+   {
+    "title": "Artifacts, secrets and deployment",
+    "terms": [
+     {
+      "term": "Artifact",
+      "definition": "file produced by a build and kept for later steps"
+     },
+     {
+      "term": "Secret",
+      "definition": "encrypted variable such as an API key"
+     },
+     {
+      "term": "Deployment stage",
+      "definition": "pipeline step that releases the build"
+     }
+    ],
+    "practice": "Store a secret and deploy to a test environment"
+   }
+  ],
+  "project": "Create a GitHub Actions workflow that builds, tests and (optionally) containerizes a sample project on every push and pull request",
+  "check_files": [
+   ".github/workflows",
+   "README.md"
+  ],
+  "check_keywords": [
+   "workflow",
+   "on:",
+   "jobs",
+   "steps",
+   "test",
+   "build",
+   "push"
+  ]
+ },
+ "html_css": {
+  "modules": [
+   {
+    "title": "HTML structure",
+    "terms": [
+     {
+      "term": "Semantic element",
+      "definition": "tag like header or article that describes its content"
+     },
+     {
+      "term": "Anchor",
+      "definition": "link element created with <a>"
+     },
+     {
+      "term": "Form",
+      "definition": "collects user input using input elements"
+     }
+    ],
+    "practice": "Build a page with header, nav, main and footer"
+   },
+   {
+    "title": "CSS fundamentals",
+    "terms": [
+     {
+      "term": "Selector",
+      "definition": "picks which elements a rule styles"
+     },
+     {
+      "term": "Box model",
+      "definition": "content, padding, border and margin around every element"
+     },
+     {
+      "term": "Specificity",
+      "definition": "rules deciding which style wins"
+     }
+    ],
+    "practice": "Style a card component and fix a spacing bug using dev tools"
+   },
+   {
+    "title": "Flexbox and grid",
+    "terms": [
+     {
+      "term": "Flexbox",
+      "definition": "one-dimensional layout along a row or column"
+     },
+     {
+      "term": "CSS Grid",
+      "definition": "two-dimensional layout of rows and columns"
+     },
+     {
+      "term": "gap",
+      "definition": "spacing between flex or grid items"
+     }
+    ],
+    "practice": "Recreate a pricing table with grid and a navbar with flexbox"
+   },
+   {
+    "title": "Responsive design",
+    "terms": [
+     {
+      "term": "Media query",
+      "definition": "applies styles at certain screen widths"
+     },
+     {
+      "term": "Mobile first",
+      "definition": "design the small screen first then enhance"
+     },
+     {
+      "term": "Viewport meta tag",
+      "definition": "makes pages scale correctly on phones"
+     }
+    ],
+    "practice": "Make your page look good at 360px, 768px and 1280px"
+   }
+  ],
+  "project": "Build a responsive multi-section personal or product landing page with semantic HTML, flexbox/grid and a mobile navigation",
+  "check_files": [
+   "index.html",
+   "style.css",
+   "README.md"
+  ],
+  "check_keywords": [
+   "flex",
+   "grid",
+   "media",
+   "semantic",
+   "header",
+   "footer",
+   "responsive"
+  ]
+ },
+ "mongodb": {
+  "modules": [
+   {
+    "title": "Document databases",
+    "terms": [
+     {
+      "term": "Document",
+      "definition": "JSON-like record stored in BSON"
+     },
+     {
+      "term": "Collection",
+      "definition": "group of documents, similar to a table"
+     },
+     {
+      "term": "_id",
+      "definition": "unique identifier every document has"
+     }
+    ],
+    "practice": "Insert and find documents in mongosh"
+   },
+   {
+    "title": "CRUD and queries",
+    "terms": [
+     {
+      "term": "insertOne",
+      "definition": "adds a document"
+     },
+     {
+      "term": "find",
+      "definition": "retrieves documents matching a filter"
+     },
+     {
+      "term": "$set",
+      "definition": "update operator that changes specific fields"
+     }
+    ],
+    "practice": "Write queries with filters, projections and sorting"
+   },
+   {
+    "title": "Modelling and indexes",
+    "terms": [
+     {
+      "term": "Embedding",
+      "definition": "nesting related data inside one document"
+     },
+     {
+      "term": "Referencing",
+      "definition": "storing another document's id"
+     },
+     {
+      "term": "Index",
+      "definition": "structure that speeds up queries on a field"
+     }
+    ],
+    "practice": "Model orders with items embedded and users referenced"
+   },
+   {
+    "title": "Aggregation",
+    "terms": [
+     {
+      "term": "Aggregation pipeline",
+      "definition": "sequence of stages that transform documents"
+     },
+     {
+      "term": "$group",
+      "definition": "stage that groups documents and computes totals"
+     },
+     {
+      "term": "$lookup",
+      "definition": "stage that joins another collection"
+     }
+    ],
+    "practice": "Compute sales per category with $group"
+   }
+  ],
+  "project": "Model a blog or e-commerce dataset in MongoDB with embedded and referenced documents, CRUD operations and an aggregation pipeline",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "insertone",
+   "find",
+   "update",
+   "aggregate",
+   "index",
+   "collection"
+  ]
+ },
+ "typescript": {
+  "modules": [
+   {
+    "title": "Types basics",
+    "terms": [
+     {
+      "term": "Type annotation",
+      "definition": "declares the expected type of a value"
+     },
+     {
+      "term": "Union type",
+      "definition": "value can be one of several types"
+     },
+     {
+      "term": "any vs unknown",
+      "definition": "any disables checking, unknown forces a check"
+     }
+    ],
+    "practice": "Add types to five functions and fix compiler errors"
+   },
+   {
+    "title": "Interfaces and generics",
+    "terms": [
+     {
+      "term": "Interface",
+      "definition": "describes the shape of an object"
+     },
+     {
+      "term": "Generic",
+      "definition": "type parameter that keeps a function reusable and safe"
+     },
+     {
+      "term": "Enum",
+      "definition": "named set of constants"
+     }
+    ],
+    "practice": "Type an API response and write a generic helper"
+   },
+   {
+    "title": "Tooling",
+    "terms": [
+     {
+      "term": "tsconfig.json",
+      "definition": "configures the TypeScript compiler"
+     },
+     {
+      "term": "strict mode",
+      "definition": "enables all strict type-checking options"
+     },
+     {
+      "term": "Type guard",
+      "definition": "runtime check that narrows a type"
+     }
+    ],
+    "practice": "Turn on strict mode and fix the fallout"
+   }
+  ],
+  "project": "Convert a small JavaScript project to TypeScript with interfaces, generics, strict mode and typed API responses",
+  "check_files": [
+   "tsconfig.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "interface",
+   "type",
+   "generic",
+   "strict",
+   "enum"
+  ]
+ },
+ "pandas": {
+  "modules": [
+   {
+    "title": "DataFrames and Series",
+    "terms": [
+     {
+      "term": "DataFrame",
+      "definition": "two-dimensional table of labelled data"
+     },
+     {
+      "term": "Series",
+      "definition": "one-dimensional labelled column"
+     },
+     {
+      "term": "head()",
+      "definition": "shows the first rows of a DataFrame"
+     }
+    ],
+    "practice": "Load a CSV and explore it with head, info and describe"
+   },
+   {
+    "title": "Selecting and cleaning",
+    "terms": [
+     {
+      "term": "loc",
+      "definition": "selects rows and columns by label"
+     },
+     {
+      "term": "fillna",
+      "definition": "replaces missing values"
+     },
+     {
+      "term": "dropna",
+      "definition": "removes rows with missing values"
+     }
+    ],
+    "practice": "Clean a messy dataset with missing values and wrong types"
+   },
+   {
+    "title": "Grouping and merging",
+    "terms": [
+     {
+      "term": "groupby",
+      "definition": "splits data into groups and aggregates each"
+     },
+     {
+      "term": "merge",
+      "definition": "joins two DataFrames on a key"
+     },
+     {
+      "term": "pivot_table",
+      "definition": "reshapes data into a summary table"
+     }
+    ],
+    "practice": "Answer five business questions using groupby and merge"
+   },
+   {
+    "title": "Visual analysis",
+    "terms": [
+     {
+      "term": "value_counts",
+      "definition": "counts occurrences of each value"
+     },
+     {
+      "term": "Correlation",
+      "definition": "measures how strongly two variables move together"
+     },
+     {
+      "term": "matplotlib",
+      "definition": "Python library for plotting charts"
+     }
+    ],
+    "practice": "Create five charts and write three insights"
+   }
+  ],
+  "project": "Clean and analyse a real CSV dataset (for example a Kaggle dataset) with Pandas: missing values, groupby, merge and 5 charts, with findings in a notebook",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "dataframe",
+   "groupby",
+   "merge",
+   "fillna",
+   "isnull",
+   "describe"
+  ]
+ },
+ "machine_learning": {
+  "modules": [
+   {
+    "title": "ML foundations",
+    "terms": [
+     {
+      "term": "Supervised learning",
+      "definition": "learning from labelled examples"
+     },
+     {
+      "term": "Feature",
+      "definition": "input variable used to make a prediction"
+     },
+     {
+      "term": "Overfitting",
+      "definition": "model memorises training data and fails on new data"
+     }
+    ],
+    "practice": "Frame three real problems as classification, regression or clustering"
+   },
+   {
+    "title": "Regression and classification",
+    "terms": [
+     {
+      "term": "Linear regression",
+      "definition": "fits a straight-line relationship to predict numbers"
+     },
+     {
+      "term": "Logistic regression",
+      "definition": "predicts class probabilities"
+     },
+     {
+      "term": "Train/test split",
+      "definition": "holds out data to estimate real-world performance"
+     }
+    ],
+    "practice": "Train a linear and a logistic model with scikit-learn"
+   },
+   {
+    "title": "Trees and ensembles",
+    "terms": [
+     {
+      "term": "Decision tree",
+      "definition": "model that splits data with if-else rules"
+     },
+     {
+      "term": "Random forest",
+      "definition": "many trees whose votes are combined"
+     },
+     {
+      "term": "Hyperparameter",
+      "definition": "setting chosen before training such as tree depth"
+     }
+    ],
+    "practice": "Compare a tree, a random forest and a baseline"
+   },
+   {
+    "title": "Evaluation",
+    "terms": [
+     {
+      "term": "Precision",
+      "definition": "share of predicted positives that are correct"
+     },
+     {
+      "term": "Recall",
+      "definition": "share of actual positives that are found"
+     },
+     {
+      "term": "Cross-validation",
+      "definition": "repeated train/test splits for a stable estimate"
+     }
+    ],
+    "practice": "Report accuracy, precision, recall and a confusion matrix"
+   },
+   {
+    "title": "Feature engineering and pipelines",
+    "terms": [
+     {
+      "term": "Feature scaling",
+      "definition": "puts features on comparable ranges"
+     },
+     {
+      "term": "One-hot encoding",
+      "definition": "turns categories into binary columns"
+     },
+     {
+      "term": "Pipeline",
+      "definition": "chains preprocessing and model into one object"
+     }
+    ],
+    "practice": "Build a scikit-learn Pipeline with preprocessing"
+   }
+  ],
+  "project": "Train, evaluate and compare at least three models on a public dataset with a proper train/test split, cross-validation and a written error analysis",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "train",
+   "test",
+   "accuracy",
+   "precision",
+   "recall",
+   "overfit",
+   "cross-validation"
+  ]
+ },
+ "statistics": {
+  "modules": [
+   {
+    "title": "Descriptive statistics",
+    "terms": [
+     {
+      "term": "Mean",
+      "definition": "arithmetic average"
+     },
+     {
+      "term": "Median",
+      "definition": "middle value, robust to outliers"
+     },
+     {
+      "term": "Standard deviation",
+      "definition": "typical distance of values from the mean"
+     }
+    ],
+    "practice": "Summarise a dataset with mean, median and spread"
+   },
+   {
+    "title": "Probability and distributions",
+    "terms": [
+     {
+      "term": "Probability",
+      "definition": "number between 0 and 1 measuring how likely an event is"
+     },
+     {
+      "term": "Normal distribution",
+      "definition": "symmetric bell-shaped distribution"
+     },
+     {
+      "term": "Independence",
+      "definition": "one event does not change the probability of another"
+     }
+    ],
+    "practice": "Simulate coin flips and dice to see the law of large numbers"
+   },
+   {
+    "title": "Inference",
+    "terms": [
+     {
+      "term": "Hypothesis test",
+      "definition": "procedure deciding if data supports a claim"
+     },
+     {
+      "term": "p-value",
+      "definition": "probability of data at least this extreme if the null were true"
+     },
+     {
+      "term": "Confidence interval",
+      "definition": "range likely to contain the true value"
+     }
+    ],
+    "practice": "Run a t-test and interpret the p-value in plain words"
+   },
+   {
+    "title": "Regression",
+    "terms": [
+     {
+      "term": "Correlation",
+      "definition": "strength of a linear relationship"
+     },
+     {
+      "term": "Regression coefficient",
+      "definition": "change in outcome for a one unit change in a predictor"
+     },
+     {
+      "term": "R-squared",
+      "definition": "share of variance explained by the model"
+     }
+    ],
+    "practice": "Fit a regression and check residuals"
+   }
+  ],
+  "project": "Analyse a dataset end to end: descriptive stats, a hypothesis test with interpretation, and a regression, written up for a non-technical reader",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "mean",
+   "median",
+   "variance",
+   "p-value",
+   "hypothesis",
+   "confidence",
+   "regression"
+  ]
+ },
+ "power_bi": {
+  "modules": [
+   {
+    "title": "Power BI basics",
+    "terms": [
+     {
+      "term": "Report",
+      "definition": "pages of visuals built on a data model"
+     },
+     {
+      "term": "Dataset",
+      "definition": "tables and relationships behind the report"
+     },
+     {
+      "term": "Power Query",
+      "definition": "tool for cleaning and shaping data before loading"
+     }
+    ],
+    "practice": "Import a CSV and clean it in Power Query"
+   },
+   {
+    "title": "Modelling and DAX",
+    "terms": [
+     {
+      "term": "Relationship",
+      "definition": "link between two tables on a key"
+     },
+     {
+      "term": "Measure",
+      "definition": "DAX calculation evaluated in the context of a visual"
+     },
+     {
+      "term": "Star schema",
+      "definition": "fact table surrounded by dimension tables"
+     }
+    ],
+    "practice": "Create total, average and year-over-year measures"
+   },
+   {
+    "title": "Visuals and storytelling",
+    "terms": [
+     {
+      "term": "Slicer",
+      "definition": "on-page filter for interactive exploration"
+     },
+     {
+      "term": "Drill-through",
+      "definition": "jump to a detailed page for a selected item"
+     },
+     {
+      "term": "Tooltip page",
+      "definition": "custom hover details"
+     }
+    ],
+    "practice": "Design a dashboard and present three insights"
+   }
+  ],
+  "project": "Build a 3-page Power BI report (overview, drill-down, insights) from a real dataset with a star-schema model, 5 DAX measures and slicers",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "dax",
+   "measure",
+   "relationship",
+   "slicer",
+   "visual",
+   "dashboard"
+  ]
+ },
+ "excel": {
+  "modules": [
+   {
+    "title": "Formulas and functions",
+    "terms": [
+     {
+      "term": "SUM/AVERAGE/COUNT",
+      "definition": "basic aggregate functions"
+     },
+     {
+      "term": "Absolute reference",
+      "definition": "$A$1 style reference that does not move when copied"
+     },
+     {
+      "term": "IF",
+      "definition": "returns different results based on a condition"
+     }
+    ],
+    "practice": "Build a marks or budget sheet with formulas"
+   },
+   {
+    "title": "Lookups and cleaning",
+    "terms": [
+     {
+      "term": "VLOOKUP/XLOOKUP",
+      "definition": "fetches a value from another table by key"
+     },
+     {
+      "term": "TRIM and TEXT functions",
+      "definition": "clean and reformat messy text"
+     },
+     {
+      "term": "Data validation",
+      "definition": "restricts what can be typed in a cell"
+     }
+    ],
+    "practice": "Clean a messy sales export and join it to a price list"
+   },
+   {
+    "title": "Pivot tables and charts",
+    "terms": [
+     {
+      "term": "Pivot table",
+      "definition": "interactive summary of a dataset"
+     },
+     {
+      "term": "Slicer",
+      "definition": "click-to-filter control for pivots"
+     },
+     {
+      "term": "Conditional formatting",
+      "definition": "colours cells by rules"
+     }
+    ],
+    "practice": "Create a pivot dashboard with two charts and slicers"
+   }
+  ],
+  "project": "Build an analysis workbook with cleaned data, lookups, pivot tables, conditional formatting and a dashboard sheet",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "pivot",
+   "vlookup",
+   "xlookup",
+   "formula",
+   "chart",
+   "conditional"
+  ]
+ },
+ "manual_testing": {
+  "modules": [
+   {
+    "title": "Testing fundamentals",
+    "terms": [
+     {
+      "term": "SDLC vs STLC",
+      "definition": "software development life cycle vs the testing life cycle inside it"
+     },
+     {
+      "term": "Verification vs validation",
+      "definition": "are we building it right vs are we building the right thing"
+     },
+     {
+      "term": "Test level",
+      "definition": "unit, integration, system and acceptance testing"
+     }
+    ],
+    "practice": "Map a familiar app to each test level"
+   },
+   {
+    "title": "Test design",
+    "terms": [
+     {
+      "term": "Equivalence partitioning",
+      "definition": "testing one value from each group of equivalent inputs"
+     },
+     {
+      "term": "Boundary value analysis",
+      "definition": "testing at the edges of allowed ranges"
+     },
+     {
+      "term": "Test case",
+      "definition": "steps, data and expected result for one scenario"
+     }
+    ],
+    "practice": "Write test cases for a login form using both techniques"
+   },
+   {
+    "title": "Bugs and reporting",
+    "terms": [
+     {
+      "term": "Severity",
+      "definition": "how badly a defect affects the system"
+     },
+     {
+      "term": "Priority",
+      "definition": "how urgently it should be fixed"
+     },
+     {
+      "term": "Regression testing",
+      "definition": "re-checking old features after a change"
+     }
+    ],
+    "practice": "Log three defects with clear steps and screenshots"
+   }
+  ],
+  "project": "Write a test plan and 25 test cases (with steps, expected results and priorities) plus 5 bug reports for a public website or sample app",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "test case",
+   "steps",
+   "expected",
+   "actual",
+   "severity",
+   "priority",
+   "bug"
+  ]
+ },
+ "selenium": {
+  "modules": [
+   {
+    "title": "WebDriver basics",
+    "terms": [
+     {
+      "term": "WebDriver",
+      "definition": "API that controls a real browser"
+     },
+     {
+      "term": "Locator",
+      "definition": "strategy such as id, CSS or XPath to find an element"
+     },
+     {
+      "term": "Driver setup",
+      "definition": "launching a browser session from code"
+     }
+    ],
+    "practice": "Open a page and click a button through code"
+   },
+   {
+    "title": "Waits and interactions",
+    "terms": [
+     {
+      "term": "Explicit wait",
+      "definition": "waits for a specific condition with a timeout"
+     },
+     {
+      "term": "Implicit wait",
+      "definition": "global default wait for finding elements"
+     },
+     {
+      "term": "StaleElementReference",
+      "definition": "error when the page changed after you found an element"
+     }
+    ],
+    "practice": "Fix a flaky test by replacing sleeps with explicit waits"
+   },
+   {
+    "title": "Framework design",
+    "terms": [
+     {
+      "term": "Page Object Model",
+      "definition": "one class per page holding its locators and actions"
+     },
+     {
+      "term": "TestNG/JUnit",
+      "definition": "runner providing assertions and reports"
+     },
+     {
+      "term": "Data-driven test",
+      "definition": "same test run with many inputs"
+     }
+    ],
+    "practice": "Refactor scripts into page objects and add a data-driven test"
+   }
+  ],
+  "project": "Automate a login + search + checkout flow on a demo shop with Selenium WebDriver using Page Object Model, explicit waits and a test report",
+  "check_files": [
+   "README.md",
+   "pom.xml"
+  ],
+  "check_keywords": [
+   "webdriver",
+   "locator",
+   "wait",
+   "pageobject",
+   "assert",
+   "xpath"
+  ]
+ },
+ "api_testing": {
+  "modules": [
+   {
+    "title": "API testing basics",
+    "terms": [
+     {
+      "term": "Endpoint",
+      "definition": "URL exposing an operation"
+     },
+     {
+      "term": "Status code",
+      "definition": "number summarising the outcome of a request"
+     },
+     {
+      "term": "Payload",
+      "definition": "data sent or received in the body"
+     }
+    ],
+    "practice": "Call a public API in Postman and inspect the response"
+   },
+   {
+    "title": "Assertions and automation",
+    "terms": [
+     {
+      "term": "Assertion",
+      "definition": "automated check on a response"
+     },
+     {
+      "term": "Environment variable",
+      "definition": "value reused across requests such as a base URL"
+     },
+     {
+      "term": "Negative test",
+      "definition": "intentionally invalid input to prove errors are handled"
+     }
+    ],
+    "practice": "Write assertions for status, body fields and response time"
+   }
+  ],
+  "project": "Create a Postman collection (or REST Assured suite) with 15 requests covering status codes, schema checks, auth and negative cases, with environment variables",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "postman",
+   "assert",
+   "status",
+   "json",
+   "token",
+   "environment"
+  ]
+ },
+ "oop": {
+  "modules": [
+   {
+    "title": "Classes and objects",
+    "terms": [
+     {
+      "term": "Class",
+      "definition": "blueprint defining fields and methods"
+     },
+     {
+      "term": "Object",
+      "definition": "an instance of a class"
+     },
+     {
+      "term": "Constructor",
+      "definition": "special method that initialises a new object"
+     }
+    ],
+    "practice": "Model a Student and a Course class"
+   },
+   {
+    "title": "Four pillars",
+    "terms": [
+     {
+      "term": "Encapsulation",
+      "definition": "bundle data with methods and hide internals"
+     },
+     {
+      "term": "Abstraction",
+      "definition": "expose what matters and hide complexity"
+     },
+     {
+      "term": "Polymorphism",
+      "definition": "same call, different behaviour depending on the object"
+     }
+    ],
+    "practice": "Create a Shape hierarchy that demonstrates polymorphism"
+   },
+   {
+    "title": "Design basics",
+    "terms": [
+     {
+      "term": "Composition",
+      "definition": "building objects from other objects"
+     },
+     {
+      "term": "Interface",
+      "definition": "contract of methods without implementation"
+     },
+     {
+      "term": "SOLID",
+      "definition": "five principles for maintainable object-oriented design"
+     }
+    ],
+    "practice": "Refactor a class with too many responsibilities"
+   }
+  ],
+  "project": "Model a small system (parking lot, library) with at least five classes showing all four OOP pillars, and explain your design in a README",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "class",
+   "inheritance",
+   "polymorphism",
+   "encapsulation",
+   "abstraction",
+   "interface"
+  ]
+ },
+ "microservices": {
+  "modules": [
+   {
+    "title": "Monolith vs microservices",
+    "terms": [
+     {
+      "term": "Monolith",
+      "definition": "single deployable unit"
+     },
+     {
+      "term": "Microservice",
+      "definition": "small independently deployable service around one capability"
+     },
+     {
+      "term": "Bounded context",
+      "definition": "boundary within which a model is consistent"
+     }
+    ],
+    "practice": "Draw the services for an e-commerce app"
+   },
+   {
+    "title": "Communication and gateways",
+    "terms": [
+     {
+      "term": "API gateway",
+      "definition": "single entry point routing to services"
+     },
+     {
+      "term": "Service discovery",
+      "definition": "finding service instances dynamically"
+     },
+     {
+      "term": "Circuit breaker",
+      "definition": "stops calling a failing service to avoid cascading failures"
+     }
+    ],
+    "practice": "Add a gateway in front of two services"
+   }
+  ],
+  "project": "Split a sample monolith into two or three services with their own data stores, communicating over REST, with a Docker Compose file",
+  "check_files": [
+   "docker-compose.yml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "service",
+   "api gateway",
+   "docker",
+   "rest",
+   "database",
+   "resilience"
+  ]
+ },
+ "redis": {
+  "modules": [
+   {
+    "title": "Redis basics",
+    "terms": [
+     {
+      "term": "Key-value store",
+      "definition": "data addressed by unique keys"
+     },
+     {
+      "term": "TTL",
+      "definition": "time after which a key expires automatically"
+     },
+     {
+      "term": "In-memory",
+      "definition": "data kept in RAM for very fast reads"
+     }
+    ],
+    "practice": "Set, get and expire keys from redis-cli"
+   },
+   {
+    "title": "Caching patterns",
+    "terms": [
+     {
+      "term": "Cache-aside",
+      "definition": "app checks the cache first then loads from the database"
+     },
+     {
+      "term": "Cache invalidation",
+      "definition": "removing or updating stale cached data"
+     },
+     {
+      "term": "Data types",
+      "definition": "strings, hashes, lists, sets and sorted sets"
+     }
+    ],
+    "practice": "Cache a slow database query and measure the speed-up"
+   }
+  ],
+  "project": "Add Redis caching to an API (cache-aside with TTL) and measure latency before and after, with a short write-up",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "cache",
+   "ttl",
+   "key",
+   "get",
+   "set",
+   "expire"
+  ]
+ },
+ "unit_testing": {
+  "modules": [
+   {
+    "title": "Unit test basics",
+    "terms": [
+     {
+      "term": "Unit test",
+      "definition": "automated test of one small piece of code"
+     },
+     {
+      "term": "Assertion",
+      "definition": "statement that must be true for the test to pass"
+     },
+     {
+      "term": "Arrange-Act-Assert",
+      "definition": "structure of a clear test"
+     }
+    ],
+    "practice": "Write tests for a calculator or string utility"
+   },
+   {
+    "title": "Mocks and coverage",
+    "terms": [
+     {
+      "term": "Mock",
+      "definition": "fake collaborator that records how it was used"
+     },
+     {
+      "term": "Fixture",
+      "definition": "reusable setup for tests"
+     },
+     {
+      "term": "Code coverage",
+      "definition": "percentage of code executed by tests"
+     }
+    ],
+    "practice": "Mock an external call and measure coverage"
+   }
+  ],
+  "project": "Write a test suite with at least 20 unit tests (including edge cases and mocks) for a small module and reach 80% coverage",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "assert",
+   "mock",
+   "test",
+   "coverage",
+   "fixture"
+  ]
+ },
+ "data_visualization": {
+  "modules": [
+   {
+    "title": "Choosing the right chart",
+    "terms": [
+     {
+      "term": "Bar chart",
+      "definition": "compares categories"
+     },
+     {
+      "term": "Line chart",
+      "definition": "shows change over time"
+     },
+     {
+      "term": "Scatter plot",
+      "definition": "shows the relationship between two numeric variables"
+     }
+    ],
+    "practice": "Pick a chart for five different questions"
+   },
+   {
+    "title": "Building and polishing",
+    "terms": [
+     {
+      "term": "Matplotlib",
+      "definition": "base Python plotting library"
+     },
+     {
+      "term": "Seaborn",
+      "definition": "statistical plots built on Matplotlib"
+     },
+     {
+      "term": "Annotation",
+      "definition": "text that highlights the point of a chart"
+     }
+    ],
+    "practice": "Redesign a cluttered chart so the message is obvious"
+   }
+  ],
+  "project": "Build a visual story from a public dataset with at least five chart types and a short written narrative, in a notebook or dashboard",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "chart",
+   "axis",
+   "title",
+   "insight",
+   "dashboard"
+  ]
+ },
+ "expressjs": {
+  "modules": [
+   {
+    "title": "Routing and middleware",
+    "terms": [
+     {
+      "term": "Route",
+      "definition": "path and method handled by a callback"
+     },
+     {
+      "term": "Middleware",
+      "definition": "function with access to req, res and next"
+     },
+     {
+      "term": "Router",
+      "definition": "mounts groups of routes on a path"
+     }
+    ],
+    "practice": "Create a users router with GET and POST"
+   },
+   {
+    "title": "Errors and structure",
+    "terms": [
+     {
+      "term": "Error-handling middleware",
+      "definition": "function with four arguments that handles errors"
+     },
+     {
+      "term": "req.params",
+      "definition": "values captured from the URL"
+     },
+     {
+      "term": "Controller layer",
+      "definition": "keeps route files thin"
+     }
+    ],
+    "practice": "Add validation and a 404 plus 500 handler"
+   }
+  ],
+  "project": "Build an Express REST API with routers, validation and centralised error handling",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "express",
+   "router",
+   "middleware",
+   "req",
+   "res",
+   "error"
+  ]
+ },
+ "hibernate_jpa": {
+  "modules": [
+   {
+    "title": "ORM concepts",
+    "terms": [
+     {
+      "term": "ORM",
+      "definition": "maps objects to relational tables"
+     },
+     {
+      "term": "@Entity",
+      "definition": "marks a class persisted as a table"
+     },
+     {
+      "term": "@Id",
+      "definition": "marks the primary key field"
+     }
+    ],
+    "practice": "Map a simple entity and persist it"
+   },
+   {
+    "title": "Relationships and queries",
+    "terms": [
+     {
+      "term": "@OneToMany",
+      "definition": "one entity relates to many others"
+     },
+     {
+      "term": "JPQL",
+      "definition": "object-oriented query language"
+     },
+     {
+      "term": "Lazy loading",
+      "definition": "related data is fetched only when accessed"
+     }
+    ],
+    "practice": "Create a relationship and write a custom query"
+   }
+  ],
+  "project": "Model a one-to-many relationship (Author-Books) with JPA entities, repositories and custom queries",
+  "check_files": [
+   "pom.xml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "entity",
+   "onetomany",
+   "repository",
+   "jpql",
+   "transaction"
+  ]
+ },
+ "system_design": {
+  "modules": [
+   {
+    "title": "Building blocks",
+    "terms": [
+     {
+      "term": "Load balancer",
+      "definition": "spreads requests across servers"
+     },
+     {
+      "term": "Cache",
+      "definition": "fast storage for frequently read data"
+     },
+     {
+      "term": "CDN",
+      "definition": "edge servers serving static content near users"
+     }
+    ],
+    "practice": "Draw the components of a simple web app"
+   },
+   {
+    "title": "Scaling and trade-offs",
+    "terms": [
+     {
+      "term": "Sharding",
+      "definition": "splitting a database across machines"
+     },
+     {
+      "term": "CAP theorem",
+      "definition": "a distributed system cannot guarantee consistency, availability and partition tolerance together"
+     },
+     {
+      "term": "Replication",
+      "definition": "copying data to several nodes for availability"
+     }
+    ],
+    "practice": "Design a URL shortener end to end"
+   }
+  ],
+  "project": "Write a design document for a URL shortener or chat app: requirements, API, data model, capacity estimate, scaling and trade-offs",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "scalability",
+   "cache",
+   "database",
+   "load balancer",
+   "trade-off",
+   "latency"
+  ]
+ },
+ "authentication": {
+  "modules": [
+   {
+    "title": "Auth concepts",
+    "terms": [
+     {
+      "term": "Authentication",
+      "definition": "proving who you are"
+     },
+     {
+      "term": "Authorization",
+      "definition": "deciding what you may do"
+     },
+     {
+      "term": "Password hashing",
+      "definition": "storing a one-way hash instead of the password"
+     }
+    ],
+    "practice": "Add registration with hashed passwords"
+   },
+   {
+    "title": "Tokens and roles",
+    "terms": [
+     {
+      "term": "JWT",
+      "definition": "signed token carrying claims about the user"
+     },
+     {
+      "term": "Bearer token",
+      "definition": "token sent in the Authorization header"
+     },
+     {
+      "term": "RBAC",
+      "definition": "permissions granted through roles"
+     }
+    ],
+    "practice": "Protect an endpoint so only admins can call it"
+   }
+  ],
+  "project": "Secure a REST API with JWT login, password hashing and role-based route protection",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "jwt",
+   "token",
+   "hash",
+   "role",
+   "login",
+   "authorization"
+  ]
+ },
+ "bash": {
+  "modules": [
+   {
+    "title": "Scripting basics",
+    "terms": [
+     {
+      "term": "Shebang",
+      "definition": "first line naming the interpreter"
+     },
+     {
+      "term": "Variable",
+      "definition": "named value read with $"
+     },
+     {
+      "term": "Exit code",
+      "definition": "number a command returns, 0 means success"
+     }
+    ],
+    "practice": "Write a script that accepts arguments"
+   },
+   {
+    "title": "Control flow and tools",
+    "terms": [
+     {
+      "term": "if/for",
+      "definition": "conditions and loops in Bash"
+     },
+     {
+      "term": "grep/awk/sed",
+      "definition": "text processing tools"
+     },
+     {
+      "term": "cron",
+      "definition": "scheduler for recurring scripts"
+     }
+    ],
+    "practice": "Automate a daily backup with cron"
+   }
+  ],
+  "project": "Write three shell scripts (backup, log summary, deployment helper) with arguments, error handling and comments",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "#!/bin/bash",
+   "if",
+   "for",
+   "grep",
+   "exit"
+  ]
+ },
+ "cpp": {
+  "modules": [
+   {
+    "title": "Syntax, pointers and references",
+    "terms": [
+     {
+      "term": "Pointer",
+      "definition": "variable that stores a memory address"
+     },
+     {
+      "term": "Reference",
+      "definition": "alias for an existing variable"
+     },
+     {
+      "term": "Header file",
+      "definition": "declares functions and classes for reuse"
+     }
+    ],
+    "practice": "Write programs that swap values through pointers and references"
+   },
+   {
+    "title": "Classes and OOP in C++",
+    "terms": [
+     {
+      "term": "Constructor",
+      "definition": "special function that initializes an object"
+     },
+     {
+      "term": "Virtual function",
+      "definition": "enables runtime polymorphism through a base pointer"
+     },
+     {
+      "term": "RAII",
+      "definition": "resource lifetime tied to object scope"
+     }
+    ],
+    "practice": "Model shapes with a base class and two derived classes"
+   },
+   {
+    "title": "STL and templates",
+    "terms": [
+     {
+      "term": "vector",
+      "definition": "dynamic array in the standard library"
+     },
+     {
+      "term": "map",
+      "definition": "sorted key-value container"
+     },
+     {
+      "term": "Template",
+      "definition": "generic code parameterized by type"
+     }
+    ],
+    "practice": "Solve five problems using vector, map and sort"
+   }
+  ],
+  "project": "Build a console inventory or bank system in C++ with classes, STL containers, file I/O and a README with complexity notes",
+  "check_files": [
+   "README.md",
+   "Makefile"
+  ],
+  "check_keywords": [
+   "class",
+   "vector",
+   "map",
+   "pointer",
+   "template",
+   "constructor"
+  ]
+ },
+ "csharp": {
+  "modules": [
+   {
+    "title": "C# fundamentals",
+    "terms": [
+     {
+      "term": "Namespace",
+      "definition": "groups related types"
+     },
+     {
+      "term": "Property",
+      "definition": "field exposed with get and set accessors"
+     },
+     {
+      "term": ".NET runtime",
+      "definition": "executes compiled C# code"
+     }
+    ],
+    "practice": "Write programs with classes, properties and collections"
+   },
+   {
+    "title": "OOP and LINQ",
+    "terms": [
+     {
+      "term": "Interface",
+      "definition": "contract that a class implements"
+     },
+     {
+      "term": "LINQ",
+      "definition": "query syntax for filtering and projecting collections"
+     },
+     {
+      "term": "Delegate",
+      "definition": "type-safe reference to a method"
+     }
+    ],
+    "practice": "Filter and group a list of objects with LINQ"
+   },
+   {
+    "title": "Async and testing",
+    "terms": [
+     {
+      "term": "async/await",
+      "definition": "writes non-blocking code that reads sequentially"
+     },
+     {
+      "term": "NuGet",
+      "definition": "package manager for .NET libraries"
+     },
+     {
+      "term": "xUnit",
+      "definition": "popular .NET unit test framework"
+     }
+    ],
+    "practice": "Add async file reading and two xUnit tests"
+   }
+  ],
+  "project": "Build a C# console or ASP.NET Core app with classes, interfaces, LINQ and unit tests",
+  "check_files": [
+   "README.md",
+   ".csproj"
+  ],
+  "check_keywords": [
+   "class",
+   "interface",
+   "linq",
+   "async",
+   "namespace",
+   "test"
+  ]
+ },
+ "go": {
+  "modules": [
+   {
+    "title": "Go basics",
+    "terms": [
+     {
+      "term": "Package",
+      "definition": "unit of code organization in Go"
+     },
+     {
+      "term": "Struct",
+      "definition": "typed collection of fields"
+     },
+     {
+      "term": "Slice",
+      "definition": "dynamic view over an array"
+     }
+    ],
+    "practice": "Write programs using slices, maps and structs"
+   },
+   {
+    "title": "Concurrency",
+    "terms": [
+     {
+      "term": "Goroutine",
+      "definition": "lightweight concurrent function"
+     },
+     {
+      "term": "Channel",
+      "definition": "typed pipe for communicating between goroutines"
+     },
+     {
+      "term": "WaitGroup",
+      "definition": "waits for a set of goroutines to finish"
+     }
+    ],
+    "practice": "Process a list of URLs concurrently with goroutines"
+   },
+   {
+    "title": "HTTP services",
+    "terms": [
+     {
+      "term": "net/http",
+      "definition": "standard library package for web servers"
+     },
+     {
+      "term": "Handler",
+      "definition": "function that responds to an HTTP request"
+     },
+     {
+      "term": "go test",
+      "definition": "built-in command that runs tests"
+     }
+    ],
+    "practice": "Serve a JSON endpoint and test it"
+   }
+  ],
+  "project": "Build a small Go REST service with handlers, a struct-based model, goroutine worker and tests",
+  "check_files": [
+   "go.mod",
+   "README.md"
+  ],
+  "check_keywords": [
+   "func",
+   "struct",
+   "goroutine",
+   "channel",
+   "http",
+   "test"
+  ]
+ },
+ "kotlin": {
+  "modules": [
+   {
+    "title": "Kotlin basics",
+    "terms": [
+     {
+      "term": "val",
+      "definition": "read-only variable"
+     },
+     {
+      "term": "Null safety",
+      "definition": "types distinguish nullable from non-null values"
+     },
+     {
+      "term": "data class",
+      "definition": "class that auto-generates equals, copy and toString"
+     }
+    ],
+    "practice": "Convert a small Java class into a Kotlin data class"
+   },
+   {
+    "title": "Functions and collections",
+    "terms": [
+     {
+      "term": "Lambda",
+      "definition": "anonymous function passed as a value"
+     },
+     {
+      "term": "Extension function",
+      "definition": "adds a method to an existing class"
+     },
+     {
+      "term": "when",
+      "definition": "expressive replacement for switch"
+     }
+    ],
+    "practice": "Transform a list with map, filter and groupBy"
+   },
+   {
+    "title": "Coroutines",
+    "terms": [
+     {
+      "term": "Coroutine",
+      "definition": "lightweight unit of asynchronous work"
+     },
+     {
+      "term": "suspend",
+      "definition": "marks a function that can pause without blocking a thread"
+     },
+     {
+      "term": "Flow",
+      "definition": "asynchronous stream of values"
+     }
+    ],
+    "practice": "Fetch data with a suspend function"
+   }
+  ],
+  "project": "Build a Kotlin console app or Android screen using data classes, null safety, collections and coroutines",
+  "check_files": [
+   "README.md",
+   "build.gradle"
+  ],
+  "check_keywords": [
+   "data class",
+   "val",
+   "null",
+   "lambda",
+   "coroutine",
+   "when"
+  ]
+ },
+ "operating_systems": {
+  "modules": [
+   {
+    "title": "Processes and threads",
+    "terms": [
+     {
+      "term": "Process",
+      "definition": "running program with its own address space"
+     },
+     {
+      "term": "Thread",
+      "definition": "unit of execution inside a process"
+     },
+     {
+      "term": "Context switch",
+      "definition": "saving one task's state to run another"
+     }
+    ],
+    "practice": "Trace how fork creates a child process"
+   },
+   {
+    "title": "CPU scheduling and deadlocks",
+    "terms": [
+     {
+      "term": "Round robin",
+      "definition": "scheduler giving each process a fixed time slice"
+     },
+     {
+      "term": "Deadlock",
+      "definition": "processes waiting on each other forever"
+     },
+     {
+      "term": "Mutex",
+      "definition": "lock that lets only one thread enter a critical section"
+     }
+    ],
+    "practice": "Simulate FCFS and round robin scheduling and compare waiting times"
+   },
+   {
+    "title": "Memory management",
+    "terms": [
+     {
+      "term": "Virtual memory",
+      "definition": "gives each process its own large address space"
+     },
+     {
+      "term": "Paging",
+      "definition": "splits memory into fixed size pages and frames"
+     },
+     {
+      "term": "Page fault",
+      "definition": "access to a page not currently in RAM"
+     }
+    ],
+    "practice": "Work out page replacement with FIFO and LRU on a reference string"
+   }
+  ],
+  "project": "Write a report with small programs demonstrating process creation, thread synchronization and a scheduling simulation",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "process",
+   "thread",
+   "scheduling",
+   "deadlock",
+   "memory",
+   "semaphore"
+  ]
+ },
+ "computer_networks": {
+  "modules": [
+   {
+    "title": "Layers and models",
+    "terms": [
+     {
+      "term": "OSI model",
+      "definition": "seven layer reference model for networking"
+     },
+     {
+      "term": "TCP/IP model",
+      "definition": "four layer model used on the internet"
+     },
+     {
+      "term": "Protocol",
+      "definition": "agreed rules for communication"
+     }
+    ],
+    "practice": "Map HTTP, TCP, IP and Ethernet to their layers"
+   },
+   {
+    "title": "IP, TCP and DNS",
+    "terms": [
+     {
+      "term": "IP address",
+      "definition": "identifies a host on a network"
+     },
+     {
+      "term": "TCP three-way handshake",
+      "definition": "SYN, SYN-ACK, ACK sets up a reliable connection"
+     },
+     {
+      "term": "DNS",
+      "definition": "translates domain names into IP addresses"
+     }
+    ],
+    "practice": "Use ping, traceroute and nslookup on a real domain"
+   },
+   {
+    "title": "HTTP and security basics",
+    "terms": [
+     {
+      "term": "HTTPS",
+      "definition": "HTTP carried over TLS encryption"
+     },
+     {
+      "term": "Subnet",
+      "definition": "logical slice of an IP network"
+     },
+     {
+      "term": "Firewall",
+      "definition": "filters traffic using rules"
+     }
+    ],
+    "practice": "Inspect headers of an HTTPS request using browser developer tools"
+   }
+  ],
+  "project": "Write a report tracing what happens when a URL is opened, with packet captures or curl and dig output as evidence",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "tcp",
+   "dns",
+   "http",
+   "ip",
+   "layer",
+   "handshake"
+  ]
+ },
+ "dbms": {
+  "modules": [
+   {
+    "title": "Relational model and ER design",
+    "terms": [
+     {
+      "term": "Entity",
+      "definition": "real world object stored as a table"
+     },
+     {
+      "term": "Relationship",
+      "definition": "association between entities"
+     },
+     {
+      "term": "Candidate key",
+      "definition": "minimal set of columns that uniquely identifies a row"
+     }
+    ],
+    "practice": "Draw an ER diagram for a library"
+   },
+   {
+    "title": "Normalization",
+    "terms": [
+     {
+      "term": "1NF",
+      "definition": "every column holds atomic values"
+     },
+     {
+      "term": "2NF",
+      "definition": "no partial dependency on part of a composite key"
+     },
+     {
+      "term": "3NF",
+      "definition": "no transitive dependency between non-key columns"
+     }
+    ],
+    "practice": "Normalize a messy orders table up to 3NF"
+   },
+   {
+    "title": "Transactions and indexing",
+    "terms": [
+     {
+      "term": "ACID",
+      "definition": "atomicity, consistency, isolation and durability guarantees"
+     },
+     {
+      "term": "Isolation level",
+      "definition": "controls how concurrent transactions see each other"
+     },
+     {
+      "term": "B-tree index",
+      "definition": "balanced tree structure speeding up lookups"
+     }
+    ],
+    "practice": "Explain a bank transfer as a transaction"
+   }
+  ],
+  "project": "Design an ER diagram and normalized schema for a hospital or library system and demonstrate two transactions with ACID reasoning",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "normalization",
+   "primary key",
+   "transaction",
+   "acid",
+   "index",
+   "er diagram"
+  ]
+ },
+ "design_patterns": {
+  "modules": [
+   {
+    "title": "SOLID principles",
+    "terms": [
+     {
+      "term": "Single responsibility",
+      "definition": "a class has one reason to change"
+     },
+     {
+      "term": "Open-closed",
+      "definition": "open for extension and closed for modification"
+     },
+     {
+      "term": "Dependency inversion",
+      "definition": "depend on abstractions not concrete classes"
+     }
+    ],
+    "practice": "Refactor a class that does too many jobs"
+   },
+   {
+    "title": "Creational patterns",
+    "terms": [
+     {
+      "term": "Singleton",
+      "definition": "guarantees one instance of a class"
+     },
+     {
+      "term": "Factory",
+      "definition": "creates objects without exposing construction logic"
+     },
+     {
+      "term": "Builder",
+      "definition": "constructs complex objects step by step"
+     }
+    ],
+    "practice": "Replace scattered new calls with a factory"
+   },
+   {
+    "title": "Behavioural patterns",
+    "terms": [
+     {
+      "term": "Observer",
+      "definition": "notifies subscribers when state changes"
+     },
+     {
+      "term": "Strategy",
+      "definition": "swaps algorithms behind a common interface"
+     },
+     {
+      "term": "Decorator",
+      "definition": "adds behaviour by wrapping an object"
+     }
+    ],
+    "practice": "Build a notification system with Observer"
+   }
+  ],
+  "project": "Implement Singleton, Factory, Observer and Strategy in a small app and document when each is appropriate",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "singleton",
+   "factory",
+   "observer",
+   "strategy",
+   "interface",
+   "solid"
+  ]
+ },
+ "agile": {
+  "modules": [
+   {
+    "title": "Agile and Scrum basics",
+    "terms": [
+     {
+      "term": "Sprint",
+      "definition": "fixed length iteration that delivers a working increment"
+     },
+     {
+      "term": "Product backlog",
+      "definition": "ordered list of everything the product needs"
+     },
+     {
+      "term": "User story",
+      "definition": "requirement written from the user's point of view"
+     }
+    ],
+    "practice": "Write five user stories with acceptance criteria"
+   },
+   {
+    "title": "Scrum events and roles",
+    "terms": [
+     {
+      "term": "Daily stand-up",
+      "definition": "short daily sync on progress and blockers"
+     },
+     {
+      "term": "Retrospective",
+      "definition": "team reflection on how to improve"
+     },
+     {
+      "term": "Product owner",
+      "definition": "person who prioritizes the backlog"
+     }
+    ],
+    "practice": "Plan a sprint and hold a mock retrospective"
+   }
+  ],
+  "project": "Run a two-week mock sprint for a small app with a backlog, sprint plan, daily notes and a retrospective document",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "sprint",
+   "backlog",
+   "standup",
+   "retrospective",
+   "user story",
+   "scrum"
+  ]
+ },
+ "django": {
+  "modules": [
+   {
+    "title": "Project structure and MVT",
+    "terms": [
+     {
+      "term": "MVT",
+      "definition": "Model, View, Template architecture of Django"
+     },
+     {
+      "term": "manage.py",
+      "definition": "command line utility for a Django project"
+     },
+     {
+      "term": "URLconf",
+      "definition": "maps URL patterns to views"
+     }
+    ],
+    "practice": "Create a project and a hello view"
+   },
+   {
+    "title": "Models and ORM",
+    "terms": [
+     {
+      "term": "Model",
+      "definition": "Python class mapped to a database table"
+     },
+     {
+      "term": "Migration",
+      "definition": "versioned change to the database schema"
+     },
+     {
+      "term": "QuerySet",
+      "definition": "lazy collection of database rows"
+     }
+    ],
+    "practice": "Create two related models and query them in the shell"
+   },
+   {
+    "title": "Forms, admin and REST",
+    "terms": [
+     {
+      "term": "Admin",
+      "definition": "auto-generated management interface"
+     },
+     {
+      "term": "Serializer",
+      "definition": "converts model instances to JSON"
+     },
+     {
+      "term": "ViewSet",
+      "definition": "groups CRUD actions for an API resource"
+     }
+    ],
+    "practice": "Expose your model through a DRF ViewSet"
+   }
+  ],
+  "project": "Build a Django app with models, admin, class-based views and a REST endpoint using Django REST Framework",
+  "check_files": [
+   "manage.py",
+   "requirements.txt",
+   "README.md"
+  ],
+  "check_keywords": [
+   "models",
+   "views",
+   "urls",
+   "migration",
+   "serializer",
+   "admin"
+  ]
+ },
+ "flask": {
+  "modules": [
+   {
+    "title": "Routing and requests",
+    "terms": [
+     {
+      "term": "Route",
+      "definition": "maps a URL to a Python function"
+     },
+     {
+      "term": "request",
+      "definition": "object holding data sent by the client"
+     },
+     {
+      "term": "jsonify",
+      "definition": "returns a JSON response"
+     }
+    ],
+    "practice": "Create GET and POST routes"
+   },
+   {
+    "title": "Structure and data",
+    "terms": [
+     {
+      "term": "Blueprint",
+      "definition": "groups related routes into a module"
+     },
+     {
+      "term": "SQLAlchemy",
+      "definition": "ORM for talking to databases from Python"
+     },
+     {
+      "term": "Application factory",
+      "definition": "function that creates and configures the app"
+     }
+    ],
+    "practice": "Store notes in SQLite with SQLAlchemy"
+   },
+   {
+    "title": "Errors and testing",
+    "terms": [
+     {
+      "term": "Error handler",
+      "definition": "custom response for an exception or status code"
+     },
+     {
+      "term": "Test client",
+      "definition": "simulates requests without running a server"
+     },
+     {
+      "term": "Environment config",
+      "definition": "separates settings from code"
+     }
+    ],
+    "practice": "Write three tests with the Flask test client"
+   }
+  ],
+  "project": "Build a Flask API with blueprints, SQLite storage and pytest tests, and document the endpoints",
+  "check_files": [
+   "requirements.txt",
+   "README.md"
+  ],
+  "check_keywords": [
+   "route",
+   "blueprint",
+   "jsonify",
+   "request",
+   "flask",
+   "test"
+  ]
+ },
+ "fastapi": {
+  "modules": [
+   {
+    "title": "Path operations",
+    "terms": [
+     {
+      "term": "Path operation",
+      "definition": "function bound to an HTTP method and path"
+     },
+     {
+      "term": "Path parameter",
+      "definition": "value taken from the URL"
+     },
+     {
+      "term": "Query parameter",
+      "definition": "optional value after the question mark"
+     }
+    ],
+    "practice": "Create GET and POST endpoints"
+   },
+   {
+    "title": "Pydantic and validation",
+    "terms": [
+     {
+      "term": "Pydantic model",
+      "definition": "typed schema that validates request data"
+     },
+     {
+      "term": "response_model",
+      "definition": "filters and documents the response shape"
+     },
+     {
+      "term": "HTTPException",
+      "definition": "raises an error with a status code"
+     }
+    ],
+    "practice": "Validate a create-user payload"
+   },
+   {
+    "title": "Dependencies and async",
+    "terms": [
+     {
+      "term": "Depends",
+      "definition": "injects shared logic such as a database session"
+     },
+     {
+      "term": "async def",
+      "definition": "declares a coroutine handler"
+     },
+     {
+      "term": "Uvicorn",
+      "definition": "ASGI server that runs the app"
+     }
+    ],
+    "practice": "Add a dependency that provides a DB session"
+   }
+  ],
+  "project": "Build a FastAPI service with Pydantic models, dependency injection, a database and auto-generated docs",
+  "check_files": [
+   "requirements.txt",
+   "README.md"
+  ],
+  "check_keywords": [
+   "fastapi",
+   "pydantic",
+   "async",
+   "depends",
+   "response_model",
+   "uvicorn"
+  ]
+ },
+ "message_queues": {
+  "modules": [
+   {
+    "title": "Why queues",
+    "terms": [
+     {
+      "term": "Message broker",
+      "definition": "middleman that stores and routes messages"
+     },
+     {
+      "term": "Producer",
+      "definition": "service that sends messages"
+     },
+     {
+      "term": "Consumer",
+      "definition": "service that reads messages"
+     }
+    ],
+    "practice": "Explain synchronous versus asynchronous processing with an order example"
+   },
+   {
+    "title": "Kafka and RabbitMQ concepts",
+    "terms": [
+     {
+      "term": "Topic",
+      "definition": "named stream of messages in Kafka"
+     },
+     {
+      "term": "Partition",
+      "definition": "ordered slice of a topic that enables parallelism"
+     },
+     {
+      "term": "Consumer group",
+      "definition": "consumers sharing the work of a topic"
+     }
+    ],
+    "practice": "Run a broker with Docker and send ten messages"
+   },
+   {
+    "title": "Reliability",
+    "terms": [
+     {
+      "term": "Acknowledgement",
+      "definition": "consumer confirms a message was processed"
+     },
+     {
+      "term": "Dead-letter queue",
+      "definition": "holds messages that keep failing"
+     },
+     {
+      "term": "Idempotent consumer",
+      "definition": "handles duplicates safely"
+     }
+    ],
+    "practice": "Add retry logic and a dead-letter queue"
+   }
+  ],
+  "project": "Build a producer and consumer pair using Kafka or RabbitMQ with retries and a dead-letter queue, documented with a diagram",
+  "check_files": [
+   "README.md",
+   "docker-compose.yml"
+  ],
+  "check_keywords": [
+   "producer",
+   "consumer",
+   "topic",
+   "queue",
+   "retry",
+   "offset"
+  ]
+ },
+ "aspnet": {
+  "modules": [
+   {
+    "title": "Web API basics",
+    "terms": [
+     {
+      "term": "Controller",
+      "definition": "class that handles HTTP requests"
+     },
+     {
+      "term": "Middleware",
+      "definition": "components forming the request pipeline"
+     },
+     {
+      "term": "Program.cs",
+      "definition": "entry point that configures services"
+     }
+    ],
+    "practice": "Create a controller with GET and POST actions"
+   },
+   {
+    "title": "Data and DI",
+    "terms": [
+     {
+      "term": "Entity Framework Core",
+      "definition": "ORM for .NET"
+     },
+     {
+      "term": "DbContext",
+      "definition": "session with the database"
+     },
+     {
+      "term": "Dependency injection",
+      "definition": "framework supplies services to classes"
+     }
+    ],
+    "practice": "Persist entities with EF Core"
+   }
+  ],
+  "project": "Build an ASP.NET Core Web API with controllers, Entity Framework Core and unit tests",
+  "check_files": [
+   "README.md",
+   ".csproj"
+  ],
+  "check_keywords": [
+   "controller",
+   "entity framework",
+   "dependency injection",
+   "middleware",
+   "dbcontext"
+  ]
+ },
+ "angular": {
+  "modules": [
+   {
+    "title": "Components and templates",
+    "terms": [
+     {
+      "term": "Component",
+      "definition": "class plus template that renders a piece of UI"
+     },
+     {
+      "term": "Data binding",
+      "definition": "syncs component data with the template"
+     },
+     {
+      "term": "Directive",
+      "definition": "adds behaviour such as *ngFor to elements"
+     }
+    ],
+    "practice": "Build a list component with *ngFor"
+   },
+   {
+    "title": "Services and HTTP",
+    "terms": [
+     {
+      "term": "Service",
+      "definition": "injectable class holding shared logic"
+     },
+     {
+      "term": "HttpClient",
+      "definition": "Angular service for HTTP calls"
+     },
+     {
+      "term": "Observable",
+      "definition": "stream of values from RxJS"
+     }
+    ],
+    "practice": "Call a REST API from a service and display data"
+   },
+   {
+    "title": "Routing and forms",
+    "terms": [
+     {
+      "term": "Router",
+      "definition": "navigates between views without reloading"
+     },
+     {
+      "term": "Reactive form",
+      "definition": "form model defined in code"
+     },
+     {
+      "term": "Guard",
+      "definition": "decides whether a route may be opened"
+     }
+    ],
+    "practice": "Add two routes and a validated form"
+   }
+  ],
+  "project": "Build an Angular app with components, routing, a service calling a REST API and reactive forms",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "component",
+   "service",
+   "module",
+   "routing",
+   "observable",
+   "template"
+  ]
+ },
+ "bootstrap_tailwind": {
+  "modules": [
+   {
+    "title": "Frameworks and grids",
+    "terms": [
+     {
+      "term": "Grid system",
+      "definition": "divides the page into responsive columns"
+     },
+     {
+      "term": "Breakpoint",
+      "definition": "screen width where the layout changes"
+     },
+     {
+      "term": "Utility class",
+      "definition": "single purpose CSS class applied in markup"
+     }
+    ],
+    "practice": "Build a three column layout that stacks on mobile"
+   },
+   {
+    "title": "Components and customization",
+    "terms": [
+     {
+      "term": "Component",
+      "definition": "prebuilt UI piece such as a navbar or card"
+     },
+     {
+      "term": "Theme",
+      "definition": "custom colors and spacing configuration"
+     },
+     {
+      "term": "Mobile-first",
+      "definition": "design for small screens then scale up"
+     }
+    ],
+    "practice": "Restyle a card and navbar with your own palette"
+   }
+  ],
+  "project": "Recreate a landing page in Bootstrap and again in Tailwind, comparing responsiveness and code size",
+  "check_files": [
+   "index.html",
+   "README.md"
+  ],
+  "check_keywords": [
+   "container",
+   "grid",
+   "responsive",
+   "utility",
+   "class",
+   "breakpoint"
+  ]
+ },
+ "redux": {
+  "modules": [
+   {
+    "title": "Store, actions and reducers",
+    "terms": [
+     {
+      "term": "Store",
+      "definition": "single object holding global state"
+     },
+     {
+      "term": "Action",
+      "definition": "plain object describing what happened"
+     },
+     {
+      "term": "Reducer",
+      "definition": "pure function computing the next state"
+     }
+    ],
+    "practice": "Build a counter with a store and reducer"
+   },
+   {
+    "title": "Redux Toolkit",
+    "terms": [
+     {
+      "term": "createSlice",
+      "definition": "defines reducers and actions together"
+     },
+     {
+      "term": "useSelector",
+      "definition": "reads state in a component"
+     },
+     {
+      "term": "createAsyncThunk",
+      "definition": "handles async requests with lifecycle actions"
+     }
+    ],
+    "practice": "Load items from an API into the store"
+   }
+  ],
+  "project": "Add Redux Toolkit to a React to-do or cart app with slices, async thunks and selectors",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "store",
+   "slice",
+   "reducer",
+   "dispatch",
+   "selector",
+   "thunk"
+  ]
+ },
+ "nextjs": {
+  "modules": [
+   {
+    "title": "Routing and rendering",
+    "terms": [
+     {
+      "term": "File-based routing",
+      "definition": "folders and files define URLs"
+     },
+     {
+      "term": "SSR",
+      "definition": "HTML is generated on the server per request"
+     },
+     {
+      "term": "SSG",
+      "definition": "pages are generated at build time"
+     }
+    ],
+    "practice": "Create three pages and a dynamic route"
+   },
+   {
+    "title": "Data and API routes",
+    "terms": [
+     {
+      "term": "API route",
+      "definition": "server function inside the Next.js project"
+     },
+     {
+      "term": "Server component",
+      "definition": "renders on the server and sends HTML"
+     },
+     {
+      "term": "Image optimization",
+      "definition": "automatic resizing and lazy loading"
+     }
+    ],
+    "practice": "Fetch data on the server and render a list"
+   }
+  ],
+  "project": "Build a Next.js blog or catalog with file-based routing, server-side rendering and an API route",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "page",
+   "route",
+   "getserversideprops",
+   "api",
+   "ssr",
+   "component"
+  ]
+ },
+ "postgresql": {
+  "modules": [
+   {
+    "title": "Setup and data types",
+    "terms": [
+     {
+      "term": "psql",
+      "definition": "command line client for PostgreSQL"
+     },
+     {
+      "term": "SERIAL",
+      "definition": "auto-incrementing integer column"
+     },
+     {
+      "term": "JSONB",
+      "definition": "binary JSON column type that can be indexed"
+     }
+    ],
+    "practice": "Install PostgreSQL and create a database with three tables"
+   },
+   {
+    "title": "Constraints and indexes",
+    "terms": [
+     {
+      "term": "Foreign key",
+      "definition": "enforces a valid link between tables"
+     },
+     {
+      "term": "Unique constraint",
+      "definition": "prevents duplicate values"
+     },
+     {
+      "term": "GIN index",
+      "definition": "index type suited to JSONB and full-text search"
+     }
+    ],
+    "practice": "Add constraints and compare EXPLAIN before and after an index"
+   },
+   {
+    "title": "Transactions and views",
+    "terms": [
+     {
+      "term": "BEGIN and COMMIT",
+      "definition": "group statements into one atomic unit"
+     },
+     {
+      "term": "View",
+      "definition": "saved query that behaves like a table"
+     },
+     {
+      "term": "Materialized view",
+      "definition": "stores query results physically"
+     }
+    ],
+    "practice": "Create a view for monthly sales"
+   }
+  ],
+  "project": "Model an e-commerce schema in PostgreSQL with constraints, indexes, a view and a transaction, documented with EXPLAIN output",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "constraint",
+   "index",
+   "view",
+   "transaction",
+   "explain",
+   "jsonb"
+  ]
+ },
+ "mysql": {
+  "modules": [
+   {
+    "title": "MySQL basics",
+    "terms": [
+     {
+      "term": "InnoDB",
+      "definition": "default storage engine supporting transactions"
+     },
+     {
+      "term": "AUTO_INCREMENT",
+      "definition": "automatically numbers new rows"
+     },
+     {
+      "term": "mysqldump",
+      "definition": "utility that exports a database backup"
+     }
+    ],
+    "practice": "Create tables and load sample data"
+   },
+   {
+    "title": "Queries and performance",
+    "terms": [
+     {
+      "term": "EXPLAIN",
+      "definition": "shows how MySQL will run a query"
+     },
+     {
+      "term": "Composite index",
+      "definition": "index spanning several columns"
+     },
+     {
+      "term": "Stored procedure",
+      "definition": "saved SQL routine you call by name"
+     }
+    ],
+    "practice": "Optimize a slow query with an index"
+   }
+  ],
+  "project": "Build a MySQL schema for a school or shop with joins, indexes, stored procedure and backup script",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "primary key",
+   "join",
+   "index",
+   "procedure",
+   "mysqldump",
+   "engine"
+  ]
+ },
+ "azure": {
+  "modules": [
+   {
+    "title": "Azure fundamentals",
+    "terms": [
+     {
+      "term": "Resource group",
+      "definition": "container that holds related Azure resources"
+     },
+     {
+      "term": "Subscription",
+      "definition": "billing boundary for Azure usage"
+     },
+     {
+      "term": "Region",
+      "definition": "geographic location of data centres"
+     }
+    ],
+    "practice": "Create a resource group and a virtual machine"
+   },
+   {
+    "title": "Compute and storage",
+    "terms": [
+     {
+      "term": "App Service",
+      "definition": "managed hosting for web apps"
+     },
+     {
+      "term": "Blob Storage",
+      "definition": "object storage for files"
+     },
+     {
+      "term": "Azure Functions",
+      "definition": "serverless code triggered by events"
+     }
+    ],
+    "practice": "Deploy a web app to App Service"
+   },
+   {
+    "title": "Identity and networking",
+    "terms": [
+     {
+      "term": "Microsoft Entra ID",
+      "definition": "identity and access management service"
+     },
+     {
+      "term": "Virtual network",
+      "definition": "private network inside Azure"
+     },
+     {
+      "term": "RBAC",
+      "definition": "role based access control for resources"
+     }
+    ],
+    "practice": "Assign a role to a user and restrict access"
+   }
+  ],
+  "project": "Deploy a web app and a storage account on Azure using the portal and then the Azure CLI, documenting costs and clean-up steps",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "resource group",
+   "app service",
+   "storage",
+   "azure cli",
+   "virtual machine",
+   "entra"
+  ]
+ },
+ "gcp": {
+  "modules": [
+   {
+    "title": "GCP fundamentals",
+    "terms": [
+     {
+      "term": "Project",
+      "definition": "top level container for GCP resources"
+     },
+     {
+      "term": "IAM",
+      "definition": "controls who can do what"
+     },
+     {
+      "term": "gcloud",
+      "definition": "command line tool for Google Cloud"
+     }
+    ],
+    "practice": "Create a project and enable an API"
+   },
+   {
+    "title": "Compute and data",
+    "terms": [
+     {
+      "term": "Compute Engine",
+      "definition": "virtual machines on Google Cloud"
+     },
+     {
+      "term": "Cloud Storage",
+      "definition": "object storage buckets"
+     },
+     {
+      "term": "BigQuery",
+      "definition": "serverless data warehouse for SQL analytics"
+     }
+    ],
+    "practice": "Load a CSV into BigQuery and query it"
+   }
+  ],
+  "project": "Deploy a containerized app to Cloud Run and store data in Cloud Storage and BigQuery, documenting IAM roles used",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "cloud run",
+   "project",
+   "iam",
+   "bigquery",
+   "storage",
+   "gcloud"
+  ]
+ },
+ "terraform": {
+  "modules": [
+   {
+    "title": "Terraform basics",
+    "terms": [
+     {
+      "term": "Provider",
+      "definition": "plugin that talks to a cloud API"
+     },
+     {
+      "term": "Resource",
+      "definition": "infrastructure object declared in code"
+     },
+     {
+      "term": "terraform plan",
+      "definition": "previews the changes before applying"
+     }
+    ],
+    "practice": "Create one resource and destroy it"
+   },
+   {
+    "title": "State and variables",
+    "terms": [
+     {
+      "term": "State file",
+      "definition": "records what Terraform manages"
+     },
+     {
+      "term": "Variable",
+      "definition": "input that makes configuration reusable"
+     },
+     {
+      "term": "Output",
+      "definition": "value exposed after apply"
+     }
+    ],
+    "practice": "Parameterize a configuration with variables"
+   },
+   {
+    "title": "Modules and workflow",
+    "terms": [
+     {
+      "term": "Module",
+      "definition": "reusable group of resources"
+     },
+     {
+      "term": "Remote backend",
+      "definition": "stores state safely for teams"
+     },
+     {
+      "term": "terraform apply",
+      "definition": "makes the real infrastructure match the code"
+     }
+    ],
+    "practice": "Turn your resources into a module"
+   }
+  ],
+  "project": "Provision a network, a virtual machine and a storage bucket with Terraform modules and remote state",
+  "check_files": [
+   "main.tf",
+   "README.md"
+  ],
+  "check_keywords": [
+   "provider",
+   "resource",
+   "variable",
+   "state",
+   "module",
+   "plan"
+  ]
+ },
+ "monitoring": {
+  "modules": [
+   {
+    "title": "Metrics, logs and traces",
+    "terms": [
+     {
+      "term": "Metric",
+      "definition": "numeric measurement over time"
+     },
+     {
+      "term": "Log",
+      "definition": "timestamped record of an event"
+     },
+     {
+      "term": "Trace",
+      "definition": "path of a request across services"
+     }
+    ],
+    "practice": "Classify five signals as metrics, logs or traces"
+   },
+   {
+    "title": "Prometheus and Grafana",
+    "terms": [
+     {
+      "term": "Prometheus",
+      "definition": "pulls and stores time series metrics"
+     },
+     {
+      "term": "Grafana",
+      "definition": "builds dashboards from data sources"
+     },
+     {
+      "term": "PromQL",
+      "definition": "query language for Prometheus"
+     }
+    ],
+    "practice": "Chart request rate with PromQL"
+   },
+   {
+    "title": "Alerting and SLOs",
+    "terms": [
+     {
+      "term": "SLI",
+      "definition": "measured indicator of service health"
+     },
+     {
+      "term": "SLO",
+      "definition": "target value for an SLI"
+     },
+     {
+      "term": "Alert rule",
+      "definition": "condition that notifies the on-call engineer"
+     }
+    ],
+    "practice": "Create an alert for high error rate"
+   }
+  ],
+  "project": "Set up Prometheus and Grafana for a sample app with a dashboard of latency and error rate and one alert rule",
+  "check_files": [
+   "prometheus.yml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "metric",
+   "prometheus",
+   "grafana",
+   "alert",
+   "dashboard",
+   "latency"
+  ]
+ },
+ "numpy": {
+  "modules": [
+   {
+    "title": "Arrays and shapes",
+    "terms": [
+     {
+      "term": "ndarray",
+      "definition": "fixed type n-dimensional array"
+     },
+     {
+      "term": "Shape",
+      "definition": "tuple giving the size of each dimension"
+     },
+     {
+      "term": "dtype",
+      "definition": "data type of array elements"
+     }
+    ],
+    "practice": "Create arrays and reshape them"
+   },
+   {
+    "title": "Vectorization and broadcasting",
+    "terms": [
+     {
+      "term": "Vectorization",
+      "definition": "applying operations to whole arrays without loops"
+     },
+     {
+      "term": "Broadcasting",
+      "definition": "rules for combining arrays of different shapes"
+     },
+     {
+      "term": "Slicing",
+      "definition": "selecting sub-arrays with start and stop indices"
+     }
+    ],
+    "practice": "Replace a Python loop with a vectorized expression"
+   },
+   {
+    "title": "Linear algebra and statistics",
+    "terms": [
+     {
+      "term": "dot",
+      "definition": "matrix multiplication"
+     },
+     {
+      "term": "mean and std",
+      "definition": "summary statistics along an axis"
+     },
+     {
+      "term": "random",
+      "definition": "module for generating random data"
+     }
+    ],
+    "practice": "Solve a linear system and compute column statistics"
+   }
+  ],
+  "project": "Implement linear regression and image brightness transforms using only NumPy arrays and document the vectorization gains",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "array",
+   "broadcasting",
+   "vectorized",
+   "shape",
+   "dot",
+   "reshape"
+  ]
+ },
+ "tableau": {
+  "modules": [
+   {
+    "title": "Connecting and fields",
+    "terms": [
+     {
+      "term": "Dimension",
+      "definition": "categorical field used to slice data"
+     },
+     {
+      "term": "Measure",
+      "definition": "numeric field that is aggregated"
+     },
+     {
+      "term": "Data source",
+      "definition": "the file or database Tableau connects to"
+     }
+    ],
+    "practice": "Connect to a CSV and drag fields to build a bar chart"
+   },
+   {
+    "title": "Charts and calculations",
+    "terms": [
+     {
+      "term": "Calculated field",
+      "definition": "new field defined by a formula"
+     },
+     {
+      "term": "Filter",
+      "definition": "limits which rows are shown"
+     },
+     {
+      "term": "Dual axis",
+      "definition": "overlays two measures on one chart"
+     }
+    ],
+    "practice": "Create a line chart with a calculated growth field"
+   },
+   {
+    "title": "Dashboards and stories",
+    "terms": [
+     {
+      "term": "Dashboard",
+      "definition": "canvas combining several sheets"
+     },
+     {
+      "term": "Action",
+      "definition": "interaction such as filter on click"
+     },
+     {
+      "term": "Story",
+      "definition": "sequence of views that tells a narrative"
+     }
+    ],
+    "practice": "Publish a dashboard with an interactive filter"
+   }
+  ],
+  "project": "Build a three sheet Tableau dashboard from a public dataset with filters, a calculated field and a story",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "dimension",
+   "measure",
+   "filter",
+   "calculated field",
+   "dashboard",
+   "story"
+  ]
+ },
+ "deep_learning": {
+  "modules": [
+   {
+    "title": "Neural network foundations",
+    "terms": [
+     {
+      "term": "Neuron",
+      "definition": "computes a weighted sum then applies an activation"
+     },
+     {
+      "term": "Backpropagation",
+      "definition": "propagates errors backwards to update weights"
+     },
+     {
+      "term": "Gradient descent",
+      "definition": "iteratively adjusts weights to reduce loss"
+     }
+    ],
+    "practice": "Train a tiny network on a toy dataset"
+   },
+   {
+    "title": "Training deep models",
+    "terms": [
+     {
+      "term": "Epoch",
+      "definition": "one full pass over the training data"
+     },
+     {
+      "term": "Dropout",
+      "definition": "randomly disables neurons to reduce overfitting"
+     },
+     {
+      "term": "Learning rate",
+      "definition": "step size for weight updates"
+     }
+    ],
+    "practice": "Compare two learning rates and plot loss"
+   },
+   {
+    "title": "CNNs and sequences",
+    "terms": [
+     {
+      "term": "Convolution",
+      "definition": "filter sliding over an image to detect patterns"
+     },
+     {
+      "term": "Pooling",
+      "definition": "downsampling that keeps the strongest features"
+     },
+     {
+      "term": "LSTM",
+      "definition": "recurrent unit designed for long sequences"
+     }
+    ],
+    "practice": "Build a CNN that classifies digits"
+   }
+  ],
+  "project": "Train a small CNN on MNIST or CIFAR-10 and report accuracy curves, an ablation and error analysis",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "neural network",
+   "backpropagation",
+   "loss",
+   "epoch",
+   "cnn",
+   "overfitting"
+  ]
+ },
+ "tensorflow_pytorch": {
+  "modules": [
+   {
+    "title": "Tensors and autograd",
+    "terms": [
+     {
+      "term": "Tensor",
+      "definition": "multi-dimensional array with GPU support"
+     },
+     {
+      "term": "Autograd",
+      "definition": "automatic differentiation engine"
+     },
+     {
+      "term": "Device",
+      "definition": "CPU or GPU where tensors live"
+     }
+    ],
+    "practice": "Create tensors and compute a gradient"
+   },
+   {
+    "title": "Building and training models",
+    "terms": [
+     {
+      "term": "nn.Module",
+      "definition": "base class for PyTorch models"
+     },
+     {
+      "term": "Optimizer",
+      "definition": "updates weights using gradients"
+     },
+     {
+      "term": "DataLoader",
+      "definition": "batches and shuffles data"
+     }
+    ],
+    "practice": "Write a training loop"
+   },
+   {
+    "title": "Keras and deployment",
+    "terms": [
+     {
+      "term": "Keras Sequential",
+      "definition": "simple stack of layers"
+     },
+     {
+      "term": "Checkpoint",
+      "definition": "saved model weights during training"
+     },
+     {
+      "term": "Saved model",
+      "definition": "exported model ready to serve"
+     }
+    ],
+    "practice": "Save and reload a trained model"
+   }
+  ],
+  "project": "Implement the same classifier in PyTorch and Keras, comparing code, training time and accuracy",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "tensor",
+   "model",
+   "optimizer",
+   "loss",
+   "dataloader",
+   "gpu"
+  ]
+ },
+ "nlp": {
+  "modules": [
+   {
+    "title": "Text preprocessing",
+    "terms": [
+     {
+      "term": "Tokenization",
+      "definition": "splitting text into tokens"
+     },
+     {
+      "term": "Stop words",
+      "definition": "very common words often removed"
+     },
+     {
+      "term": "Stemming",
+      "definition": "reducing words to a crude root form"
+     }
+    ],
+    "practice": "Clean and tokenize a review dataset"
+   },
+   {
+    "title": "Representations",
+    "terms": [
+     {
+      "term": "TF-IDF",
+      "definition": "weights words by frequency and rarity"
+     },
+     {
+      "term": "Word embedding",
+      "definition": "dense vector capturing meaning"
+     },
+     {
+      "term": "Cosine similarity",
+      "definition": "measures the angle between two vectors"
+     }
+    ],
+    "practice": "Find the most similar documents to a query"
+   },
+   {
+    "title": "Transformers",
+    "terms": [
+     {
+      "term": "Attention",
+      "definition": "lets a model weigh which words matter for each other"
+     },
+     {
+      "term": "BERT",
+      "definition": "pretrained transformer encoder for language understanding"
+     },
+     {
+      "term": "Fine-tuning",
+      "definition": "adapting a pretrained model to a task"
+     }
+    ],
+    "practice": "Fine-tune a small model on a labelled dataset"
+   }
+  ],
+  "project": "Build a text classifier (sentiment or spam) with TF-IDF baseline and a transformer fine-tune, comparing metrics",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "tokenization",
+   "embedding",
+   "tf-idf",
+   "transformer",
+   "f1",
+   "classification"
+  ]
+ },
+ "llms_genai": {
+  "modules": [
+   {
+    "title": "LLM basics and prompting",
+    "terms": [
+     {
+      "term": "LLM",
+      "definition": "neural model trained on huge text to predict the next token"
+     },
+     {
+      "term": "Prompt",
+      "definition": "instructions and context given to the model"
+     },
+     {
+      "term": "Temperature",
+      "definition": "controls randomness of generated text"
+     }
+    ],
+    "practice": "Write a prompt with a role, task and output format"
+   },
+   {
+    "title": "Embeddings and vector search",
+    "terms": [
+     {
+      "term": "Embedding",
+      "definition": "numeric vector capturing the meaning of text"
+     },
+     {
+      "term": "Vector store",
+      "definition": "database that finds nearest embeddings"
+     },
+     {
+      "term": "Chunking",
+      "definition": "splitting documents into retrievable pieces"
+     }
+    ],
+    "practice": "Embed ten paragraphs and search them"
+   },
+   {
+    "title": "RAG and agents",
+    "terms": [
+     {
+      "term": "RAG",
+      "definition": "retrieves relevant documents and gives them to the model as context"
+     },
+     {
+      "term": "Hallucination",
+      "definition": "confident but unsupported model output"
+     },
+     {
+      "term": "Tool calling",
+      "definition": "model requests a function to run with arguments"
+     }
+    ],
+    "practice": "Add source citations to your RAG answers"
+   }
+  ],
+  "project": "Build a retrieval-augmented question answering app over your own PDFs with chunking, embeddings, a vector store and cited answers",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "rag",
+   "embedding",
+   "chunk",
+   "vector",
+   "prompt",
+   "retrieval"
+  ]
+ },
+ "mlops": {
+  "modules": [
+   {
+    "title": "ML lifecycle",
+    "terms": [
+     {
+      "term": "Experiment tracking",
+      "definition": "recording parameters and metrics of each run"
+     },
+     {
+      "term": "Model registry",
+      "definition": "versioned store of trained models"
+     },
+     {
+      "term": "Reproducibility",
+      "definition": "ability to recreate a result from code and data"
+     }
+    ],
+    "practice": "Track two runs with MLflow"
+   },
+   {
+    "title": "Serving and monitoring",
+    "terms": [
+     {
+      "term": "Model serving",
+      "definition": "exposing a model through an API"
+     },
+     {
+      "term": "Data drift",
+      "definition": "input data changing from what the model saw in training"
+     },
+     {
+      "term": "Canary release",
+      "definition": "rolling out to a small share of traffic first"
+     }
+    ],
+    "practice": "Serve a model with FastAPI in Docker"
+   }
+  ],
+  "project": "Package an ML model in a Docker container behind an API with MLflow tracking and a CI workflow that runs tests",
+  "check_files": [
+   "Dockerfile",
+   "README.md"
+  ],
+  "check_keywords": [
+   "mlflow",
+   "docker",
+   "model",
+   "api",
+   "tracking",
+   "pipeline"
+  ]
+ },
+ "computer_vision": {
+  "modules": [
+   {
+    "title": "Image basics",
+    "terms": [
+     {
+      "term": "Pixel",
+      "definition": "smallest unit of an image holding intensity values"
+     },
+     {
+      "term": "Grayscale",
+      "definition": "single channel image"
+     },
+     {
+      "term": "Resize and crop",
+      "definition": "change image size and region"
+     }
+    ],
+    "practice": "Load, resize and grayscale images with OpenCV"
+   },
+   {
+    "title": "CNNs and detection",
+    "terms": [
+     {
+      "term": "Data augmentation",
+      "definition": "creating varied training images by flipping and rotating"
+     },
+     {
+      "term": "IoU",
+      "definition": "overlap measure between predicted and true boxes"
+     },
+     {
+      "term": "YOLO",
+      "definition": "real time object detector"
+     }
+    ],
+    "practice": "Train a classifier with augmentation"
+   }
+  ],
+  "project": "Build an image classifier or object detector with OpenCV preprocessing and evaluate it with a confusion matrix",
+  "check_files": [
+   "README.md",
+   "requirements.txt"
+  ],
+  "check_keywords": [
+   "opencv",
+   "cnn",
+   "image",
+   "detection",
+   "augmentation",
+   "accuracy"
+  ]
+ },
+ "etl": {
+  "modules": [
+   {
+    "title": "ETL concepts",
+    "terms": [
+     {
+      "term": "Extract",
+      "definition": "pull data from sources"
+     },
+     {
+      "term": "Transform",
+      "definition": "clean and reshape data"
+     },
+     {
+      "term": "Load",
+      "definition": "write data into the target store"
+     }
+    ],
+    "practice": "Sketch an ETL diagram for sales data"
+   },
+   {
+    "title": "Building pipelines",
+    "terms": [
+     {
+      "term": "Idempotent job",
+      "definition": "safe to run twice with the same result"
+     },
+     {
+      "term": "Data validation",
+      "definition": "checks that data meets expectations"
+     },
+     {
+      "term": "Airflow DAG",
+      "definition": "workflow of tasks with dependencies"
+     }
+    ],
+    "practice": "Schedule a daily job that loads a CSV"
+   },
+   {
+    "title": "Quality and scale",
+    "terms": [
+     {
+      "term": "Incremental load",
+      "definition": "processes only new or changed rows"
+     },
+     {
+      "term": "Schema evolution",
+      "definition": "handling changes in source columns"
+     },
+     {
+      "term": "Data lineage",
+      "definition": "tracking where data came from"
+     }
+    ],
+    "practice": "Add validation checks and a failure alert"
+   }
+  ],
+  "project": "Build an ETL pipeline that extracts from an API and a CSV, cleans and loads into SQLite or PostgreSQL, scheduled with Airflow or cron",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "extract",
+   "transform",
+   "load",
+   "schema",
+   "dag",
+   "validation"
+  ]
+ },
+ "big_data": {
+  "modules": [
+   {
+    "title": "Distributed processing",
+    "terms": [
+     {
+      "term": "Cluster",
+      "definition": "group of machines working together"
+     },
+     {
+      "term": "MapReduce",
+      "definition": "split, process and combine model for big data"
+     },
+     {
+      "term": "HDFS",
+      "definition": "distributed file system for large files"
+     }
+    ],
+    "practice": "Explain how word count runs on a cluster"
+   },
+   {
+    "title": "Spark essentials",
+    "terms": [
+     {
+      "term": "DataFrame",
+      "definition": "distributed table with a schema"
+     },
+     {
+      "term": "Transformation",
+      "definition": "lazy operation that defines a new dataset"
+     },
+     {
+      "term": "Action",
+      "definition": "operation that triggers computation"
+     }
+    ],
+    "practice": "Load a CSV into Spark and aggregate it"
+   },
+   {
+    "title": "Performance",
+    "terms": [
+     {
+      "term": "Partition",
+      "definition": "slice of data processed in parallel"
+     },
+     {
+      "term": "Shuffle",
+      "definition": "expensive movement of data between nodes"
+     },
+     {
+      "term": "Caching",
+      "definition": "keeps data in memory for reuse"
+     }
+    ],
+    "practice": "Compare runtimes with different partition counts"
+   }
+  ],
+  "project": "Analyze a multi-million row dataset with PySpark, using DataFrames, joins and partitioning, and report timings",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "spark",
+   "dataframe",
+   "partition",
+   "rdd",
+   "cluster",
+   "shuffle"
+  ]
+ },
+ "data_warehousing": {
+  "modules": [
+   {
+    "title": "Warehouse concepts",
+    "terms": [
+     {
+      "term": "Data warehouse",
+      "definition": "central store optimized for analytics"
+     },
+     {
+      "term": "OLTP",
+      "definition": "transaction processing for day to day operations"
+     },
+     {
+      "term": "OLAP",
+      "definition": "analytical processing across large datasets"
+     }
+    ],
+    "practice": "Compare OLTP and OLAP for a retail business"
+   },
+   {
+    "title": "Dimensional modeling",
+    "terms": [
+     {
+      "term": "Fact table",
+      "definition": "stores measurable events such as sales"
+     },
+     {
+      "term": "Dimension table",
+      "definition": "descriptive context such as product or date"
+     },
+     {
+      "term": "Star schema",
+      "definition": "fact table linked directly to dimensions"
+     }
+    ],
+    "practice": "Design a star schema for orders"
+   }
+  ],
+  "project": "Design a star schema for sales analytics, load sample data and write five analytical queries",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "fact table",
+   "dimension",
+   "star schema",
+   "olap",
+   "etl",
+   "grain"
+  ]
+ },
+ "test_automation": {
+  "modules": [
+   {
+    "title": "Automation strategy",
+    "terms": [
+     {
+      "term": "Test pyramid",
+      "definition": "many unit tests, fewer integration tests, fewest UI tests"
+     },
+     {
+      "term": "Regression suite",
+      "definition": "tests that guard existing behaviour"
+     },
+     {
+      "term": "Flaky test",
+      "definition": "test that passes and fails without code changes"
+     }
+    ],
+    "practice": "Decide which five manual tests to automate first"
+   },
+   {
+    "title": "Framework design",
+    "terms": [
+     {
+      "term": "Page Object Model",
+      "definition": "one class per page holding locators and actions"
+     },
+     {
+      "term": "Fixture",
+      "definition": "setup and teardown shared by tests"
+     },
+     {
+      "term": "Data-driven testing",
+      "definition": "same test run with many inputs"
+     }
+    ],
+    "practice": "Refactor a script into page objects"
+   },
+   {
+    "title": "Reporting and CI",
+    "terms": [
+     {
+      "term": "Test report",
+      "definition": "readable summary of passes and failures"
+     },
+     {
+      "term": "CI trigger",
+      "definition": "runs tests on each commit"
+     },
+     {
+      "term": "Parallel execution",
+      "definition": "runs tests simultaneously to save time"
+     }
+    ],
+    "practice": "Run your suite in GitHub Actions"
+   }
+  ],
+  "project": "Build a Page Object based automation suite with Selenium or Playwright and an HTML report, running in CI",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "page object",
+   "assertion",
+   "fixture",
+   "report",
+   "framework",
+   "ci"
+  ]
+ },
+ "cybersecurity": {
+  "modules": [
+   {
+    "title": "Security fundamentals",
+    "terms": [
+     {
+      "term": "CIA triad",
+      "definition": "confidentiality, integrity and availability"
+     },
+     {
+      "term": "Threat",
+      "definition": "potential cause of harm"
+     },
+     {
+      "term": "Vulnerability",
+      "definition": "weakness that can be exploited"
+     }
+    ],
+    "practice": "Classify five incidents by CIA impact"
+   },
+   {
+    "title": "Web attacks",
+    "terms": [
+     {
+      "term": "SQL injection",
+      "definition": "attacker input alters a database query"
+     },
+     {
+      "term": "XSS",
+      "definition": "injects scripts that run in other users' browsers"
+     },
+     {
+      "term": "CSRF",
+      "definition": "tricks a logged-in user into sending unwanted requests"
+     }
+    ],
+    "practice": "Reproduce SQL injection in a lab and fix it with parameters"
+   },
+   {
+    "title": "Defence",
+    "terms": [
+     {
+      "term": "Hashing",
+      "definition": "one-way transformation used for password storage"
+     },
+     {
+      "term": "TLS",
+      "definition": "encrypts data in transit"
+     },
+     {
+      "term": "Least privilege",
+      "definition": "grant only the access needed"
+     }
+    ],
+    "practice": "Harden a small server checklist"
+   }
+  ],
+  "project": "Test a deliberately vulnerable app (DVWA or Juice Shop) in a lab and write a report covering three OWASP Top 10 issues with fixes",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "owasp",
+   "injection",
+   "xss",
+   "encryption",
+   "vulnerability",
+   "mitigation"
+  ]
+ },
+ "android_development": {
+  "modules": [
+   {
+    "title": "Android fundamentals",
+    "terms": [
+     {
+      "term": "Activity",
+      "definition": "single screen with a UI"
+     },
+     {
+      "term": "Manifest",
+      "definition": "declares components and permissions of the app"
+     },
+     {
+      "term": "Intent",
+      "definition": "message used to start components"
+     }
+    ],
+    "practice": "Create an app with two activities"
+   },
+   {
+    "title": "UI and architecture",
+    "terms": [
+     {
+      "term": "RecyclerView",
+      "definition": "efficient scrolling list"
+     },
+     {
+      "term": "ViewModel",
+      "definition": "holds UI state across configuration changes"
+     },
+     {
+      "term": "LiveData",
+      "definition": "observable data holder aware of lifecycle"
+     }
+    ],
+    "practice": "Show a list backed by a ViewModel"
+   },
+   {
+    "title": "Networking and storage",
+    "terms": [
+     {
+      "term": "Retrofit",
+      "definition": "type-safe HTTP client"
+     },
+     {
+      "term": "Room",
+      "definition": "SQLite abstraction for local data"
+     },
+     {
+      "term": "Permission",
+      "definition": "user consent for sensitive features"
+     }
+    ],
+    "practice": "Fetch and cache data from a public API"
+   }
+  ],
+  "project": "Build an Android app with two screens, a RecyclerView or Compose list, ViewModel and a Retrofit API call",
+  "check_files": [
+   "README.md",
+   "build.gradle"
+  ],
+  "check_keywords": [
+   "activity",
+   "viewmodel",
+   "retrofit",
+   "recyclerview",
+   "compose",
+   "manifest"
+  ]
+ },
+ "flutter": {
+  "modules": [
+   {
+    "title": "Widgets and layout",
+    "terms": [
+     {
+      "term": "Widget",
+      "definition": "building block of Flutter UIs"
+     },
+     {
+      "term": "StatelessWidget",
+      "definition": "widget without mutable state"
+     },
+     {
+      "term": "Column and Row",
+      "definition": "layout widgets that stack children"
+     }
+    ],
+    "practice": "Build a profile screen with Column and Row"
+   },
+   {
+    "title": "State and navigation",
+    "terms": [
+     {
+      "term": "setState",
+      "definition": "rebuilds a widget after state changes"
+     },
+     {
+      "term": "Navigator",
+      "definition": "pushes and pops screens"
+     },
+     {
+      "term": "Provider",
+      "definition": "simple state management package"
+     }
+    ],
+    "practice": "Create a to-do app with state"
+   },
+   {
+    "title": "Networking",
+    "terms": [
+     {
+      "term": "Future",
+      "definition": "value that will be available later"
+     },
+     {
+      "term": "http package",
+      "definition": "makes web requests"
+     },
+     {
+      "term": "JSON parsing",
+      "definition": "converts response text into Dart objects"
+     }
+    ],
+    "practice": "Load and display API data"
+   }
+  ],
+  "project": "Build a Flutter app with navigation, a list from an API and local state management",
+  "check_files": [
+   "pubspec.yaml",
+   "README.md"
+  ],
+  "check_keywords": [
+   "widget",
+   "state",
+   "setstate",
+   "provider",
+   "navigator",
+   "future"
+  ]
+ },
+ "graphql": {
+  "modules": [
+   {
+    "title": "GraphQL concepts",
+    "terms": [
+     {
+      "term": "Schema",
+      "definition": "describes types and operations available"
+     },
+     {
+      "term": "Query",
+      "definition": "read operation requesting exact fields"
+     },
+     {
+      "term": "Mutation",
+      "definition": "write operation that changes data"
+     }
+    ],
+    "practice": "Write queries against a public GraphQL API"
+   },
+   {
+    "title": "Building a server",
+    "terms": [
+     {
+      "term": "Resolver",
+      "definition": "function that returns data for a field"
+     },
+     {
+      "term": "Type system",
+      "definition": "defines fields and their types"
+     },
+     {
+      "term": "Over-fetching",
+      "definition": "receiving more data than needed, avoided by GraphQL"
+     }
+    ],
+    "practice": "Implement two resolvers"
+   }
+  ],
+  "project": "Build a GraphQL API with a schema, queries, a mutation and a resolver connected to a database",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "schema",
+   "query",
+   "mutation",
+   "resolver",
+   "type",
+   "apollo"
+  ]
+ },
+ "vuejs": {
+  "modules": [
+   {
+    "title": "Reactivity and templates",
+    "terms": [
+     {
+      "term": "Reactive state",
+      "definition": "data whose changes update the UI"
+     },
+     {
+      "term": "v-for",
+      "definition": "renders a list from an array"
+     },
+     {
+      "term": "v-model",
+      "definition": "two way binding for form inputs"
+     }
+    ],
+    "practice": "Build a task list"
+   },
+   {
+    "title": "Components and routing",
+    "terms": [
+     {
+      "term": "Props",
+      "definition": "data passed from a parent to a child component"
+     },
+     {
+      "term": "Emit",
+      "definition": "child component sending an event to its parent"
+     },
+     {
+      "term": "Vue Router",
+      "definition": "client-side routing for Vue apps"
+     }
+    ],
+    "practice": "Split your app into three components"
+   }
+  ],
+  "project": "Build a Vue app with components, props, a Pinia store and API calls",
+  "check_files": [
+   "package.json",
+   "README.md"
+  ],
+  "check_keywords": [
+   "component",
+   "props",
+   "ref",
+   "computed",
+   "router",
+   "pinia"
+  ]
+ },
+ "c": {
+  "modules": [
+   {
+    "title": "C fundamentals",
+    "terms": [
+     {
+      "term": "Pointer",
+      "definition": "variable storing a memory address"
+     },
+     {
+      "term": "Array",
+      "definition": "fixed size block of same typed elements"
+     },
+     {
+      "term": "Header file",
+      "definition": "declaration file included with #include"
+     }
+    ],
+    "practice": "Write programs using arrays and pointers"
+   },
+   {
+    "title": "Memory and structs",
+    "terms": [
+     {
+      "term": "malloc",
+      "definition": "allocates memory on the heap"
+     },
+     {
+      "term": "free",
+      "definition": "releases heap memory"
+     },
+     {
+      "term": "struct",
+      "definition": "groups related variables into one type"
+     }
+    ],
+    "practice": "Build a dynamic array and free it correctly"
+   }
+  ],
+  "project": "Implement a linked list, a string utility library and a small file-based program in C with memory leak checks using valgrind",
+  "check_files": [
+   "README.md",
+   "Makefile"
+  ],
+  "check_keywords": [
+   "pointer",
+   "malloc",
+   "free",
+   "struct",
+   "array",
+   "header"
+  ]
+ },
+ "r": {
+  "modules": [
+   {
+    "title": "R basics",
+    "terms": [
+     {
+      "term": "Vector",
+      "definition": "ordered collection of same typed values"
+     },
+     {
+      "term": "Data frame",
+      "definition": "table of rows and columns"
+     },
+     {
+      "term": "Tidyverse",
+      "definition": "collection of packages for data analysis"
+     }
+    ],
+    "practice": "Load a CSV and summarize it"
+   },
+   {
+    "title": "Visualization and models",
+    "terms": [
+     {
+      "term": "ggplot2",
+      "definition": "grammar of graphics plotting package"
+     },
+     {
+      "term": "dplyr",
+      "definition": "verbs to filter, group and summarize data"
+     },
+     {
+      "term": "lm",
+      "definition": "fits a linear regression model"
+     }
+    ],
+    "practice": "Plot a relationship and fit a regression"
+   }
+  ],
+  "project": "Analyze a public dataset in R with dplyr, ggplot2 and a short statistical test, delivered as an R Markdown report",
+  "check_files": [
+   "README.md"
+  ],
+  "check_keywords": [
+   "dataframe",
+   "dplyr",
+   "ggplot2",
+   "tidyverse",
+   "summary",
+   "lm"
+  ]
+ }
+}

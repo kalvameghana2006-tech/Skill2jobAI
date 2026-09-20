@@ -1,0 +1,314 @@
+# Learning paths: per skill an ordered list of modules.  These power (a) the day-by-day roadmap, (b) auto-generated quizzes from the
+# "Term: definition" pairs, and (c) the RAG knowledge base (each module is retrievable and citable).
+# Format:  M: Module title || Term: definition; Term: definition || practice task
+#          project:   mini-project used as the practical verification task
+#          check_files / check_keywords: rubric used to verify a submitted GitHub repo or write-up
+
+@Docker
+project: Containerize a Spring Boot (or Flask) app plus a MySQL database with Docker Compose and document how to run it
+check_files: Dockerfile, docker-compose.yml, README.md
+check_keywords: dockerfile, compose, image, container, volume, port
+M: Containers vs virtual machines || Container: isolated process sharing the host kernel; Virtual machine: full guest OS running on a hypervisor; Image: read-only template used to create containers || Install Docker and run hello-world, nginx and an interactive ubuntu container
+M: Images and containers in practice || docker run: creates and starts a container from an image; docker ps: lists running containers; Docker Hub: public registry for sharing images || Pull, tag and remove images; map a container port to your laptop
+M: Writing a Dockerfile || FROM: sets the base image; COPY: adds files into the image; CMD: default command run when the container starts; Layer caching: unchanged steps are reused to speed up builds || Write a Dockerfile for a small web app and build it
+M: Volumes and networks || Volume: persistent storage that outlives a container; Bridge network: default network letting containers talk by name; Port mapping: exposes a container port on the host || Run a database container with a named volume and connect an app to it
+M: Docker Compose || docker-compose.yml: declares multi-container apps in one file; depends_on: controls service start order; Environment variables: configure containers without rebuilding images || Compose an app + database stack and bring it up with one command
+M: Best practices || Multi-stage build: uses one stage to build and a slim stage to run; .dockerignore: excludes files from the build context; Non-root user: limits damage if a container is compromised || Shrink your image with a multi-stage build
+
+@REST API
+project: Build a small REST service (users or todos) with GET, POST, PUT and DELETE endpoints, JSON validation and proper status codes
+check_files: README.md
+check_keywords: get, post, put, delete, status, json, endpoint
+M: HTTP and REST basics || REST: architectural style using resources addressed by URLs; HTTP method: verb such as GET or POST describing the action; Stateless: each request carries everything the server needs || Use curl or Postman to call a public API and inspect headers and bodies
+M: Methods and status codes || GET: reads a resource without changing it; POST: creates a new resource; 201 Created: returned after a resource is successfully created; 404 Not Found: the requested resource does not exist || Map CRUD operations to methods and pick the right status code for each case
+M: Designing resources and JSON || Resource naming: use nouns like /users/42 not verbs; JSON: text format used for request and response bodies; Idempotent: repeating the request leaves the same server state (PUT, DELETE) || Design the URL structure and JSON shapes for a small todo API
+M: Build your first API || Controller: code that receives requests and returns responses; Request body: data the client sends in POST or PUT; Validation: rejecting bad input with a 400 response || Implement GET and POST endpoints in your framework of choice
+M: Errors, pagination and versioning || Pagination: returning large lists in pages using limit and offset; API versioning: keeping old clients working via /v1 style paths; Error payload: consistent JSON body describing what went wrong || Add pagination, validation errors and a /v1 prefix
+
+@Spring Boot
+project: Build a Spring Boot REST service with a MySQL or H2 database, layered controller/service/repository code and unit tests
+check_files: pom.xml, README.md
+check_keywords: controller, service, repository, entity, application.properties, restcontroller
+M: Spring Boot foundations || Auto-configuration: Spring Boot sets sensible defaults from the libraries on the classpath; Starter: one dependency that pulls in a whole feature set; Spring Initializr: web tool that generates a project skeleton || Generate a project with Spring Initializr and run a hello endpoint
+M: Controllers and request mapping || @RestController: marks a class whose methods return JSON responses; @GetMapping: maps an HTTP GET request to a method; @RequestBody: binds the JSON request body to a Java object || Create GET and POST endpoints for a Student or Product resource
+M: Dependency injection and layers || Bean: object managed by the Spring container; @Service: marks business logic classes; Dependency injection: Spring supplies collaborators instead of you calling new || Split your code into controller, service and repository layers
+M: Persistence with Spring Data JPA || @Entity: maps a Java class to a database table; JpaRepository: gives CRUD methods without writing SQL; application.properties: holds datasource and server settings || Connect your API to MySQL or H2 and persist real data
+M: Validation, exceptions and tests || @Valid: triggers bean validation on incoming data; @ControllerAdvice: centralizes exception handling for all controllers; MockMvc: tests controllers without starting a server || Add validation, a global error handler and two controller tests
+
+@Git
+project: Create a repository with a README, at least three feature branches merged through pull requests and a resolved merge conflict
+check_files: README.md, .gitignore
+check_keywords: branch, merge, pull request, commit, conflict
+M: Version control basics || Repository: folder whose history Git tracks; Commit: saved snapshot of your files with a message; Staging area: holding zone for changes chosen for the next commit || Init a repo, make five commits and read git log
+M: Branching and merging || Branch: independent line of development; Merge: combines the history of two branches; HEAD: pointer to the commit you currently have checked out || Create a feature branch, commit on it and merge it back
+M: Remotes and pull requests || git push: uploads local commits to a remote; Pull request: proposes changes for review before merging; Fork: your own copy of someone else's repository || Push to GitHub and open a pull request on your own repo
+M: Fixing mistakes || git revert: creates a new commit that undoes an earlier one; Merge conflict: two branches changed the same lines; git stash: temporarily shelves uncommitted changes || Create and resolve a merge conflict on purpose
+
+@SQL
+project: Design a small schema (students, courses, enrollments) and write 15 queries using joins, GROUP BY, subqueries and window functions, documented in a README
+check_files: README.md
+check_keywords: join, group by, having, subquery, index, primary key
+M: Querying with SELECT || SELECT: chooses which columns to return; WHERE: filters rows before grouping; ORDER BY: sorts the result set || Answer ten questions on a sample database with SELECT and WHERE
+M: Aggregation and grouping || GROUP BY: collapses rows into groups for aggregates like COUNT and SUM; HAVING: filters groups after aggregation; DISTINCT: removes duplicate rows from the result || Compute totals and averages per category and filter groups with HAVING
+M: Joins || INNER JOIN: keeps only rows that match in both tables; LEFT JOIN: keeps all rows from the left table plus matches; Foreign key: column referencing another table's primary key || Join three tables to build a report and explain each join type
+M: Subqueries and window functions || Subquery: query nested inside another query; Window function: calculates across related rows without collapsing them; CTE: named temporary result defined with WITH || Rank rows per group with ROW_NUMBER and reuse logic with a CTE
+M: Design and performance || Primary key: uniquely identifies each row; Index: structure that speeds up lookups on a column; Normalization: organizing tables to reduce redundancy || Create tables with keys and compare a query plan before and after adding an index
+
+@DSA
+project: Solve and document 30 problems across arrays, strings, hash maps, linked lists, trees and dynamic programming with complexity analysis for each
+check_files: README.md
+check_keywords: complexity, o(n), array, tree, hash, recursion, dynamic programming
+M: Complexity and arrays || Big-O: describes how running time grows with input size; Array: contiguous block giving O(1) access by index; Two pointers: technique scanning from both ends or at two speeds || Solve five array and two-pointer problems and state each complexity
+M: Hashing and strings || Hash map: key-value store with average O(1) lookup; Sliding window: maintains a moving range to avoid re-scanning; Anagram: words with the same letters in different order || Solve five hash map and sliding window problems
+M: Stacks, queues and linked lists || Stack: last-in first-out structure; Queue: first-in first-out structure; Linked list: nodes connected by pointers || Implement a stack, a queue and reverse a linked list
+M: Recursion, trees and graphs || Recursion: a function solving a problem by calling itself on smaller inputs; Binary search tree: tree where left values are smaller and right values larger; BFS: explores a graph level by level using a queue || Implement tree traversals and BFS/DFS on a graph
+M: Sorting and searching || Binary search: halves a sorted search space each step in O(log n); Merge sort: divide and conquer sort running in O(n log n); Quick sort: partitions around a pivot, O(n log n) on average || Implement binary search, merge sort and quick sort from scratch
+M: Dynamic programming || Memoization: caches results of overlapping subproblems; Optimal substructure: best solution is built from best sub-solutions; Tabulation: fills a table bottom-up instead of recursing || Solve climbing stairs, knapsack and longest common subsequence
+
+@Python
+project: Build a command-line or Flask utility (expense tracker, log analyzer) with functions, a class, file handling, error handling and unit tests
+check_files: README.md, requirements.txt
+check_keywords: def, class, import, list, dict, exception, test
+M: Syntax and data types || List: ordered mutable collection; Tuple: ordered immutable collection; Dictionary: key-value mapping || Write ten small programs using lists, dicts and loops
+M: Functions and modules || Function: reusable block defined with def; Module: a .py file you import; Comprehension: compact way to build a list or dict from a loop || Refactor a script into functions and split it into two modules
+M: Object-oriented Python || Class: blueprint for objects; __init__: constructor that sets up a new object; Inheritance: a class reusing another class's behaviour || Model a bank account or inventory with classes
+M: Files, errors and libraries || try/except: catches and handles runtime errors; with statement: opens a file and guarantees it is closed; pip: installs third-party packages || Read a CSV, handle bad rows and call a public API with requests
+M: Testing and packaging || pytest: framework for writing concise tests; Virtual environment: isolated set of installed packages per project; requirements.txt: lists a project's dependencies || Add tests for your utility and freeze its requirements
+
+@Java
+project: Build a console or REST-based Library/Bank management app using OOP (interfaces, inheritance), collections, exceptions and JUnit tests
+check_files: README.md, pom.xml
+check_keywords: class, interface, extends, arraylist, hashmap, exception, junit
+M: Java basics || JVM: virtual machine that runs compiled bytecode; Primitive types: int, double, boolean and similar built-in value types; Static typing: variable types are checked at compile time || Write programs using loops, arrays and methods
+M: Classes and OOP || Encapsulation: hiding fields behind methods; Inheritance: a subclass extending a superclass with extends; Polymorphism: one interface, many behaviours || Model shapes or accounts with an interface and two implementations
+M: Collections and generics || ArrayList: resizable array-backed list; HashMap: key-value collection with hashing; Generics: type parameters that give compile-time type safety || Count word frequencies with HashMap and sort objects with a Comparator
+M: Exceptions, streams and lambdas || Checked exception: must be handled or declared by the caller; Lambda: concise anonymous function; Stream API: functional pipeline for filtering and mapping collections || Refactor loops into streams and add custom exceptions
+M: Testing and build tools || JUnit: standard Java unit testing framework; Maven: build tool that manages dependencies via pom.xml; Interface: contract listing methods a class must implement || Add JUnit tests to your project and build it with Maven
+
+@JavaScript
+project: Build an interactive to-do or quiz web app with modern JavaScript (modules, fetch, DOM events, async/await) and no framework
+check_files: index.html, README.md
+check_keywords: fetch, async, promise, addeventlistener, array, function
+M: Language fundamentals || let/const: block-scoped variable declarations; Arrow function: shorter function syntax that keeps outer this; Template literal: string with embedded expressions in backticks || Practise variables, functions and loops in the browser console
+M: Arrays and objects || map: builds a new array by transforming each item; filter: keeps only items that pass a test; Destructuring: unpacks values from arrays or objects into variables || Transform a list of objects with map, filter and reduce
+M: The DOM and events || DOM: tree representation of a web page; Event listener: function that runs when a user action occurs; querySelector: finds an element with a CSS selector || Build a click counter and a form that validates input
+M: Async JavaScript || Promise: object representing a future value; async/await: writes asynchronous code that reads like sequential code; fetch: browser API for HTTP requests || Fetch data from a public API and render it as cards
+M: Modern JS in practice || ES module: file that exports and imports values; Closure: function remembering variables from where it was created; Event loop: mechanism that runs callbacks after the current call stack empties || Split your app into modules and add error handling
+
+@React
+project: Build a multi-component React app (movie search, expense tracker) with hooks, props, lists, forms and API calls, deployed to Netlify or Vercel
+check_files: package.json, README.md
+check_keywords: usestate, useeffect, component, props, key, fetch
+M: Components and JSX || Component: reusable function returning UI; JSX: HTML-like syntax inside JavaScript; Props: read-only inputs passed from parent to child || Build a card component and render it from an array
+M: State and events || useState: hook that stores state inside a component; Controlled input: form field whose value lives in React state; Lifting state up: moving shared state to a common parent || Build a counter, a toggle and a controlled form
+M: Effects and data fetching || useEffect: hook for side effects such as fetching data; Dependency array: controls when an effect re-runs; Loading state: UI shown while waiting for data || Fetch API data on load and handle loading and errors
+M: Lists, routing and structure || key prop: stable identifier that helps React update lists efficiently; React Router: library for client-side routing; Custom hook: reusable function built from other hooks || Add two routes and extract a custom hook
+M: Ship it || Build: production-optimised bundle of your app; Environment variable: configuration outside the code; Deployment: publishing the built app on a host || Deploy the app and add a README with screenshots
+
+@Node.js
+project: Build a Node.js + Express REST API with MongoDB or a JSON store, request validation, error middleware and environment-based config
+check_files: package.json, README.md
+check_keywords: express, route, middleware, async, package.json, env
+M: Node runtime basics || Event loop: lets Node handle many operations without blocking; npm: package manager for JavaScript libraries; CommonJS/ESM: module systems for sharing code between files || Run scripts, read files and install a package
+M: Building a server || http module: built-in server API; Route: URL and method pair handled by a function; Request/Response: objects representing incoming and outgoing HTTP data || Create a server with three routes
+M: Express and middleware || Middleware: function that runs between request and response; express.json(): parses JSON request bodies; Router: groups related routes || Refactor into routers and add logging middleware
+M: Databases and async code || Mongoose: ODM that models MongoDB documents; async/await: sequential-looking asynchronous code; Environment variables: keep secrets out of source code || Persist data in MongoDB and read config from .env
+
+@Linux
+project: Write a set of shell commands or a script that sets up a project directory, users/permissions, a cron job and a log-rotation report, documented in a README
+check_files: README.md
+check_keywords: chmod, grep, ssh, cron, apt, systemctl
+M: Filesystem and commands || pwd/ls/cd: navigate the filesystem; chmod: changes file permissions; Root directory: the top of the Linux file tree written as / || Navigate, create and permission a folder tree
+M: Text and pipes || grep: searches text for patterns; Pipe: sends one command's output into another; Redirection: writes output to a file with > or >> || Analyse a log file with grep, sort, uniq and pipes
+M: Processes and packages || ps/top: inspect running processes; apt: installs software on Debian and Ubuntu; systemctl: starts, stops and inspects services || Install nginx, start it as a service and check its status
+M: Networking and SSH || SSH: encrypted remote login to another machine; curl: transfers data using URLs from the terminal; Cron: schedules commands to run automatically || Connect over SSH and schedule a job with cron
+
+@Kubernetes
+project: Deploy a containerized app on a local cluster (minikube or kind) with a Deployment, Service, ConfigMap and readiness probe
+check_files: deployment.yaml, service.yaml, README.md
+check_keywords: deployment, service, pod, replicas, kubectl, configmap
+M: Cluster concepts || Pod: smallest deployable unit, one or more containers; Node: machine that runs pods; Control plane: components that manage the cluster state || Start minikube and inspect nodes and system pods
+M: Deployments and Services || Deployment: manages replicas and rolling updates of pods; Service: stable network endpoint that load balances to pods; kubectl apply: creates or updates resources from YAML || Deploy an app with 3 replicas and expose it with a Service
+M: Configuration and storage || ConfigMap: injects non-secret configuration; Secret: stores sensitive values such as passwords; PersistentVolume: storage that outlives pods || Move settings to a ConfigMap and mount a volume
+M: Operations || Readiness probe: tells Kubernetes when a pod can receive traffic; Rolling update: replaces pods gradually with zero downtime; HPA: autoscaler that adds pods based on load || Trigger a rolling update and roll it back
+
+@AWS
+project: Host a static site on S3 and a small API on EC2 or Lambda with IAM roles, documenting the architecture and cost controls
+check_files: README.md
+check_keywords: ec2, s3, iam, vpc, lambda, region
+M: Cloud fundamentals || Region: geographic area hosting AWS data centres; IAM: service controlling who can do what; Shared responsibility: AWS secures the cloud, you secure what you put in it || Create an account with MFA and a least-privilege IAM user
+M: Compute and storage || EC2: virtual servers you can launch on demand; S3: object storage for files of any size; EBS: block storage attached to an EC2 instance || Launch an EC2 instance, connect over SSH and host a file on S3
+M: Networking and databases || VPC: your isolated virtual network in AWS; Security group: virtual firewall for an instance; RDS: managed relational database service || Place an instance in a VPC and open only the ports you need
+M: Serverless and cost || Lambda: runs code without managing servers; API Gateway: fronts Lambda with HTTP endpoints; Free tier and budgets: alerts that stop surprise bills || Deploy a Lambda behind API Gateway and set a budget alert
+
+@CI/CD
+project: Create a GitHub Actions workflow that builds, tests and (optionally) containerizes a sample project on every push and pull request
+check_files: .github/workflows, README.md
+check_keywords: workflow, on:, jobs, steps, test, build, push
+M: CI/CD concepts || Continuous integration: merging and testing code frequently; Continuous delivery: keeping software always ready to release; Pipeline: automated sequence of build and test stages || Sketch the pipeline stages for one of your own projects
+M: First workflow || Workflow: YAML file describing an automated process; Job: group of steps that run on one runner; Trigger: event such as push that starts a workflow || Write a workflow that runs your tests on every push
+M: Artifacts, secrets and deployment || Artifact: file produced by a build and kept for later steps; Secret: encrypted variable such as an API key; Deployment stage: pipeline step that releases the build || Store a secret and deploy to a test environment
+
+@HTML/CSS
+project: Build a responsive multi-section personal or product landing page with semantic HTML, flexbox/grid and a mobile navigation
+check_files: index.html, style.css, README.md
+check_keywords: flex, grid, media, semantic, header, footer, responsive
+M: HTML structure || Semantic element: tag like header or article that describes its content; Anchor: link element created with <a>; Form: collects user input using input elements || Build a page with header, nav, main and footer
+M: CSS fundamentals || Selector: picks which elements a rule styles; Box model: content, padding, border and margin around every element; Specificity: rules deciding which style wins || Style a card component and fix a spacing bug using dev tools
+M: Flexbox and grid || Flexbox: one-dimensional layout along a row or column; CSS Grid: two-dimensional layout of rows and columns; gap: spacing between flex or grid items || Recreate a pricing table with grid and a navbar with flexbox
+M: Responsive design || Media query: applies styles at certain screen widths; Mobile first: design the small screen first then enhance; Viewport meta tag: makes pages scale correctly on phones || Make your page look good at 360px, 768px and 1280px
+
+@MongoDB
+project: Model a blog or e-commerce dataset in MongoDB with embedded and referenced documents, CRUD operations and an aggregation pipeline
+check_files: README.md
+check_keywords: insertone, find, update, aggregate, index, collection
+M: Document databases || Document: JSON-like record stored in BSON; Collection: group of documents, similar to a table; _id: unique identifier every document has || Insert and find documents in mongosh
+M: CRUD and queries || insertOne: adds a document; find: retrieves documents matching a filter; $set: update operator that changes specific fields || Write queries with filters, projections and sorting
+M: Modelling and indexes || Embedding: nesting related data inside one document; Referencing: storing another document's id; Index: structure that speeds up queries on a field || Model orders with items embedded and users referenced
+M: Aggregation || Aggregation pipeline: sequence of stages that transform documents; $group: stage that groups documents and computes totals; $lookup: stage that joins another collection || Compute sales per category with $group
+
+@TypeScript
+project: Convert a small JavaScript project to TypeScript with interfaces, generics, strict mode and typed API responses
+check_files: tsconfig.json, README.md
+check_keywords: interface, type, generic, strict, enum
+M: Types basics || Type annotation: declares the expected type of a value; Union type: value can be one of several types; any vs unknown: any disables checking, unknown forces a check || Add types to five functions and fix compiler errors
+M: Interfaces and generics || Interface: describes the shape of an object; Generic: type parameter that keeps a function reusable and safe; Enum: named set of constants || Type an API response and write a generic helper
+M: Tooling || tsconfig.json: configures the TypeScript compiler; strict mode: enables all strict type-checking options; Type guard: runtime check that narrows a type || Turn on strict mode and fix the fallout
+
+@Pandas
+project: Clean and analyse a real CSV dataset (for example a Kaggle dataset) with Pandas: missing values, groupby, merge and 5 charts, with findings in a notebook
+check_files: README.md
+check_keywords: dataframe, groupby, merge, fillna, isnull, describe
+M: DataFrames and Series || DataFrame: two-dimensional table of labelled data; Series: one-dimensional labelled column; head(): shows the first rows of a DataFrame || Load a CSV and explore it with head, info and describe
+M: Selecting and cleaning || loc: selects rows and columns by label; fillna: replaces missing values; dropna: removes rows with missing values || Clean a messy dataset with missing values and wrong types
+M: Grouping and merging || groupby: splits data into groups and aggregates each; merge: joins two DataFrames on a key; pivot_table: reshapes data into a summary table || Answer five business questions using groupby and merge
+M: Visual analysis || value_counts: counts occurrences of each value; Correlation: measures how strongly two variables move together; matplotlib: Python library for plotting charts || Create five charts and write three insights
+
+@Machine Learning
+project: Train, evaluate and compare at least three models on a public dataset with a proper train/test split, cross-validation and a written error analysis
+check_files: README.md, requirements.txt
+check_keywords: train, test, accuracy, precision, recall, overfit, cross-validation
+M: ML foundations || Supervised learning: learning from labelled examples; Feature: input variable used to make a prediction; Overfitting: model memorises training data and fails on new data || Frame three real problems as classification, regression or clustering
+M: Regression and classification || Linear regression: fits a straight-line relationship to predict numbers; Logistic regression: predicts class probabilities; Train/test split: holds out data to estimate real-world performance || Train a linear and a logistic model with scikit-learn
+M: Trees and ensembles || Decision tree: model that splits data with if-else rules; Random forest: many trees whose votes are combined; Hyperparameter: setting chosen before training such as tree depth || Compare a tree, a random forest and a baseline
+M: Evaluation || Precision: share of predicted positives that are correct; Recall: share of actual positives that are found; Cross-validation: repeated train/test splits for a stable estimate || Report accuracy, precision, recall and a confusion matrix
+M: Feature engineering and pipelines || Feature scaling: puts features on comparable ranges; One-hot encoding: turns categories into binary columns; Pipeline: chains preprocessing and model into one object || Build a scikit-learn Pipeline with preprocessing
+
+@Statistics
+project: Analyse a dataset end to end: descriptive stats, a hypothesis test with interpretation, and a regression, written up for a non-technical reader
+check_files: README.md
+check_keywords: mean, median, variance, p-value, hypothesis, confidence, regression
+M: Descriptive statistics || Mean: arithmetic average; Median: middle value, robust to outliers; Standard deviation: typical distance of values from the mean || Summarise a dataset with mean, median and spread
+M: Probability and distributions || Probability: number between 0 and 1 measuring how likely an event is; Normal distribution: symmetric bell-shaped distribution; Independence: one event does not change the probability of another || Simulate coin flips and dice to see the law of large numbers
+M: Inference || Hypothesis test: procedure deciding if data supports a claim; p-value: probability of data at least this extreme if the null were true; Confidence interval: range likely to contain the true value || Run a t-test and interpret the p-value in plain words
+M: Regression || Correlation: strength of a linear relationship; Regression coefficient: change in outcome for a one unit change in a predictor; R-squared: share of variance explained by the model || Fit a regression and check residuals
+
+@Power BI
+project: Build a 3-page Power BI report (overview, drill-down, insights) from a real dataset with a star-schema model, 5 DAX measures and slicers
+check_files: README.md
+check_keywords: dax, measure, relationship, slicer, visual, dashboard
+M: Power BI basics || Report: pages of visuals built on a data model; Dataset: tables and relationships behind the report; Power Query: tool for cleaning and shaping data before loading || Import a CSV and clean it in Power Query
+M: Modelling and DAX || Relationship: link between two tables on a key; Measure: DAX calculation evaluated in the context of a visual; Star schema: fact table surrounded by dimension tables || Create total, average and year-over-year measures
+M: Visuals and storytelling || Slicer: on-page filter for interactive exploration; Drill-through: jump to a detailed page for a selected item; Tooltip page: custom hover details || Design a dashboard and present three insights
+
+@Excel
+project: Build an analysis workbook with cleaned data, lookups, pivot tables, conditional formatting and a dashboard sheet
+check_files: README.md
+check_keywords: pivot, vlookup, xlookup, formula, chart, conditional
+M: Formulas and functions || SUM/AVERAGE/COUNT: basic aggregate functions; Absolute reference: $A$1 style reference that does not move when copied; IF: returns different results based on a condition || Build a marks or budget sheet with formulas
+M: Lookups and cleaning || VLOOKUP/XLOOKUP: fetches a value from another table by key; TRIM and TEXT functions: clean and reformat messy text; Data validation: restricts what can be typed in a cell || Clean a messy sales export and join it to a price list
+M: Pivot tables and charts || Pivot table: interactive summary of a dataset; Slicer: click-to-filter control for pivots; Conditional formatting: colours cells by rules || Create a pivot dashboard with two charts and slicers
+
+@Manual Testing
+project: Write a test plan and 25 test cases (with steps, expected results and priorities) plus 5 bug reports for a public website or sample app
+check_files: README.md
+check_keywords: test case, steps, expected, actual, severity, priority, bug
+M: Testing fundamentals || SDLC vs STLC: software development life cycle vs the testing life cycle inside it; Verification vs validation: are we building it right vs are we building the right thing; Test level: unit, integration, system and acceptance testing || Map a familiar app to each test level
+M: Test design || Equivalence partitioning: testing one value from each group of equivalent inputs; Boundary value analysis: testing at the edges of allowed ranges; Test case: steps, data and expected result for one scenario || Write test cases for a login form using both techniques
+M: Bugs and reporting || Severity: how badly a defect affects the system; Priority: how urgently it should be fixed; Regression testing: re-checking old features after a change || Log three defects with clear steps and screenshots
+
+@Selenium
+project: Automate a login + search + checkout flow on a demo shop with Selenium WebDriver using Page Object Model, explicit waits and a test report
+check_files: README.md, pom.xml
+check_keywords: webdriver, locator, wait, pageobject, assert, xpath
+M: WebDriver basics || WebDriver: API that controls a real browser; Locator: strategy such as id, CSS or XPath to find an element; Driver setup: launching a browser session from code || Open a page and click a button through code
+M: Waits and interactions || Explicit wait: waits for a specific condition with a timeout; Implicit wait: global default wait for finding elements; StaleElementReference: error when the page changed after you found an element || Fix a flaky test by replacing sleeps with explicit waits
+M: Framework design || Page Object Model: one class per page holding its locators and actions; TestNG/JUnit: runner providing assertions and reports; Data-driven test: same test run with many inputs || Refactor scripts into page objects and add a data-driven test
+
+@API Testing
+project: Create a Postman collection (or REST Assured suite) with 15 requests covering status codes, schema checks, auth and negative cases, with environment variables
+check_files: README.md
+check_keywords: postman, assert, status, json, token, environment
+M: API testing basics || Endpoint: URL exposing an operation; Status code: number summarising the outcome of a request; Payload: data sent or received in the body || Call a public API in Postman and inspect the response
+M: Assertions and automation || Assertion: automated check on a response; Environment variable: value reused across requests such as a base URL; Negative test: intentionally invalid input to prove errors are handled || Write assertions for status, body fields and response time
+
+@OOP
+project: Model a small system (parking lot, library) with at least five classes showing all four OOP pillars, and explain your design in a README
+check_files: README.md
+check_keywords: class, inheritance, polymorphism, encapsulation, abstraction, interface
+M: Classes and objects || Class: blueprint defining fields and methods; Object: an instance of a class; Constructor: special method that initialises a new object || Model a Student and a Course class
+M: Four pillars || Encapsulation: bundle data with methods and hide internals; Abstraction: expose what matters and hide complexity; Polymorphism: same call, different behaviour depending on the object || Create a Shape hierarchy that demonstrates polymorphism
+M: Design basics || Composition: building objects from other objects; Interface: contract of methods without implementation; SOLID: five principles for maintainable object-oriented design || Refactor a class with too many responsibilities
+
+@Microservices
+project: Split a sample monolith into two or three services with their own data stores, communicating over REST, with a Docker Compose file
+check_files: docker-compose.yml, README.md
+check_keywords: service, api gateway, docker, rest, database, resilience
+M: Monolith vs microservices || Monolith: single deployable unit; Microservice: small independently deployable service around one capability; Bounded context: boundary within which a model is consistent || Draw the services for an e-commerce app
+M: Communication and gateways || API gateway: single entry point routing to services; Service discovery: finding service instances dynamically; Circuit breaker: stops calling a failing service to avoid cascading failures || Add a gateway in front of two services
+
+@Redis
+project: Add Redis caching to an API (cache-aside with TTL) and measure latency before and after, with a short write-up
+check_files: README.md
+check_keywords: cache, ttl, key, get, set, expire
+M: Redis basics || Key-value store: data addressed by unique keys; TTL: time after which a key expires automatically; In-memory: data kept in RAM for very fast reads || Set, get and expire keys from redis-cli
+M: Caching patterns || Cache-aside: app checks the cache first then loads from the database; Cache invalidation: removing or updating stale cached data; Data types: strings, hashes, lists, sets and sorted sets || Cache a slow database query and measure the speed-up
+
+@Unit Testing
+project: Write a test suite with at least 20 unit tests (including edge cases and mocks) for a small module and reach 80% coverage
+check_files: README.md
+check_keywords: assert, mock, test, coverage, fixture
+M: Unit test basics || Unit test: automated test of one small piece of code; Assertion: statement that must be true for the test to pass; Arrange-Act-Assert: structure of a clear test || Write tests for a calculator or string utility
+M: Mocks and coverage || Mock: fake collaborator that records how it was used; Fixture: reusable setup for tests; Code coverage: percentage of code executed by tests || Mock an external call and measure coverage
+
+@Data Visualization
+project: Build a visual story from a public dataset with at least five chart types and a short written narrative, in a notebook or dashboard
+check_files: README.md
+check_keywords: chart, axis, title, insight, dashboard
+M: Choosing the right chart || Bar chart: compares categories; Line chart: shows change over time; Scatter plot: shows the relationship between two numeric variables || Pick a chart for five different questions
+M: Building and polishing || Matplotlib: base Python plotting library; Seaborn: statistical plots built on Matplotlib; Annotation: text that highlights the point of a chart || Redesign a cluttered chart so the message is obvious
+
+@Express.js
+project: Build an Express REST API with routers, validation and centralised error handling
+check_files: package.json, README.md
+check_keywords: express, router, middleware, req, res, error
+M: Routing and middleware || Route: path and method handled by a callback; Middleware: function with access to req, res and next; Router: mounts groups of routes on a path || Create a users router with GET and POST
+M: Errors and structure || Error-handling middleware: function with four arguments that handles errors; req.params: values captured from the URL; Controller layer: keeps route files thin || Add validation and a 404 plus 500 handler
+
+@Hibernate/JPA
+project: Model a one-to-many relationship (Author-Books) with JPA entities, repositories and custom queries
+check_files: pom.xml, README.md
+check_keywords: entity, onetomany, repository, jpql, transaction
+M: ORM concepts || ORM: maps objects to relational tables; @Entity: marks a class persisted as a table; @Id: marks the primary key field || Map a simple entity and persist it
+M: Relationships and queries || @OneToMany: one entity relates to many others; JPQL: object-oriented query language; Lazy loading: related data is fetched only when accessed || Create a relationship and write a custom query
+
+@System Design
+project: Write a design document for a URL shortener or chat app: requirements, API, data model, capacity estimate, scaling and trade-offs
+check_files: README.md
+check_keywords: scalability, cache, database, load balancer, trade-off, latency
+M: Building blocks || Load balancer: spreads requests across servers; Cache: fast storage for frequently read data; CDN: edge servers serving static content near users || Draw the components of a simple web app
+M: Scaling and trade-offs || Sharding: splitting a database across machines; CAP theorem: a distributed system cannot guarantee consistency, availability and partition tolerance together; Replication: copying data to several nodes for availability || Design a URL shortener end to end
+
+@Authentication
+project: Secure a REST API with JWT login, password hashing and role-based route protection
+check_files: README.md
+check_keywords: jwt, token, hash, role, login, authorization
+M: Auth concepts || Authentication: proving who you are; Authorization: deciding what you may do; Password hashing: storing a one-way hash instead of the password || Add registration with hashed passwords
+M: Tokens and roles || JWT: signed token carrying claims about the user; Bearer token: token sent in the Authorization header; RBAC: permissions granted through roles || Protect an endpoint so only admins can call it
+
+@Bash
+project: Write three shell scripts (backup, log summary, deployment helper) with arguments, error handling and comments
+check_files: README.md
+check_keywords: #!/bin/bash, if, for, grep, exit
+M: Scripting basics || Shebang: first line naming the interpreter; Variable: named value read with $; Exit code: number a command returns, 0 means success || Write a script that accepts arguments
+M: Control flow and tools || if/for: conditions and loops in Bash; grep/awk/sed: text processing tools; cron: scheduler for recurring scripts || Automate a daily backup with cron

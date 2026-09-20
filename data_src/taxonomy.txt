@@ -1,0 +1,117 @@
+# Skill taxonomy source.  Edit this file, then run:  python scripts/build_data.py
+# Format:  Name | Category | aliases (comma separated; a leading ~ = normalise-only, never extracted from free text) | prerequisites | effort (days) | implies | description
+# "implies" = skills that are reasonably inferred (with lower confidence) when this skill has real evidence.
+
+Python | Programming | python3, python programming, py, ~python 3 | | 10 | | Versatile high-level language for scripting, backend APIs, automation, data science and machine learning
+Java | Programming | core java, java se, java programming, java 8, java 11, java 17, jdk, j2se | | 14 | OOP | Statically typed object-oriented language for enterprise backends, Android and large scale systems
+JavaScript | Programming | js, ecmascript, es6, es2015, vanilla js, vanilla javascript | | 12 | | Language of the web used for interactive browser interfaces and server side code
+TypeScript | Programming | ~ts, ts | JavaScript | 6 | JavaScript | Typed superset of JavaScript that adds static types for safer large frontend and backend code
+C | Programming | c programming, c language, ansi c | | 12 | | Low level procedural language for systems, embedded software and performance critical code
+C++ | Programming | cpp, c plus plus, c plus-plus | | 16 | OOP | Systems language with classes and templates used for performance critical software, games and trading systems
+C# | Programming | csharp, c sharp, c-sharp | | 14 | OOP | Modern object-oriented language from Microsoft used with .NET for enterprise and web applications
+Go | Programming | golang, go lang | | 10 | | Compiled language from Google known for simple concurrency and fast cloud services
+Kotlin | Programming | kotlin android, kotlin programming | | 8 | | Modern concise JVM language and the preferred language for Android development
+R | Programming | r programming, r language, rstudio | | 10 | | Statistical programming language for data analysis and visualization
+SQL | Databases | structured query language, sql queries, sql programming, t-sql, pl/sql, plsql, joins and subqueries | | 7 | | Standard language to query and manage relational databases using joins, aggregations and subqueries
+Bash | Programming | bash scripting, shell scripting, shell script, shell, sh scripting, unix shell | Linux | 4 | Linux | Command line scripting to automate tasks on Linux and Unix systems
+
+DSA | CS Fundamentals | data structures, algorithms, data structures and algorithms, data structures & algorithms, competitive programming, leetcode, coding interview, ~dsa | | 30 | | Core data structures (arrays, trees, graphs, hash maps) and algorithms (sorting, searching, dynamic programming) for efficient problem solving
+OOP | CS Fundamentals | object oriented programming, object-oriented programming, object oriented design, oops, oop concepts, object oriented concepts | | 5 | | Modelling software with classes, encapsulation, inheritance, polymorphism and abstraction
+Operating Systems | CS Fundamentals | operating system, os concepts, process scheduling, os fundamentals | | 8 | | Processes, threads, scheduling, memory management and file systems
+Computer Networks | CS Fundamentals | networking, computer networking, tcp/ip, network fundamentals, osi model, tcp ip | | 8 | | How data moves across networks: OSI and TCP/IP layers, HTTP, DNS, routing and sockets
+DBMS | CS Fundamentals | database management systems, database management system, database concepts, normalization, rdbms, acid transactions, er diagrams | | 6 | | Relational model, normalization, ER modelling, ACID transactions and indexing
+System Design | CS Fundamentals | hld, lld, high level design, low level design, distributed systems, scalable systems, system architecture | REST API, SQL | 15 | | Designing scalable services: load balancing, caching, databases, queues and trade-offs
+Design Patterns | CS Fundamentals | design pattern, gof patterns, solid principles | OOP | 6 | OOP | Reusable solutions such as Singleton, Factory, Observer and the SOLID principles
+Git | Tools | github, gitlab, version control, git & github, git/github, bitbucket, git flow | | 2 | | Distributed version control: commits, branches, merges and pull requests
+Linux | Tools | unix, ubuntu, linux commands, linux administration, centos, red hat | | 4 | | Command line, file permissions, processes, package managers and networking on Linux servers
+Agile | Tools | scrum, agile methodology, sdlc, kanban, sprint planning, jira | | 2 | | Iterative delivery with sprints, stand-ups, backlogs and retrospectives
+
+Spring Boot | Backend | spring, spring framework, springboot, spring mvc, spring data | Java | 10 | Java, REST API | Opinionated Java framework for building production-ready REST services with auto-configuration
+REST API | Backend | ~rest, restful api, restful apis, restful services, rest services, web api, web apis, rest apis, restful web services, api development, http apis, restful, rest endpoints | | 4 | | Designing HTTP APIs with resources, verbs, status codes and JSON payloads
+Node.js | Backend | nodejs, node js, ~node | JavaScript | 8 | JavaScript | JavaScript runtime for building fast server side applications and APIs
+Express.js | Backend | expressjs, express js, ~express | Node.js | 3 | Node.js, JavaScript | Minimal Node.js web framework for routing, middleware and REST APIs
+Django | Backend | django rest framework, drf | Python | 8 | Python | Batteries-included Python web framework with ORM, admin and authentication
+Flask | Backend | flask api, flask framework | Python | 4 | Python | Lightweight Python micro-framework for web apps and APIs
+FastAPI | Backend | fast api | Python, REST API | 4 | Python, REST API | Modern async Python framework for typed, documented REST APIs
+Hibernate/JPA | Backend | hibernate, jpa, spring data jpa, object relational mapping, jdbc, ~orm | Java, SQL | 4 | Java | ORM layer mapping Java objects to relational tables
+Microservices | Backend | microservice, microservice architecture, microservices architecture, service oriented architecture | REST API, Docker | 8 | REST API | Splitting applications into independently deployable services that communicate over APIs or messages
+GraphQL | Backend | graph ql, apollo graphql | REST API | 4 | | Query language letting clients request exactly the data they need from one endpoint
+Authentication | Backend | jwt, oauth, oauth2, authorization, spring security, session management, sso | REST API | 4 | | Securing APIs with sessions, JWT tokens, OAuth2 and role based access control
+Message Queues | Backend | kafka, rabbitmq, apache kafka, message broker, messaging systems, event driven, activemq, pub/sub | | 7 | | Asynchronous communication between services using brokers such as Kafka and RabbitMQ
+ASP.NET | Backend | asp.net core, .net, dotnet, .net core, asp net | C# | 10 | C# | Microsoft framework for building web APIs and apps in C#
+
+HTML/CSS | Frontend | html, css, html5, css3, html and css, html & css, web design, flexbox, responsive design, responsive web design | | 5 | | Structure and styling of web pages, layouts with flexbox and grid, and responsive design
+React | Frontend | reactjs, react.js, react js, react hooks, jsx | JavaScript, HTML/CSS | 14 | JavaScript, HTML/CSS | Component based UI library with state, props, hooks and virtual DOM
+Angular | Frontend | angularjs, angular js, rxjs | TypeScript, HTML/CSS | 14 | TypeScript, JavaScript | Full featured TypeScript framework for large single page applications
+Vue.js | Frontend | vue, vuejs, vue js, vuex, nuxt | JavaScript, HTML/CSS | 10 | JavaScript | Progressive JavaScript framework for reactive user interfaces
+Bootstrap/Tailwind | Frontend | bootstrap, tailwind, tailwind css, tailwindcss, material ui, css frameworks | HTML/CSS | 3 | HTML/CSS | Utility and component CSS frameworks for fast responsive styling
+Redux | Frontend | redux toolkit, state management, context api, zustand | React | 3 | React | Predictable global state management for React apps
+Next.js | Frontend | nextjs, next js, server side rendering, ssr | React | 6 | React, JavaScript | React framework with routing, server side rendering and API routes
+
+MySQL | Databases | my sql, mariadb | SQL | 2 | SQL | Popular open source relational database
+PostgreSQL | Databases | postgres, postgre sql, psql | SQL | 3 | SQL | Advanced open source relational database with rich types and extensions
+MongoDB | Databases | mongo, nosql, mongo db, mongoose, document database | | 4 | | Document oriented NoSQL database storing JSON like documents
+Redis | Databases | redis cache, caching, in-memory cache, memcached | | 3 | | In memory key value store used for caching, sessions and queues
+
+Docker | DevOps & Cloud | docker compose, docker-compose, containers, containerization, containerisation, dockerfile, docker images, docker hub | Linux, Git | 6 | | Packaging apps and dependencies into portable containers using images, Dockerfiles and Compose
+Kubernetes | DevOps & Cloud | k8s, container orchestration, helm, kubectl, eks, aks, gke | Docker | 15 | Docker | Orchestrating containers at scale with pods, deployments, services and autoscaling
+CI/CD | DevOps & Cloud | cicd, ci cd, continuous integration, continuous delivery, continuous deployment, jenkins, github actions, gitlab ci, azure devops, build pipelines | Git | 5 | Git | Automating build, test and deployment with pipelines such as GitHub Actions and Jenkins
+AWS | DevOps & Cloud | amazon web services, aws cloud, ec2, s3, aws lambda, rds, iam, cloudfront, ~lambda | Linux | 14 | | Core Amazon cloud services: EC2, S3, IAM, RDS, Lambda and VPC networking
+Azure | DevOps & Cloud | microsoft azure, azure cloud, azure functions | | 14 | | Microsoft cloud platform: virtual machines, storage, App Service, Functions and Entra ID
+GCP | DevOps & Cloud | google cloud, google cloud platform, gcloud, compute engine | | 14 | | Google cloud platform: Compute Engine, Cloud Storage, BigQuery and Cloud Run
+Terraform | DevOps & Cloud | infrastructure as code, iac, cloudformation, pulumi | AWS | 8 | | Declaring cloud infrastructure as code with providers, state and modules
+Monitoring | DevOps & Cloud | prometheus, grafana, observability, logging, elk, elk stack, datadog, alerting | Linux | 5 | | Metrics, logs and alerts with Prometheus, Grafana and the ELK stack for reliable systems
+
+Pandas | Data & ML | pandas dataframe, dataframes, data wrangling, data manipulation | Python | 4 | Python | Python library for tabular data cleaning, grouping and analysis with DataFrames
+NumPy | Data & ML | numerical python, scipy | Python | 3 | Python | Array computing in Python: vectorized maths, broadcasting and linear algebra
+Data Visualization | Data & ML | matplotlib, seaborn, plotly, data viz, ggplot | | 4 | | Communicating insights through charts using Matplotlib, Seaborn or BI tools
+Excel | Data & ML | ms excel, microsoft excel, advanced excel, excel formulas, pivot tables, vlookup, spreadsheets, google sheets | | 4 | | Spreadsheet analysis with formulas, lookups, pivot tables and charts
+Power BI | Data & ML | powerbi, power bi desktop, dax, power query, microsoft power bi | Excel | 6 | | Microsoft BI tool for data models, DAX measures and interactive dashboards
+Tableau | Data & ML | tableau desktop, tableau public | | 6 | | Visual analytics tool to build interactive dashboards
+Statistics | Data & ML | statistical analysis, probability, probability and statistics, hypothesis testing, descriptive statistics, regression analysis, a/b testing, inferential statistics | | 10 | | Distributions, hypothesis testing, confidence intervals and regression for data-driven decisions
+Machine Learning | Data & ML | ml, scikit-learn, sklearn, scikit learn, supervised learning, unsupervised learning, predictive modeling, predictive modelling, xgboost | Python, Statistics | 25 | | Training models such as regression, trees and clustering; evaluation, overfitting and feature engineering
+Deep Learning | Data & ML | ~dl, neural networks, neural network, cnn, rnn, lstm | Machine Learning | 20 | Machine Learning | Neural networks with backpropagation, CNNs and sequence models
+TensorFlow/PyTorch | Data & ML | pytorch, tensorflow, keras | Deep Learning | 10 | Python | Deep learning frameworks for building and training neural networks
+NLP | Data & ML | natural language processing, text mining, text classification, sentiment analysis, spacy, nltk, hugging face, huggingface, bert | Machine Learning | 12 | Machine Learning | Working with text: tokenization, embeddings, classification and transformer models
+LLMs/GenAI | Data & ML | llm, llms, large language models, generative ai, genai, gen ai, prompt engineering, langchain, langgraph, rag, retrieval augmented generation, openai api, vector database, vector databases | Python | 8 | Python | Building apps on large language models: prompting, RAG, vector stores and agents
+MLOps | Data & ML | ml deployment, model deployment, mlflow, model serving, kubeflow, ml pipelines | Docker, Machine Learning | 8 | | Packaging, deploying, versioning and monitoring ML models in production
+Computer Vision | Data & ML | opencv, ~cv, image processing, object detection, image classification, yolo | Deep Learning | 12 | Deep Learning | Teaching machines to understand images: OpenCV, CNNs and object detection
+ETL | Data & ML | etl pipelines, data pipelines, data pipeline, data cleaning, data engineering, airflow, data ingestion, elt | SQL | 5 | | Extracting, transforming and loading data with pipelines and orchestration tools like Airflow
+Big Data | Data & ML | spark, pyspark, apache spark, hadoop, big data processing, hive, databricks | Python, SQL | 12 | | Distributed data processing with Spark and Hadoop
+Data Warehousing | Data & ML | data warehouse, snowflake, bigquery, redshift, star schema, dimensional modeling, olap, data modeling | SQL | 6 | SQL | Star schemas, fact and dimension tables and warehouse platforms such as Snowflake and BigQuery
+
+Manual Testing | Testing & QA | test cases, test case design, stlc, bug reporting, test plans, defect tracking, functional testing, regression testing, black box testing, uat | | 4 | | Designing test cases, executing them and reporting defects across the STLC
+Selenium | Testing & QA | selenium webdriver, webdriver, ui automation, browser automation | Manual Testing | 8 | | Automating browser tests with WebDriver locators, waits and page objects
+Test Automation | Testing & QA | automation testing, test automation frameworks, cypress, playwright, robot framework, bdd, cucumber, page object model, automation framework | Manual Testing | 8 | | Building maintainable automated test suites and frameworks with BDD and page objects
+API Testing | Testing & QA | postman, rest assured, restassured, api automation, soapui, api tests | REST API | 3 | | Validating REST endpoints, status codes and payloads with Postman or REST Assured
+Unit Testing | Testing & QA | junit, testng, pytest, mockito, unit tests, jest, tdd, test driven development, mocha, unittest | OOP | 4 | | Writing isolated tests with assertions and mocks using JUnit, pytest or Jest
+
+Cybersecurity | Security | cyber security, network security, owasp, ethical hacking, penetration testing, vulnerability assessment, information security, siem, security fundamentals | Computer Networks | 8 | | Threats, OWASP Top 10, encryption, vulnerability assessment and basic incident response
+Android Development | Mobile | android, android studio, android sdk, jetpack compose | Java | 15 | | Building native Android apps with activities, fragments, ViewModels and REST integration
+Flutter | Mobile | dart, flutter development, flutter sdk | | 12 | | Cross platform mobile UI toolkit using Dart widgets and state management
+
+@families
+# Family name : transfer credit (0-1) : members.  Someone strong in one member gets partial credit for another.
+SQL databases : 0.55 : SQL, MySQL, PostgreSQL, DBMS
+Frontend frameworks : 0.5 : React, Angular, Vue.js, Next.js
+Cloud platforms : 0.55 : AWS, Azure, GCP
+Python web frameworks : 0.55 : Django, Flask, FastAPI
+Java backend : 0.45 : Spring Boot, Hibernate/JPA
+JavaScript backend : 0.5 : Node.js, Express.js
+Deep learning stack : 0.5 : TensorFlow/PyTorch, Deep Learning
+BI tools : 0.5 : Power BI, Tableau, Excel, Data Visualization
+Test automation : 0.4 : Selenium, Test Automation, API Testing, Unit Testing
+Container tooling : 0.3 : Docker, Kubernetes
+Data platforms : 0.4 : Big Data, Data Warehousing, ETL
+NoSQL stores : 0.4 : MongoDB, Redis
+Service architecture : 0.4 : Microservices, Message Queues
+Pipelines and IaC : 0.35 : CI/CD, Terraform
+Mobile : 0.35 : Android Development, Flutter
+Typed OOP languages : 0.3 : Java, C#, C++, Kotlin
+Scripting languages : 0.3 : Python, Bash
+
+@not_related
+# Pairs that look similar by name or embedding but must never give transfer credit
+Java : JavaScript
+C : C++
+C : C#

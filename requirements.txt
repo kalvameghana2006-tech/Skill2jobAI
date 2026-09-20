@@ -1,0 +1,13 @@
+streamlit>=1.40
+plotly>=5.20
+numpy>=1.26
+pandas>=2.0
+pypdf>=4.0
+requests>=2.31
+python-dotenv>=1.0
+langgraph>=0.2
+langchain-core>=0.3
+google-genai>=1.0
+sentence-transformers>=3.0     # semantic embeddings (downloads ~90 MB model on first run); the app falls back to an offline embedder if missing
+SpeechRecognition>=3.10        # free voice transcription fallback when no Gemini key
+pytest>=8.0
