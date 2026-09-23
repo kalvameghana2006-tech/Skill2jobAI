@@ -23,7 +23,7 @@ VECTOR_CACHE = STORAGE_DIR / "vectors"
 def env(name: str, default: str = "") -> str:
     return os.getenv(name, default).strip()
 
-GEMINI_MODEL = env("GEMINI_MODEL", "gemini-2.5-flash")
+GEMINI_MODEL = env("GEMINI_MODEL", "gemini-3.6-flash")
 EMBEDDING_MODEL = env("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 # Set EMBEDDING_BACKEND=hash to force the built-in offline embedder (no model download).
 EMBEDDING_BACKEND = env("EMBEDDING_BACKEND", "auto")
